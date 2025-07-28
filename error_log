@@ -1,0 +1,1 @@
+[28-Jul-2025 02:59:37 UTC] PHP Warning:  file_get_contents(/home/maratonp/public_html/maratonmonterrey.mx/prueba/wp-content/plugins/woo-banorte-master/includes/llave_privada.pem): Failed to open stream: No such file or directory in /home/maratonp/public_html/maratonmonterrey.mx/prueba/wp-content/plugins/woo-banorte-master/includes/encrypt.php on line 34
