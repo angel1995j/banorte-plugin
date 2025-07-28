@@ -1,46 +1,48 @@
-jQuery(document).ready(function($) {
-    $('#banorte-submit').on('click', function() {
-        const data = {
-            amount: $('#banorte-amount').val(),
-            order_id: $('#banorte-order-id').val(),
-            merchant_id: $('#banorte-merchant-id').val(),
-            terminal_id: $('#banorte-terminal-id').val(),
-            merchant_name: $('#banorte-merchant-name').val(),
-            merchant_city: $('#banorte-merchant-city').val(),
-            currency_code: $('#banorte-currency-code').val(),
-            callback_url: $('#banorte-callback-url').val()
-        };
+jQuery(function($) {
+    $(document).on('click', '#place_order', function(e) {
+        if ($('input[name="payment_method"]:checked').val() !== 'banorte_bank_bb') return;
 
-        $.post(banorte_params.encryption_url, data, function(response) {
-            if (response.success) {
-                // Crear formulario oculto y enviar a Banorte
-                const form = document.createElement('form');
-                form.method = 'POST';
-                form.action = 'https://via.banorte.com/secure3d/Solucion3DSecure.htm';
-                form.style.display = 'none';
-                
-                Object.entries({
-                    Merchant: data.merchant_id,
-                    Reference: data.order_id,
-                    Amount: data.amount,
-                    Key: response.key,
-                    Vector: response.iv,
-                    Data: response.data
-                }).forEach(([name, value]) => {
-                    const input = document.createElement('input');
-                    input.type = 'hidden';
-                    input.name = name;
-                    input.value = value;
-                    form.appendChild(input);
+        e.preventDefault();
+        
+        var $form = $('form.checkout, form#order_review');
+        var order_id = $form.find('#order_id').val() || typeof wc_checkout_params !== 'undefined' ? wc_checkout_params.order_id : 0;
+
+        console.log('Enviando pago Banorte. Order ID:', order_id); // Debug
+
+        $.ajax({
+            url: banorte_vars.ajax_url,
+            type: 'POST',
+            dataType: 'json',
+            data: {
+                action: 'banorte_process_payment',
+                security: banorte_vars.nonce,  // Cambiado a 'security' que es el est¨¢ndar de WooCommerce
+                order_id: order_id
+            },
+            beforeSend: function() {
+                console.log('Iniciando solicitud AJAX'); // Debug
+                $.blockUI({
+                    message: 'Procesando pago con Banorte...',
+                    overlayCSS: {
+                        background: '#fff',
+                        opacity: 0.6
+                    }
                 });
-                
-                document.body.appendChild(form);
-                form.submit();
-            } else {
-                alert('Error: ' + (response.message || 'Error desconocido'));
+            },
+            success: function(response) {
+                console.log('Respuesta recibida:', response); // Debug
+                if (response.success && response.data.redirect_url) {
+                    window.location = response.data.redirect_url;
+                } else {
+                    alert(response.data || 'Error desconocido');
+                }
+            },
+            error: function(xhr, status, error) {
+                console.error('Error AJAX:', status, error, xhr.responseText); // Debug detallado
+                alert('Error al comunicarse con el servidor. Por favor intente nuevamente.');
+            },
+            complete: function() {
+                $.unblockUI();
             }
-        }).fail(function() {
-            alert('Error al conectar con el servidor');
         });
     });
 });

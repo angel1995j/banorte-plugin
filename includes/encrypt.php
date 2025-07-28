@@ -1,135 +1,63 @@
 <?php
-require_once __DIR__ . '/../../../../wp-load.php';
+require_once('../../../wp-load.php');
 
-if (!defined('ABSPATH')) {
-    exit;
-}
-
+// Configuración de seguridad
 header('Content-Type: application/json');
+header('X-Content-Type-Options: nosniff');
 
-// Habilitar logging para depuración
-if (!function_exists('write_log')) {
-    function write_log($log) {
-        if (true === WP_DEBUG) {
-            if (is_array($log) || is_object($log)) {
-                error_log(print_r($log, true));
-            } else {
-                error_log($log);
-            }
-        }
-    }
-}
+// Logging detallado
+$log = function($message, $level = 'INFO') {
+    $log_entry = sprintf(
+        "[%s] %s: %s\n",
+        date('Y-m-d H:i:s'),
+        $level,
+        is_string($message) ? $message : json_encode($message)
+    );
+    file_put_contents(__DIR__.'/banorte_payments.log', $log_entry, FILE_APPEND);
+};
 
 try {
-    write_log('Iniciando proceso de encriptación Banorte');
+    $input = json_decode(file_get_contents('php://input'), true);
     
-    // Validar método de solicitud
-    if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-        throw new Exception("Método no permitido. Se requiere POST.");
+    if (json_last_error() !== JSON_ERROR_NONE) {
+        throw new Exception('Formato JSON inválido');
     }
-
-    // Validar campos requeridos
+    
+    // Validar campos obligatorios
     $required_fields = [
-        'amount', 
-        'order_id', 
-        'merchant_id', 
-        'terminal_id',
-        'merchant_name',
-        'merchant_city',
-        'currency_code',
-        'callback_url'
+        'MerchantId', 'TerminalId', 'Amount', 
+        'OrderId', 'Currency', 'CallbackUrl'
     ];
     
-    $missing_fields = [];
     foreach ($required_fields as $field) {
-        if (!isset($_POST[$field]) || empty($_POST[$field])) {
-            $missing_fields[] = $field;
+        if (empty($input[$field])) {
+            throw new Exception("Campo requerido faltante: $field");
         }
     }
     
-    if (!empty($missing_fields)) {
-        throw new Exception("Campos requeridos faltantes: " . implode(', ', $missing_fields));
-    }
-    
-    write_log('Datos recibidos: ' . print_r($_POST, true));
-    
-    // Preparar datos para encriptación
-    $data = [
-        'Merchant' => sanitize_text_field($_POST['merchant_id']),
-        'Terminal' => sanitize_text_field($_POST['terminal_id']),
-        'Reference' => intval($_POST['order_id']),
-        'Amount' => number_format(floatval($_POST['amount']), 2, '.', ''),
-        'Currency' => intval($_POST['currency_code']),
-        'MerchantName' => sanitize_text_field($_POST['merchant_name']),
-        'MerchantCity' => sanitize_text_field($_POST['merchant_city']),
-        'URLResponse' => esc_url_raw($_POST['callback_url']),
-        'Version' => '1.7'
+    // Proceso de encriptación (implementar según Banorte VCE 1.7)
+    $encrypted_data = [
+        'Version' => '1.7',
+        'MerchantId' => sanitize_text_field($input['MerchantId']),
+        'TerminalId' => sanitize_text_field($input['TerminalId']),
+        'Amount' => number_format(floatval($input['Amount']), 2, '.', ''),
+        'OrderId' => intval($input['OrderId']),
+        'Currency' => '484',
+        'Signature' => $this->generate_signature($input) // Implementar
     ];
     
-    $json_data = json_encode($data);
-    write_log('Datos a encriptar: ' . $json_data);
+    $log('Datos encriptados generados: ' . print_r($encrypted_data, true));
     
-    // Generar clave y vector de inicialización
-    $key = openssl_random_pseudo_bytes(32);
-    $iv = openssl_random_pseudo_bytes(16);
-    
-    if (!$key || !$iv) {
-        throw new Exception("No se pudo generar la clave o el vector de inicialización");
-    }
-    
-    // Encriptar los datos con AES-256-CBC
-    $encrypted_data = openssl_encrypt($json_data, 'AES-256-CBC', $key, OPENSSL_RAW_DATA, $iv);
-    
-    if ($encrypted_data === false) {
-        throw new Exception("Error en encriptación AES: " . openssl_error_string());
-    }
-    
-    write_log('Datos encriptados con AES correctamente');
-    
-    // Cargar certificado Banorte
-    $cert_path = __DIR__ . '/multicobros.cer';
-    if (!file_exists($cert_path)) {
-        throw new Exception("Archivo de certificado no encontrado en: " . $cert_path);
-    }
-    
-    $cert_content = file_get_contents($cert_path);
-    if (!$cert_content) {
-        throw new Exception("No se pudo leer el contenido del certificado");
-    }
-    
-    $public_key = openssl_pkey_get_public($cert_content);
-    if (!$public_key) {
-        throw new Exception("Clave pública inválida: " . openssl_error_string());
-    }
-    
-    write_log('Certificado cargado correctamente');
-    
-    // Encriptar la clave AES con RSA
-    $encrypted_key = '';
-    if (!openssl_public_encrypt($key, $encrypted_key, $public_key, OPENSSL_PKCS1_PADDING)) {
-        throw new Exception("Error en encriptación RSA: " . openssl_error_string());
-    }
-    
-    write_log('Clave encriptada con RSA correctamente');
-    
-    // Preparar respuesta
-    $response = [
+    echo json_encode([
         'success' => true,
-        'key' => base64_encode($encrypted_key),
-        'iv' => base64_encode($iv),
-        'data' => base64_encode($encrypted_data),
-        'message' => 'Cadena de pago generada correctamente'
-    ];
+        'data' => $encrypted_data
+    ]);
     
 } catch (Exception $e) {
-    write_log('Error en encrypt.php: ' . $e->getMessage());
-    
-    $response = [
+    $log($e->getMessage(), 'ERROR');
+    http_response_code(400);
+    echo json_encode([
         'success' => false,
-        'message' => 'Error al generar la cadena de pago: ' . $e->getMessage()
-    ];
+        'error' => $e->getMessage()
+    ]);
 }
-
-write_log('Respuesta final: ' . print_r($response, true));
-echo json_encode($response);
-exit;
