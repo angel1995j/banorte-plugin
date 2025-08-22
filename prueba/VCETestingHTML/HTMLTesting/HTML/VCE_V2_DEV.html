@@ -1,0 +1,1478 @@
+<!DOCTYPE html>
+<html Lang="en">
+<head>
+    <title>Orquestador</title>
+    <link rel="stylesheet" href="../../css/estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- <link rel="stylesheet" href="css/jquery.modal.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+          integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+          crossorigin="anonymous">
+
+
+    <!--[if !IE]>
+    <script type="text/javascript" src="/sites/all/themes/mytheme/script/modernizr.js"></script>
+    <![endif]-->
+    <script type="text/javascript"
+            src="https://multicobros.banorte.com/orquestador/resources/js/jquery-3.3.1.js"></script>
+    <script type="text/javascript"
+            src="https://multicobros.banorte.com/orquestador/lightbox/checkoutV2.js"></script>
+    <script type="text/javascript" src="../../js/CypherMerchant.js"></script>
+
+</head>
+<body>
+<div class="row">
+    <div class="col formulario">
+        <a href="./testingOrquestadorDEV - Convivencia - Main.html"><i class="fas fa-arrow-left fa-fw"></i></a>
+        <center>
+            <div class="row">
+                <div class="col titulo">
+                    <i class="fas fa-shopping-cart fa-fw"></i>
+                    <i class="fas fa-arrow-right fa-fw"></i>
+                    <i class="fas fa-arrow-right fa-fw"></i>
+                    <h4 id="cabecera">Parámetros de envío al Orquestador de Pagos</h4>
+                </div>
+            </div>
+        </center>
+        <form name="payinfo" id="payinfo" method="POST" target="_blank">
+            <center>
+                <div class="row">
+                    <div class="col">
+                        <div>
+                            <h3 id="cabeceram">
+                                <!-- 						 1° Paso  <input type="button" value="Encriptar Informaci&oacute;n" id="encrip" name="encrip"><br> -->
+                                -- 1° Paso -- <input type="button" value="Enviar Petición" id="botonPOC"
+                                                     name="botonPOC">
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <h3 id="cabeceram">Informaci&oacute;n Encriptada</h3>
+                <div class="row">
+                    <div class="col">
+                        <textarea id="infocryp" name="infocryp" disabled></textarea>
+                    </div>
+                </div>
+            </center>
+            <center><h3 id="cabeceram">Parámetros de Comercio</h3></center>
+
+            <!-- Opción de convivencia -->
+            <div class="row">
+                <div class="col">
+                    <center>
+                        <h2><label>Opción Seleccionada</label></h2>
+                        <h2><label>V2 - Cifrados desde Comercio</label></h2>
+                    </center>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <center><h2><label>*************************************************</label></h2></center>
+                </div>
+            </div>
+
+            <center><h3 id="cabeceram">LLAVE COMERCIO (Ingrese la llave pública, contenido sin -----BEGIN
+                CERTIFICATE----- y -----END CERTIFICATE-----)</h3></center>
+
+            <div class="row">
+                <div class="col">
+                    <label for="key">Llavé Pública:</label>
+                    <input type="text" name="key"
+                           value="MIIGVjCCBT6gAwIBAgITFwABIQr95dc29zzr2wABAAEhCjANBgkqhkiG9w0BAQsF
+ADB5MQswCQYDVQQGEwJNWDEZMBcGCgmSJomT8ixkARkWCWdmYmFub3J0ZTEeMBwG
+A1UEChMVU2VndXJpZGFkIGluZm9ybWF0aWNhMS8wLQYDVQQDEyZHcnVwbyBGaW5h
+bmNpZXJvIEJhbm9ydGUgQ0EgRW50ZXJwcmlzZTAeFw0yNDAzMDQyMDM2NTRaFw0y
+NTAzMDQyMDM2NTRaMIGoMQswCQYDVQQGEwJNWDELMAkGA1UECBMCREYxDzANBgNV
+BAcTBk1leGljbzErMCkGA1UEChMiR3J1cG8gRmluYW5jaWVybyBCYW5vcnRlIFNB
+QiBkZSBDVjEkMCIGA1UECxMbU2VndXJpZGFkIGRlIGxhIEluZm9ybWFjaW9uMSgw
+JgYDVQQDEx9tdWx0aWNvYnJvc2tleS51bml4LmJhbm9ydGUuY29tMIIBIjANBgkq
+hkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0dKvz3+1Y94EvZkhd+2xccYMDNdM7gfl
+J5OCknAJn8Qh8wnSHxNtcNWBvAcrzu1WUIxrWYKT4hKfutnNGSb5TFdWpkSkp1/G
+fmAvx2UoRSVx/HtZBQX6P0BDEsry1y8lYxjPAUAyPgxY4khOmQeyTYCTJGK7Zg0z
+cHVao3CkjuUaZ/AB3L0jUQBr4R2h7P5zea4NxvT445sf8bmcFZYmefjdwHR05PtS
+vV/rV5+KzWJbrRnEPeNRuderuKFgpPs2+tmvxgTlISK5wqa5bZ0N79uO73qz+lKw
+9qUQq0jeb8RRN3mozPbMpliFeXu87B3IIQaEZOErwl7zIGmmEN0BxwIDAQABo4IC
+pTCCAqEwFAYDVR0RBA0wC4IJbG54c2lzYTNwMB0GA1UdDgQWBBQJifjmRJ3yk/mt
+W0ZCcsMX43zTpTAfBgNVHSMEGDAWgBTQBPbPr59ruX3bXiA0YK0zB6UM0zCB7QYD
+VR0fBIHlMIHiMIHfoIHcoIHZhoHWbGRhcDovLy9DTj1HcnVwbyUyMEZpbmFuY2ll
+cm8lMjBCYW5vcnRlJTIwQ0ElMjBFbnRlcnByaXNlLENOPUNBLUJBTk9SVEUtUkEs
+Q049Q0RQLENOPVB1YmxpYyUyMEtleSUyMFNlcnZpY2VzLENOPVNlcnZpY2VzLENO
+PUNvbmZpZ3VyYXRpb24sREM9Z2ZiYW5vcnRlP2NlcnRpZmljYXRlUmV2b2NhdGlv
+bkxpc3Q/YmFzZT9vYmplY3RDbGFzcz1jUkxEaXN0cmlidXRpb25Qb2ludDCB2wYI
+KwYBBQUHAQEEgc4wgcswgcgGCCsGAQUFBzAChoG7bGRhcDovLy9DTj1HcnVwbyUy
+MEZpbmFuY2llcm8lMjBCYW5vcnRlJTIwQ0ElMjBFbnRlcnByaXNlLENOPUFJQSxD
+Tj1QdWJsaWMlMjBLZXklMjBTZXJ2aWNlcyxDTj1TZXJ2aWNlcyxDTj1Db25maWd1
+cmF0aW9uLERDPWdmYmFub3J0ZT9jQUNlcnRpZmljYXRlP2Jhc2U/b2JqZWN0Q2xh
+c3M9Y2VydGlmaWNhdGlvbkF1dGhvcml0eTALBgNVHQ8EBAMCBaAwPAYJKwYBBAGC
+NxUHBC8wLQYlKwYBBAGCNxUIg+v5BoK1j0eNkROCp58GguHddCKCxphfgtj9DwIB
+ZAIBDzATBgNVHSUEDDAKBggrBgEFBQcDATAbBgkrBgEEAYI3FQoEDjAMMAoGCCsG
+AQUFBwMBMA0GCSqGSIb3DQEBCwUAA4IBAQAPlZ6fN/Hq5EK3PTDAqMDQdYltTTPA
+Z3Ar3OdYCgTDfITwL7FbdnCR4cy2O8ZE9LqjZ/1ZbO1csWaLHDAwf2lXsfdOGRrP
+9minylhSAS8A1P/eLelAhJoQ86wqQA55yzNb5EEX82F8zYjNwOYpjXVojw8FB8uo
+GtAf9etNe7Xg8G8omKS9+HXFdvpVsAalRwVwAv4Gz0YWf7j6qEfnp6sxChRy1p0f
+HOy6X/HdoNInKp2c3fS9GB60seJdN1lTYnQredpTONgyWI2Jmj2Dvm0J1naqELWr
+R0kU3Vi/bm4o3QHjXDJFWesJ+YD8i6FNsqZmF1jI/0do07qIIoBHM4li"
+                           id="key" required>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col">
+                    <center><h2><label>*************************************************</label></h2></center>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label for="merchantId">Merchant ID:</label>
+                    <input type="text" name="merchantId" value="99999999" id="merchantId" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="name">User:</label>
+                    <input type="text" name="name" value="T9999999" required id="name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" value="DHJGD99999" required id="password">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="mode">Mode:</label>
+                    <input type="text" name="mode" value="PRD" required id="mode">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="controlNumber">Control Number:</label>
+                    <input type="text" name="controlNumber" value="NUMCONTROL99999" required id="controlNumber">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="terminalId">Terminal ID:</label>
+                    <input type="text" name="terminalId" value="12348" required id="terminalId">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="amount">Amount:</label>
+                    <input type="text" name="amount" value="1.00" required id="amount">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="customerRef1">Customer Ref 1:</label>
+                    <input type="text" name="customerRef1" maxlength="20" value="" required id="customerRef1">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="customerRef2">Customer Ref 2:</label>
+                    <input type="text" name="customerRef2" value="" required id="customerRef2">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="customerRef3">Customer Ref 3:</label>
+                    <input type="text" name="customerRef3" value="" required id="customerRef3">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="customerRef4">Customer Ref 4:</label>
+                    <input type="text" name="customerRef4" value="" required id="customerRef4">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="customerRef5">Customer Ref 5:</label>
+                    <input type="text" name="customerRef5" value="" required id="customerRef5">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantName">Merchant Name:</label>
+                    <input type="text" name="merchantName" value="Pruebas Banorte" required id="merchantName">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantCity">Merchant City:</label>
+                    <input type="text" name="merchantCity" value="Monterrey" required id="merchantCity">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="lang">Languaje:</label>
+                    <input type="text" name="lang" value="ES" required id="lang">
+                </div>
+            </div>
+
+            <center><h3 id="cabecetk">Par&aacute;metros de Tokenización</h3></center>
+
+            <div class="row">
+                <div class="col">
+                    <label for="emailCdmx">Id usuario comercio:</label>
+                    <input type="text"
+                           onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;"
+                           name="idUsrComercio" value="usrcom99999" required id="idUsrComercio">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label for="emailCdmx">Correo usuario comercio:</label>
+                    <input type="text" name="correoUsrComercio" value="tucorreo@email.com" required id="correoUsrComercio">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label>Usar tokenización:</label>
+                    <input type="radio" id="si" name="usarTk" value=0>
+                    <label for="si">NO</label>
+                    <input type="radio" checked id="no" name="usarTk" value=1>
+                    <label for="no">SI</label>
+                </div>
+            </div>
+
+            <center><h3 id="cabeceram">Par&aacute;metros de Cybersource</h3></center>
+
+            <div class="row">
+                <div class="col">
+                    <label for="billToFirstName">billToFirstName:</label>
+                    <input type="text" name="billToFirstName" value="Luis Enrique" required id="billToFirstName">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="billToLastName">billToLastName:</label>
+                    <input type="text" name="billToLastName" value="Hernandez Alvarez" required id="billToLastName">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="billToStreet">billToStreet:</label>
+                    <input type="text" name="billToStreet" value="Eugenia" required id="billToStreet">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="billToStreetNumber">billToStreetNumber:</label>
+                    <input type="text" name="billToStreetNumber" value="197" required id="billToStreetNumber">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="billToStreetNumbe2">billToStreetNumbe2:</label>
+                    <input type="text" name="billToStreetNumbe2" value="" required id="billToStreetNumbe2">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="billToStreet2Col">billToStreet2Col:</label>
+                    <input type="text" name="billToStreet2Col" value="Narvarte" required id="billToStreet2Col">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="billToStreet2Del">billToStreet2Del:</label>
+                    <input type="text" name="billToStreet2Del" value="Benito Juarez" required id="billToStreet2Del">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="billToCity">billToCity:</label>
+                    <input type="text" name="billToCity" value="CDMX" required id="billToCity">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="billToState">billToState:</label>
+                    <input type="text" name="billToState" value="DF" required id="billToState">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="billToCountry">billToCountry:</label>
+                    <input type="text" name="billToCountry" value="MX" required id="billToCountry">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="billToPhoneNumber">billToPhoneNumber:</label>
+                    <input type="text" name="billToPhoneNumber" value="5578987688" required id="billToPhoneNumber">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="billToPostalCode">billToPostalCode:</label>
+                    <input type="text" name="billToPostalCode" value="03020" required id="billToPostalCode">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="billToEmail">billToEmail:</label>
+                    <input type="text" name="billToEmail" value="review@banorte.com" required id="billToEmail">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="billToCustomerId">billToCustomerId:</label>
+                    <input type="text" name="billToCustomerId" value="" required id="billToCustomerId">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="billToCustomerPassword">billToCustomerPassword:</label>
+                    <input type="text" name="billToCustomerPassword" value="" required id="billToCustomerPassword">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="billToDateOfBirth">billToDateOfBirth:</label>
+                    <input type="text" name="billToDateOfBirth" value="" required id="billToDateOfBirth">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="billToHostname">billToHostname:</label>
+                    <input type="text" name="billToHostname" value="LSTK" required id="billToHostname">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="billToHttpBrowserEmail">billToHttpBrowserEmail:</label>
+                    <input type="text" name="billToHttpBrowserEmail" value="" required id="billToHttpBrowserEmail">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="billToIpAddress">billToIpAddress:</label>
+                    <input type="text" name="billToIpAddress" value="127.0.0.1" required id="billToIpAddress">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="comments">Comments:</label>
+                    <input type="text" name="comments" value="Compra a MSI" required id="comments">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label for="shipToFirstName">shipToFirstName:</label>
+                    <input type="text" name="shipToFirstName" value="" required id="shipToFirstName">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="shipToLastName">shipToLastName:</label>
+                    <input type="text" name="shipToLastName" value="" required id="shipToLastName">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="shipToStreetNumber">shipToStreetNumber:</label>
+                    <input type="text" name="shipToStreetNumber" value="" required id="shipToStreetNumber">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="shipToStreetNumber2">shipToStreetNumber2:</label>
+                    <input type="text" name="shipToStreetNumber2" value="" required id="shipToStreetNumber2">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="shipToStreet2Col">shipToStreet2Col:</label>
+                    <input type="text" name="shipToStreet2Col" value="" required id="shipToStreet2Col">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="shipToStreet2Del">shipToStreet2Del:</label>
+                    <input type="text" name="shipToStreet2Del" value="" required id="shipToStreet2Del">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="shipToCity">shipToCity:</label>
+                    <input type="text" name="shipToCity" value="" required id="shipToCity">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="shipToState">shipToState:</label>
+                    <input type="text" name="shipToState" value="" required id="shipToState">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="shipToCountry">shipToCountry:</label>
+                    <input type="text" name="shipToCountry" value="" required id="shipToCountry">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="shipToPostalCode">shipToPostalCode:</label>
+                    <input type="text" name="shipToPostalCode" value="" required id="shipToPostalCode">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="shipToPhoneNumber">shipToPhoneNumber:</label>
+                    <input type="text" name="shipToPhoneNumber" value="" required id="shipToPhoneNumber">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField3">merchantDefinedDataField3:</label>
+                    <input type="text" name="merchantDefinedDataField3" value="" required
+                           id="merchantDefinedDataField3">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField4">merchantDefinedDataField4:</label>
+                    <input type="text" name="merchantDefinedDataField4" value="" required
+                           id="merchantDefinedDataField4">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField5">merchantDefinedDataField5:</label>
+                    <input type="text" name="merchantDefinedDataField5" value="" required
+                           id="merchantDefinedDataField5">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField6">merchantDefinedDataField6:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField6" value="" required
+                           id="merchantDefinedDataField6">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField7">merchantDefinedDataField7:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField7" value="" required
+                           id="merchantDefinedDataField7">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField8">merchantDefinedDataField8:</label>
+                    <input type="text" name="merchantDefinedDataField8" value="" required
+                           id="merchantDefinedDataField8">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField9">merchantDefinedDataField9:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField9" value="" required
+                           id="merchantDefinedDataField9">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField10">merchantDefinedDataField10:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField10" value="" required
+                           id="merchantDefinedDataField10">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField11">merchantDefinedDataField11:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField11" value="" required
+                           id="merchantDefinedDataField11">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField12">merchantDefinedDataField12:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField12" value="" required
+                           id="merchantDefinedDataField12">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField13">merchantDefinedDataField13:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField13" value="" required
+                           id="merchantDefinedDataField13">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField14">merchantDefinedDataField14:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField14" value="" required
+                           id="merchantDefinedDataField14">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField15">merchantDefinedDataField15:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField15" value="" required
+                           id="merchantDefinedDataField15">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField16">merchantDefinedDataField16:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField16" value="" required
+                           id="merchantDefinedDataField16">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField17">merchantDefinedDataField17:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField17" value="" required
+                           id="merchantDefinedDataField17">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField18">merchantDefinedDataField18:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField18" value="" required
+                           id="merchantDefinedDataField18">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField19">merchantDefinedDataField19:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField19" value="" required
+                           id="merchantDefinedDataField19">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField20">merchantDefinedDataField20:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField20" value="" required
+                           id="merchantDefinedDataField20">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField21">merchantDefinedDataField21:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField21" value="" required
+                           id="merchantDefinedDataField21">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField22">merchantDefinedDataField22:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField22" value="" required
+                           id="merchantDefinedDataField22">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField23">merchantDefinedDataField23:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField23" value="" required
+                           id="merchantDefinedDataField23">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField24">merchantDefinedDataField24:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField24" value="" required
+                           id="merchantDefinedDataField24">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField25">merchantDefinedDataField25:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField25" value="" required
+                           id="merchantDefinedDataField25">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField26">merchantDefinedDataField26:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField26" value="" required
+                           id="merchantDefinedDataField26">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField27">merchantDefinedDataField27:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField27" value="" required
+                           id="merchantDefinedDataField27">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField28">merchantDefinedDataField28:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField28" value="" required
+                           id="merchantDefinedDataField28">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField29">merchantDefinedDataField29:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField29" value="" required
+                           id="merchantDefinedDataField29">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField30">merchantDefinedDataField30:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField30" value="" required
+                           id="merchantDefinedDataField30">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField31">merchantDefinedDataField31:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField31" value="" required
+                           id="merchantDefinedDataField31">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField32">merchantDefinedDataField32:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField32" value="" required
+                           id="merchantDefinedDataField32">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField33">merchantDefinedDataField33:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField33" value="" required
+                           id="merchantDefinedDataField33">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField34">merchantDefinedDataField34:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField34" value="" required
+                           id="merchantDefinedDataField34">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField35">merchantDefinedDataField35:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField35" value="" required
+                           id="merchantDefinedDataField35">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField36">merchantDefinedDataField36:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField36" value="" required
+                           id="merchantDefinedDataField36">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField37">merchantDefinedDataField37:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField37" value="" required
+                           id="merchantDefinedDataField37">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField38">merchantDefinedDataField38:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField38" value="" required
+                           id="merchantDefinedDataField38">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField39">merchantDefinedDataField39:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField39" value="" required
+                           id="merchantDefinedDataField39">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField40">merchantDefinedDataField40:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField40" value="" required
+                           id="merchantDefinedDataField40">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField41">merchantDefinedDataField41:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField41" value="" required
+                           id="merchantDefinedDataField41">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField42">merchantDefinedDataField42:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField42" value="" required
+                           id="merchantDefinedDataField42">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField43">merchantDefinedDataField43:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField43" value="" required
+                           id="merchantDefinedDataField43">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField44">merchantDefinedDataField44:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField44" value="" required
+                           id="merchantDefinedDataField44">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField45">merchantDefinedDataField45:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField45" value="" required
+                           id="merchantDefinedDataField45">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField46">merchantDefinedDataField46:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField46" value="" required
+                           id="merchantDefinedDataField46">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField47">merchantDefinedDataField47:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField47" value="" required
+                           id="merchantDefinedDataField47">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField48">merchantDefinedDataField48:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField48" value="" required
+                           id="merchantDefinedDataField48">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField49">merchantDefinedDataField49:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField49" value="" required
+                           id="merchantDefinedDataField49">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField50">merchantDefinedDataField50:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField50" value="" required
+                           id="merchantDefinedDataField50">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField51">merchantDefinedDataField51:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField51" value="" required
+                           id="merchantDefinedDataField51">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField52">merchantDefinedDataField52:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField52" value="" required
+                           id="merchantDefinedDataField52">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField53">merchantDefinedDataField53:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField53" value="" required
+                           id="merchantDefinedDataField53">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField54">merchantDefinedDataField54:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField54" value="" required
+                           id="merchantDefinedDataField54">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField55">merchantDefinedDataField55:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField55" value="" required
+                           id="merchantDefinedDataField55">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField56">merchantDefinedDataField56:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField56" value="" required
+                           id="merchantDefinedDataField56">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField57">merchantDefinedDataField57:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField57" value="" required
+                           id="merchantDefinedDataField57">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField58">merchantDefinedDataField58:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField58" value="" required
+                           id="merchantDefinedDataField58">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField59">merchantDefinedDataField59:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField59" value="" required
+                           id="merchantDefinedDataField59">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField60">merchantDefinedDataField60:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField60" value="" required
+                           id="merchantDefinedDataField60">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField61">merchantDefinedDataField61:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField61" value="" required
+                           id="merchantDefinedDataField61">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField62">merchantDefinedDataField62:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField62" value="" required
+                           id="merchantDefinedDataField62">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField63">merchantDefinedDataField63:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField63" value="" required
+                           id="merchantDefinedDataField63">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField64">merchantDefinedDataField64:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField64" value="" required
+                           id="merchantDefinedDataField64">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField65">merchantDefinedDataField65:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField65" value="" required
+                           id="merchantDefinedDataField65">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField66">merchantDefinedDataField66:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField66" value="" required
+                           id="merchantDefinedDataField66">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField67">merchantDefinedDataField67:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField67" value="" required
+                           id="merchantDefinedDataField67">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField68">merchantDefinedDataField68:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField68" value="" required
+                           id="merchantDefinedDataField68">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField69">merchantDefinedDataField69:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField69" value="" required
+                           id="merchantDefinedDataField69">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField70">merchantDefinedDataField70:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField70" value="" required
+                           id="merchantDefinedDataField70">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField71">merchantDefinedDataField71:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField71" value="" required
+                           id="merchantDefinedDataField71">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField72">merchantDefinedDataField72:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField72" value="" required
+                           id="merchantDefinedDataField72">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField73">merchantDefinedDataField73:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField73" value="" required
+                           id="merchantDefinedDataField73">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField74">merchantDefinedDataField74:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField74" value="" required
+                           id="merchantDefinedDataField74">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField75">merchantDefinedDataField75:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField75" value="" required
+                           id="merchantDefinedDataField75">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField76">merchantDefinedDataField76:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField76" value="" required
+                           id="merchantDefinedDataField76">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField77">merchantDefinedDataField77:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField77" value="" required
+                           id="merchantDefinedDataField77">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField78">merchantDefinedDataField78:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField78" value="" required
+                           id="merchantDefinedDataField78">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField79">merchantDefinedDataField79:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField79" value="" required
+                           id="merchantDefinedDataField79">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField80">merchantDefinedDataField80:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField80" value="" required
+                           id="merchantDefinedDataField80">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField81">merchantDefinedDataField81:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField81" value="" required
+                           id="merchantDefinedDataField81">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField82">merchantDefinedDataField82:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField82" value="" required
+                           id="merchantDefinedDataField82">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField83">merchantDefinedDataField83:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField83" value="" required
+                           id="merchantDefinedDataField83">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField84">merchantDefinedDataField84:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField84" value="" required
+                           id="merchantDefinedDataField84">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField85">merchantDefinedDataField85:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField85" value="" required
+                           id="merchantDefinedDataField85">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField86">merchantDefinedDataField86:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField86" value="" required
+                           id="merchantDefinedDataField86">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField87">merchantDefinedDataField87:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField87" value="" required
+                           id="merchantDefinedDataField87">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField88">merchantDefinedDataField88:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField88" value="" required
+                           id="merchantDefinedDataField88">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField89">merchantDefinedDataField89:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField89" value="" required
+                           id="merchantDefinedDataField89">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField90">merchantDefinedDataField90:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField90" value="" required
+                           id="merchantDefinedDataField90">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField91">merchantDefinedDataField91:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField91" value="" required
+                           id="merchantDefinedDataField91">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField92">merchantDefinedDataField92:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField92" value="" required
+                           id="merchantDefinedDataField92">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField93">merchantDefinedDataField93:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField93" value="" required
+                           id="merchantDefinedDataField93">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField94">merchantDefinedDataField94:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField94" value="" required
+                           id="merchantDefinedDataField94">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField95">merchantDefinedDataField95:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField95" value="" required
+                           id="merchantDefinedDataField95">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField96">merchantDefinedDataField96:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField96" value="" required
+                           id="merchantDefinedDataField96">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField97">merchantDefinedDataField97:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField97" value="" required
+                           id="merchantDefinedDataField97">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField98">merchantDefinedDataField98:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField98" value="" required
+                           id="merchantDefinedDataField98">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField99">merchantDefinedDataField99:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField99" value="" required
+                           id="merchantDefinedDataField99">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="merchantDefinedDataField100">merchantDefinedDataField100:</label>
+                    <input maxlength="40" type="text" name="merchantDefinedDataField100" value="" required
+                           id="merchantDefinedDataField100">
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="col formulario">
+        <center>
+            <div class="row">
+                <div class="col titulo">
+                    <i class="fas fa-shopping-basket fa-fw"></i>
+                    <i class="fas fa-arrow-left fa-fw"></i>
+                    <i class="fas fa-arrow-left fa-fw"></i>
+                    <h4 id="cabecera">Respuesta de Orquestador de Pagos al Comercio</h4>
+                </div>
+            </div>
+
+            <h3 id="cabeceram">
+                -- Limpiar Campos -- <input type="button" value="Clear" id="clear" name="clear"><br>
+
+            </h3>
+
+            <h3 id="cabeceram">Respuesta Objeto JSON</h3>
+        </center>
+        <div class="row">
+            <div class="col">
+                <textarea id="respuesta" name="respuesta" disabled></textarea>
+            </div>
+        </div>
+        <center><h3 id="cabeceram"> Respuesta Motor</h3></center>
+        <div class="row">
+            <div class="col">
+                <label for="controlNumber">ControlNumber</label>
+                <input name="controlNumber" id="controlN" type="text" disabled></input>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="paywCode">PaywCode</label>
+                <input name="paywCode" id="paywCode" type="text" disabled></input>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="texto">Texto</label>
+                <input name="texto" id="texto" type="text" disabled></input>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="codigoAut">codigoAut</label>
+                <input name="codigoAut" id="codigoAut" type="text" disabled></input>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="fechaRspCte">FechaRspCte</label>
+                <input name="fechaRspCte" id="fechaRspCte" type="text" disabled></input>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="referencia">Referencia</label>
+                <input name="referencia" id="referencia" type="text" disabled></input>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="resultadoPayw">ResultadoPayw</label>
+                <input name="resultadoPayw" id="resultadoPayw" type="text" disabled></input>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="resultadoAut">ResultadoAut</label>
+                <input name="resultadoAut" id="resultadoAut" type="text" disabled></input>
+            </div>
+        </div>
+        <h3 id="cabeceram">Respuesta 3D Secure Plus</h3>
+        <div class="row">
+            <div class="col">
+                <label for="status3D">Status3D</label>
+                <input name="status3D" id="status3D" type="text" disabled></input>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="eci">Eci</label>
+                <input name="eci" id="eci" type="text" disabled></input>
+            </div>
+        </div>
+        <h3 id="cabeceram">Respuesta Cybersurce (Bancyb)</h3>
+        <div class="row">
+            <div class="col">
+                <label for="decision">Decision</label>
+                <input name="decision" id="decision" type="text" disabled></input>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="reasonCode">ReasonCode</label>
+                <input name="reasonCode" id="reasonCode" type="text" disabled></input>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="bnteCode">bnteCode</label>
+                <input name="bnteCode" id="bnteCode" type="text" disabled></input>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="bnteText">bnteText</label>
+                <input name="bnteText" id="bnteText" type="text" disabled></input>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+
+    Payment.setEnv("pro");
+    var xObjEnc;
+    $(document).ready(function () {
+        $("#clear").click(function () {
+            document.getElementById("respuesta").value = "";
+            document.getElementById("codigoAut").value = "";
+            document.getElementById("controlN").value = "";
+            document.getElementById("fechaRspCte").value = "";
+            document.getElementById("paywCode").value = "";
+            document.getElementById("referencia").value = "";
+            document.getElementById("resultadoPayw").value = "";
+            document.getElementById("texto").value = "";
+            document.getElementById("infocryp").value = "";
+        });
+
+
+        $("#encrip").click(function () {
+            // Reset Values
+            document.getElementById("respuesta").value = "";
+            document.getElementById("codigoAut").value = "";
+            document.getElementById("controlN").value = "";
+            document.getElementById("fechaRspCte").value = "";
+            document.getElementById("paywCode").value = "";
+            document.getElementById("referencia").value = "";
+            document.getElementById("resultadoPayw").value = "";
+            document.getElementById("texto").value = "";
+        });
+
+        $("#botonPOC").click(function () {
+            data = {
+                MerchantID: $("#merchantId").val(),
+                User: $("#name").val(),
+                Password: $("#password").val(),
+                Mode: $("#mode").val(),
+                ControlNumber: $("#controlNumber").val(),
+                TerminalID: $("#terminalId").val(),
+                Amount: $("#amount").val(),
+                MerchantName: $("#merchantName").val(),
+                MerchantCity: $("#merchantCity").val(),
+                Language: $("#lang").val(),
+                CustomerRef1: $("#customerRef1").val(),
+                CustomerRef2: $("#customerRef2").val(),
+                CustomerRef3: $("#customerRef3").val(),
+                CustomerRef4: $("#customerRef4").val(),
+                CustomerRef5: $("#customerRef5").val(),
+                IdUsrComercio: $("#idUsrComercio").val(),
+                CorreoUsrComercio: $("#correoUsrComercio").val(),
+                UsarTokenizacion: $("input[name='usarTk']:checked").val(),
+
+                // Merchant Cyb Params
+                FirstName: $("#billToFirstName").val(),
+                LastName: $("#billToLastName").val(),
+                Street: $("#billToStreet").val(),
+                StreetNumberInt: $("#billToStreetNumber").val(),
+                StreetNumberExt: $("#billToStreetNumbe2").val(),
+                Col: $("#billToStreet2Col").val(),
+                Del: $("#billToStreet2Del").val(),
+                City: $("#billToCity").val(),
+                State: $("#billToState").val(),
+                Country: $("#billToCountry").val(),
+                PhoneNumber: $("#billToPhoneNumber").val(),
+                PostalCode: $("#billToPostalCode").val(),
+                Email: $("#billToEmail").val(),
+                CustomerID: $("#billToCustomerId").val(),
+                CustomerPassword: $("#billToCustomerPassword").val(),
+                DateOfBirth: $("#billToDateOfBirth").val(),
+                Hostname: $("#billToHostname").val(),
+                BrowserEmail: $("#billToHttpBrowserEmail").val(),
+                IpAddress: $("#billToIpAddress").val(),
+                Comments: $("#comments").val(),
+
+                // Merchant Ship Params
+                ShipFirstName: $("#shipToFirstName").val(),
+                ShipToLastName: $("#shipToLastName").val(),
+                ShipStreetNumberInt: $("#shipToStreetNumber").val(),
+                ShipStreetNumberExt: $("#shipToStreetNumber2").val(),
+                ShipCol: $("#shipToStreet2Col").val(),
+                ShipDel: $("#shipToStreet2Del").val(),
+                ShipCity: $("#shipToCity").val(),
+                ShipState: $("#shipToState").val(),
+                ShipCountry: $("#shipToCountry").val(),
+                ShipPostalCode: $("#shipToPostalCode").val(),
+                ShipPhoneNumber: $("#shipToPhoneNumber").val(),
+                ShipShippingMethod: $("#shipToShippingMethod").val(),
+
+                // MerchantDataFields Params
+                CustomDataField1: $("#merchantDefinedDataField1").val(),
+                CustomDataField2: $("#merchantDefinedDataField2").val(),
+                CustomDataField3: $("#merchantDefinedDataField3").val(),
+                CustomDataField4: $("#merchantDefinedDataField4").val(),
+                CustomDataField5: $("#merchantDefinedDataField5").val(),
+                CustomDataField8: $("#merchantDefinedDataField8").val(),
+
+                // NUEVOS CAMPOS *******************************
+                CustomDataField6: $("#merchantDefinedDataField6").val(),
+                CustomDataField7: $("#merchantDefinedDataField7").val(),
+                CustomDataField9: $("#merchantDefinedDataField9").val(),
+                CustomDataField10: $("#merchantDefinedDataField10").val(),
+                CustomDataField11: $("#merchantDefinedDataField11").val(),
+                CustomDataField12: $("#merchantDefinedDataField12").val(),
+                CustomDataField13: $("#merchantDefinedDataField13").val(),
+                CustomDataField14: $("#merchantDefinedDataField14").val(),
+                CustomDataField15: $("#merchantDefinedDataField15").val(),
+                CustomDataField16: $("#merchantDefinedDataField16").val(),
+                CustomDataField17: $("#merchantDefinedDataField17").val(),
+                CustomDataField18: $("#merchantDefinedDataField18").val(),
+                CustomDataField19: $("#merchantDefinedDataField19").val(),
+                CustomDataField20: $("#merchantDefinedDataField20").val(),
+                CustomDataField21: $("#merchantDefinedDataField21").val(),
+                CustomDataField22: $("#merchantDefinedDataField22").val(),
+                CustomDataField23: $("#merchantDefinedDataField23").val(),
+                CustomDataField24: $("#merchantDefinedDataField24").val(),
+                CustomDataField25: $("#merchantDefinedDataField25").val(),
+                CustomDataField26: $("#merchantDefinedDataField26").val(),
+                CustomDataField27: $("#merchantDefinedDataField27").val(),
+                CustomDataField28: $("#merchantDefinedDataField28").val(),
+                CustomDataField29: $("#merchantDefinedDataField29").val(),
+                CustomDataField30: $("#merchantDefinedDataField30").val(),
+                CustomDataField31: $("#merchantDefinedDataField31").val(),
+                CustomDataField32: $("#merchantDefinedDataField32").val(),
+                CustomDataField33: $("#merchantDefinedDataField33").val(),
+                CustomDataField34: $("#merchantDefinedDataField34").val(),
+                CustomDataField35: $("#merchantDefinedDataField35").val(),
+                CustomDataField36: $("#merchantDefinedDataField36").val(),
+                CustomDataField37: $("#merchantDefinedDataField37").val(),
+                CustomDataField38: $("#merchantDefinedDataField38").val(),
+                CustomDataField39: $("#merchantDefinedDataField39").val(),
+                CustomDataField40: $("#merchantDefinedDataField40").val(),
+                CustomDataField41: $("#merchantDefinedDataField41").val(),
+                CustomDataField42: $("#merchantDefinedDataField42").val(),
+                CustomDataField43: $("#merchantDefinedDataField43").val(),
+                CustomDataField44: $("#merchantDefinedDataField44").val(),
+                CustomDataField45: $("#merchantDefinedDataField45").val(),
+                CustomDataField46: $("#merchantDefinedDataField46").val(),
+                CustomDataField47: $("#merchantDefinedDataField47").val(),
+                CustomDataField48: $("#merchantDefinedDataField48").val(),
+                CustomDataField49: $("#merchantDefinedDataField49").val(),
+                CustomDataField50: $("#merchantDefinedDataField50").val(),
+                CustomDataField51: $("#merchantDefinedDataField51").val(),
+                CustomDataField52: $("#merchantDefinedDataField52").val(),
+                CustomDataField53: $("#merchantDefinedDataField53").val(),
+                CustomDataField54: $("#merchantDefinedDataField54").val(),
+                CustomDataField55: $("#merchantDefinedDataField55").val(),
+                CustomDataField56: $("#merchantDefinedDataField56").val(),
+                CustomDataField57: $("#merchantDefinedDataField57").val(),
+                CustomDataField58: $("#merchantDefinedDataField58").val(),
+                CustomDataField59: $("#merchantDefinedDataField59").val(),
+                CustomDataField60: $("#merchantDefinedDataField60").val(),
+                CustomDataField61: $("#merchantDefinedDataField61").val(),
+                CustomDataField62: $("#merchantDefinedDataField62").val(),
+                CustomDataField63: $("#merchantDefinedDataField63").val(),
+                CustomDataField64: $("#merchantDefinedDataField64").val(),
+                CustomDataField65: $("#merchantDefinedDataField65").val(),
+                CustomDataField66: $("#merchantDefinedDataField66").val(),
+                CustomDataField67: $("#merchantDefinedDataField67").val(),
+                CustomDataField68: $("#merchantDefinedDataField68").val(),
+                CustomDataField69: $("#merchantDefinedDataField69").val(),
+                CustomDataField70: $("#merchantDefinedDataField70").val(),
+                CustomDataField71: $("#merchantDefinedDataField71").val(),
+                CustomDataField72: $("#merchantDefinedDataField72").val(),
+                CustomDataField73: $("#merchantDefinedDataField73").val(),
+                CustomDataField74: $("#merchantDefinedDataField74").val(),
+                CustomDataField75: $("#merchantDefinedDataField75").val(),
+                CustomDataField76: $("#merchantDefinedDataField76").val(),
+                CustomDataField77: $("#merchantDefinedDataField77").val(),
+                CustomDataField78: $("#merchantDefinedDataField78").val(),
+                CustomDataField79: $("#merchantDefinedDataField79").val(),
+                CustomDataField80: $("#merchantDefinedDataField80").val(),
+                CustomDataField81: $("#merchantDefinedDataField81").val(),
+                CustomDataField82: $("#merchantDefinedDataField82").val(),
+                CustomDataField83: $("#merchantDefinedDataField83").val(),
+                CustomDataField84: $("#merchantDefinedDataField84").val(),
+                CustomDataField85: $("#merchantDefinedDataField85").val(),
+                CustomDataField86: $("#merchantDefinedDataField86").val(),
+                CustomDataField87: $("#merchantDefinedDataField87").val(),
+                CustomDataField88: $("#merchantDefinedDataField88").val(),
+                CustomDataField89: $("#merchantDefinedDataField89").val(),
+                CustomDataField90: $("#merchantDefinedDataField90").val(),
+                CustomDataField91: $("#merchantDefinedDataField91").val(),
+                CustomDataField92: $("#merchantDefinedDataField92").val(),
+                CustomDataField93: $("#merchantDefinedDataField93").val(),
+                CustomDataField94: $("#merchantDefinedDataField94").val(),
+                CustomDataField95: $("#merchantDefinedDataField95").val(),
+                CustomDataField96: $("#merchantDefinedDataField96").val(),
+                CustomDataField97: $("#merchantDefinedDataField97").val(),
+                CustomDataField98: $("#merchantDefinedDataField98").val(),
+                CustomDataField99: $("#merchantDefinedDataField99").val(),
+                CustomDataField100: $("#merchantDefinedDataField100").val(),
+            }
+
+            xObjEnc = cypherDataByMerchant(data, $("#key").val());
+
+            document.getElementById("infocryp").value = xObjEnc;
+
+            //Reset Values
+            document.getElementById("respuesta").value = "";
+            document.getElementById("codigoAut").value = "";
+            document.getElementById("controlN").value = "";
+            document.getElementById("fechaRspCte").value = "";
+            document.getElementById("paywCode").value = "";
+            document.getElementById("referencia").value = "";
+            document.getElementById("resultadoPayw").value = "";
+            document.getElementById("texto").value = "";
+            Payment.startPayment({
+                Params: xObjEnc
+                ,
+                onClosed: function (res) {
+                    document.getElementById("respuesta").value = JSON.stringify(res);
+                },
+                onError: function (res) {
+                    document.getElementById("respuesta").value = JSON.stringify(res);
+                },
+                onSuccess: function (res) {
+                    var resp = JSON.stringify(res, undefined, 4);
+                    console.log(resp);
+                    document.getElementById("respuesta").value = resp;
+                    document.getElementById("codigoAut").value = JSON.stringify(res.codigoAut);
+                    document.getElementById("controlN").value = JSON.stringify(res.numeroControl);
+                    document.getElementById("fechaRspCte").value = JSON.stringify(res.fechaRspCte);
+                    document.getElementById("paywCode").value = JSON.stringify(res.codigoPayw);
+                    document.getElementById("referencia").value = JSON.stringify(res.referencia);
+                    document.getElementById("resultadoPayw").value = JSON.stringify(res.resultadoPayw);
+                    document.getElementById("resultadoAut").value = JSON.stringify(res.resultadoAut);
+                    document.getElementById("texto").value = JSON.stringify(res.texto);
+                    document.getElementById("decision").value = JSON.stringify(res.decision);
+                    document.getElementById("reasonCode").value = JSON.stringify(res.reasonCode);
+                    document.getElementById("bnteCode").value = JSON.stringify(res.bnteCode);
+                    document.getElementById("bnteText").value = JSON.stringify(res.bnteText);
+                    document.getElementById("status3D").value = JSON.stringify(res.status3D);
+                    document.getElementById("eci").value = JSON.stringify(res.eci);
+
+                },
+                onCancel: function (res) {
+                    document.getElementById("respuesta").value = JSON.stringify(res);
+                }
+            });
+        });
+    });
+</script>
+</body>
+</html>
