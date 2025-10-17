@@ -1,0 +1,1234 @@
+nohup: ignoring input
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.7.1)
+
+2025-10-16 15:57:21,233 [main] - [INFO ] - com.cifrado.PruebaServicioCifrado: Starting PruebaServicioCifrado v1.0 using Java 11.0.25 on server1.maratonmonterrey.mx with PID 4058 (/home/maratonp/public_html/maratonmonterrey.mx/php/CifradoComponent-1.0.jar started by root in /home/maratonp/public_html/maratonmonterrey.mx/php)
+2025-10-16 15:57:21,249 [main] - [DEBUG] - com.cifrado.PruebaServicioCifrado: Running with Spring Boot v2.7.1, Spring v5.3.21
+2025-10-16 15:57:21,251 [main] - [INFO ] - com.cifrado.PruebaServicioCifrado: No active profile set, falling back to 1 default profile: "default"
+2025-10-16 15:57:23,577 [main] - [INFO ] - com.cifrado.PruebaServicioCifrado: Started PruebaServicioCifrado in 3.024 seconds (JVM running for 7.126)
+
+----------------------------------------------------------------------
+----------------------------- wsCifrado ------------------------------
+----------------------------------------------------------------------
+
+2025-10-16 15:57:30,496 [http-nio-8888-exec-1] - [DEBUG] - com.cifrado.controller.CifradoController: Obteniendo Base64 (JSON Datos) [eyJtZXJjaGFudElkIjoiOTcwOTg4NCIsIm5hbWUiOiJBTkdJRSIsInBhc3N3b3JkIjoiTWFyP3RvTjIhNSIsIm1vZGUiOiJQUkQiLCJjb250cm9sTnVtYmVyIjoiUkVGMTc2MDYzMDI0NSIsInRlcm1pbmFsSWQiOiI5NzA5ODg0MSIsImFtb3VudCI6IjIwLjAwIiwibWVyY2hhbnROYW1lIjoiSU5TQ1JJUCBNQVJBVEhPTiBNVFkiLCJtZXJjaGFudENpdHkiOiJNb250ZXJyZXkiLCJsYW5nIjoiRVMiLCJjdXN0b21lclJlZjEiOiJOQSIsImN1c3RvbWVyUmVmMiI6Ik5BIiwiY3VzdG9tZXJSZWYzIjoiTkEiLCJjdXN0b21lclJlZjQiOiJOQSIsImN1c3RvbWVyUmVmNSI6Ik5BIn0=]... 
+2025-10-16 15:57:30,498 [http-nio-8888-exec-1] - [DEBUG] - com.cifrado.controller.CifradoController: Resultado Decodificado de Base64 (JSON Datos) [{"merchantId":"9709884","name":"ANGIE","password":"Mar?toN2!5","mode":"PRD","controlNumber":"REF1760630245","terminalId":"97098841","amount":"20.00","merchantName":"INSCRIP MARATHON MTY","merchantCity":"Monterrey","lang":"ES","customerRef1":"NA","customerRef2":"NA","customerRef3":"NA","customerRef4":"NA","customerRef5":"NA"}]
+
+2025-10-16 15:57:30,499 [http-nio-8888-exec-1] - [DEBUG] - com.cifrado.controller.CifradoController: 1.- Se cifrará JSON Datos con la llave pública -> [MIIGdDCCBVygAwIBAgITFwABTnQA5m6Udb1vlQABAAFOdDANBgkqhkiG9w0BAQsF
+ADB5MQswCQYDVQQGEwJNWDEZMBcGCgmSJomT8ixkARkWCWdmYmFub3J0ZTEeMBwG
+A1UEChMVU2VndXJpZGFkIGluZm9ybWF0aWNhMS8wLQYDVQQDEyZHcnVwbyBGaW5h
+bmNpZXJvIEJhbm9ydGUgQ0EgRW50ZXJwcmlzZTAeFw0yNTAyMjEyMDAwMzVaFw0y
+NjAyMjEyMDAwMzVaMIGoMQswCQYDVQQGEwJNWDELMAkGA1UECBMCREYxDzANBgNV
+BAcTBk1leGljbzErMCkGA1UEChMiR3J1cG8gRmluYW5jaWVybyBCYW5vcnRlIFNB
+QiBkZSBDVjEkMCIGA1UECxMbU2VndXJpZGFkIGRlIGxhIEluZm9ybWFjaW9uMSgw
+JgYDVQQDEx9tdWx0aWNvYnJvc2tleS51bml4LmJhbm9ydGUuY29tMIIBIjANBgkq
+hkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvp69wp3Z6ZXCHS+OQ2k8H26dWwuF/cSv
+f37YT7NYfz4YvvXeahNv0CCStL5tATSoYj8MDKzNbwidXq/7e6JQpV1bcZjYXcjL
+qli0GrOaJ00wUdR3zFS5F85Ks7ycTW6wNl/n7X8QXFVAh+HJyO7yrKdopcPyNLfJ
+xBeXlvvuGfAKLJ7mCDdPN2UROg/35yLKil+VMB8OgF/KXEajmR0a+FiEe96+AkW3
+oWMslb9fXm8+Kc4IqXKTZQg52CHPlbSnY8vaBqZd0sH5W60NILFFXgNFXsQAHhUt
+njvcL+MY6NOHGeRYyrafP7Vwoog2kQiIUZafH/D1dWmB0r9qCv3VkQIDAQABo4IC
+wzCCAr8wMgYDVR0RBCswKYIKbG54c2lzYTAxcIIbbG54c2lzYTAxcC51bml4LmJh
+bm9ydGUuY29tMB0GA1UdDgQWBBR3lYj1Ic4B/MjmXVpM+fSAo3YxhTAfBgNVHSME
+GDAWgBTQBPbPr59ruX3bXiA0YK0zB6UM0zCB7QYDVR0fBIHlMIHiMIHfoIHcoIHZ
+hoHWbGRhcDovLy9DTj1HcnVwbyUyMEZpbmFuY2llcm8lMjBCYW5vcnRlJTIwQ0El
+MjBFbnRlcnByaXNlLENOPUNBLUJBTk9SVEUtUkEsQ049Q0RQLENOPVB1YmxpYyUy
+MEtleSUyMFNlcnZpY2VzLENOPVNlcnZpY2VzLENOPUNvbmZpZ3VyYXRpb24sREM9
+Z2ZiYW5vcnRlP2NlcnRpZmljYXRlUmV2b2NhdGlvbkxpc3Q/YmFzZT9vYmplY3RD
+bGFzcz1jUkxEaXN0cmlidXRpb25Qb2ludDCB2wYIKwYBBQUHAQEEgc4wgcswgcgG
+CCsGAQUFBzAChoG7bGRhcDovLy9DTj1HcnVwbyUyMEZpbmFuY2llcm8lMjBCYW5v
+cnRlJTIwQ0ElMjBFbnRlcnByaXNlLENOPUFJQSxDTj1QdWJsaWMlMjBLZXklMjBT
+ZXJ2aWNlcyxDTj1TZXJ2aWNlcyxDTj1Db25maWd1cmF0aW9uLERDPWdmYmFub3J0
+ZT9jQUNlcnRpZmljYXRlP2Jhc2U/b2JqZWN0Q2xhc3M9Y2VydGlmaWNhdGlvbkF1
+dGhvcml0eTALBgNVHQ8EBAMCBaAwPAYJKwYBBAGCNxUHBC8wLQYlKwYBBAGCNxUI
+g+v5BoK1j0eNkROCp58GguHddCKCxphfgtj9DwIBZAIBEjATBgNVHSUEDDAKBggr
+BgEFBQcDATAbBgkrBgEEAYI3FQoEDjAMMAoGCCsGAQUFBwMBMA0GCSqGSIb3DQEB
+CwUAA4IBAQBicj3sAYJZTkjNo+HcqhPGDSA8vJ3rTEvDDqcaNiWlfPFaXLNBxfk2
+aKuV6Ibf1nSE9lfrpqVz+RwKCrtc4jXx9lO6BkgAuG7H2h6Tg53TbYPUJnr5ynwi
+jRlOacsJFvj5c6MLoM0Jrdw9ozd8UVjbqHTWo9iClPOGm9GX3FSc21bUWkSlp/Re
+MeWXKhMhCtKdWPqQGYIW3skpUYzhgGTDdEaUvXFYK79Pud7mxS1761P1qt7s1Axo
+61dvEM9gwtPuqcARkrwMroAqUhPmda71sndN3Z1CAh1khviyowwA2dZdxdT8ZqZy
+01+dEnuNx6BtEq8aht+M2u01BOXiqj1U
+]
+2025-10-16 15:57:30,553 [http-nio-8888-exec-1] - [DEBUG] - com.cifrado.controller.CifradoController: 2.- Resultado cifrado AES ( Subcadena2 ) [n6szh/b97zgYgFzkCEDJeSW6anXIJlPku+27jnF4CW1/7H7ZnvmMfs6FdDrLaPIi6FA/8JDOsUmkXCyyRzrLmGVSFqt2TqZtnOFzazqxdKJiu0cnF1LJVmTAgRItre9PpxAe3RtOFCwipsAVHIbgBJjnn+vJuOriG7N8jabX4hOvn3wv1tqVInBbqrBuwZl/UYWgW2syMDMDuqf6quPcB7pnTSVwKi9a3QVLz3tFdRv7oxWHz+3yampnw/TgzpmXvj2QL9/u73zDwIgzdq46RAbE4jOW6yBnPrhhz4P2yPBsbSDrIP3GXOsNpWwJJjz4FAG6Kwx5N3FgrpTOLzw8jMDnk0qnAGM31feydvXqMoef+Rq//qoCAhPrGyK0ixMCPXJxSAiU8AjyRQz7YUOu7qQwTScXF7QBPFxBa8SK/75opf3gMCg=]
+2025-10-16 15:57:30,559 [http-nio-8888-exec-1] - [DEBUG] - com.cifrado.controller.CifradoController: 3.- Prueba decifrado AES (JSON Datos) [{"merchantId":"9709884","name":"ANGIE","password":"Mar?toN2!5","mode":"PRD","controlNumber":"REF1760630245","terminalId":"97098841","amount":"20.00","merchantName":"INSCRIP MARATHON MTY","merchantCity":"Monterrey","lang":"ES","customerRef1":"NA","customerRef2":"NA","customerRef3":"NA","customerRef4":"NA","customerRef5":"NA"}]
+
+------------ JSON a utilizar en el servicio de Descifrado ------------
+{
+    "vi": "3035693635756c686479627133696b63",
+    "salt": "6c30786e65357831696f32676d713534",
+    "passphrase": "Nh0UKBfaEXhl?FIw",
+    "cypherData": "Sustituir_por_el_valor_de_cadena_cifrada_(data)_de_la_respuesta_de_VCE"
+}
+----------------------------------------------------------------------
+
+2025-10-16 15:57:30,559 [http-nio-8888-exec-1] - [DEBUG] - com.cifrado.controller.CifradoController: 4.- AES Llaves Generada [3035693635756c686479627133696b63::6c30786e65357831696f32676d713534::Nh0UKBfaEXhl?FIw]
+2025-10-16 15:57:30,559 [http-nio-8888-exec-1] - [DEBUG] - com.cifrado.controller.CifradoController: -
+2025-10-16 15:57:30,612 [http-nio-8888-exec-1] - [DEBUG] - com.cifrado.utils.CifradoRSA: RSA Encrypt Provider: [SunJCE], [RSA/ECB/OAEPWITHSHA-256ANDMGF1PADDING]
+2025-10-16 15:57:30,613 [http-nio-8888-exec-1] - [DEBUG] - com.cifrado.controller.CifradoController: 5.- Resultado cifrado de Llaves AES ( Subcadena1 ) [J6RO0P32Rpkby3E35Et9KklBheed9XhLWDA55qUGr65oGFcCT3S1qYOZoOQCkBltHyS9veOK4LNljKShMW6ilyGDlLbmmsnfroo3Vl2j3RPtY1BwjbxbL+Olvx3pX5EjgqelocJlTnkoaVdH/s/tmcC04hk8szbkI5WufZgi0yx2nvK2/McqUkRpIFnlgnGiYIoptmg2oab2WgfroiMWhO5mQgURNQsor4TPNIAyX/02FubVS6QsJWeWOQC3sRhY+RgjhRj52Fyicp06n7q3GenFmUnnhqOE4pn9Z2Q3UqrQspdnMYOcyqC1igXmtFs218YHqIdXr3i8+Tl6xDFhhA==]
+2025-10-16 15:57:30,613 [http-nio-8888-exec-1] - [DEBUG] - com.cifrado.controller.CifradoController: Cadena para enviar al Orquestador (Subcadena1:::Subcadena2) [J6RO0P32Rpkby3E35Et9KklBheed9XhLWDA55qUGr65oGFcCT3S1qYOZoOQCkBltHyS9veOK4LNljKShMW6ilyGDlLbmmsnfroo3Vl2j3RPtY1BwjbxbL+Olvx3pX5EjgqelocJlTnkoaVdH/s/tmcC04hk8szbkI5WufZgi0yx2nvK2/McqUkRpIFnlgnGiYIoptmg2oab2WgfroiMWhO5mQgURNQsor4TPNIAyX/02FubVS6QsJWeWOQC3sRhY+RgjhRj52Fyicp06n7q3GenFmUnnhqOE4pn9Z2Q3UqrQspdnMYOcyqC1igXmtFs218YHqIdXr3i8+Tl6xDFhhA==:::n6szh/b97zgYgFzkCEDJeSW6anXIJlPku+27jnF4CW1/7H7ZnvmMfs6FdDrLaPIi6FA/8JDOsUmkXCyyRzrLmGVSFqt2TqZtnOFzazqxdKJiu0cnF1LJVmTAgRItre9PpxAe3RtOFCwipsAVHIbgBJjnn+vJuOriG7N8jabX4hOvn3wv1tqVInBbqrBuwZl/UYWgW2syMDMDuqf6quPcB7pnTSVwKi9a3QVLz3tFdRv7oxWHz+3yampnw/TgzpmXvj2QL9/u73zDwIgzdq46RAbE4jOW6yBnPrhhz4P2yPBsbSDrIP3GXOsNpWwJJjz4FAG6Kwx5N3FgrpTOLzw8jMDnk0qnAGM31feydvXqMoef+Rq//qoCAhPrGyK0ixMCPXJxSAiU8AjyRQz7YUOu7qQwTScXF7QBPFxBa8SK/75opf3gMCg=]
+
+----------------------------------------------------------------------
+----------------------------- wsCifrado ------------------------------
+----------------------------------------------------------------------
+
+2025-10-16 16:23:15,467 [http-nio-8888-exec-2] - [DEBUG] - com.cifrado.controller.CifradoController: Obteniendo Base64 (JSON Datos) [eyJtZXJjaGFudElkIjoiOTcwOTg4NCIsIm5hbWUiOiJBTkdJRSIsInBhc3N3b3JkIjoiTWFyP3RvTjIhNSIsIm1vZGUiOiJQUkQiLCJjb250cm9sTnVtYmVyIjoiUkVGMTc2MDYzMTc5MiIsInRlcm1pbmFsSWQiOiI5NzA5ODg0MSIsImFtb3VudCI6IjIwLjAwIiwibWVyY2hhbnROYW1lIjoiSU5TQ1JJUCBNQVJBVEhPTiBNVFkiLCJtZXJjaGFudENpdHkiOiJNb250ZXJyZXkiLCJsYW5nIjoiRVMiLCJjdXN0b21lclJlZjEiOiJOQSIsImN1c3RvbWVyUmVmMiI6Ik5BIiwiY3VzdG9tZXJSZWYzIjoiTkEiLCJjdXN0b21lclJlZjQiOiJOQSIsImN1c3RvbWVyUmVmNSI6Ik5BIn0=]... 
+2025-10-16 16:23:15,468 [http-nio-8888-exec-2] - [DEBUG] - com.cifrado.controller.CifradoController: Resultado Decodificado de Base64 (JSON Datos) [{"merchantId":"9709884","name":"ANGIE","password":"Mar?toN2!5","mode":"PRD","controlNumber":"REF1760631792","terminalId":"97098841","amount":"20.00","merchantName":"INSCRIP MARATHON MTY","merchantCity":"Monterrey","lang":"ES","customerRef1":"NA","customerRef2":"NA","customerRef3":"NA","customerRef4":"NA","customerRef5":"NA"}]
+
+2025-10-16 16:23:15,469 [http-nio-8888-exec-2] - [DEBUG] - com.cifrado.controller.CifradoController: 1.- Se cifrará JSON Datos con la llave pública -> [MIIGdDCCBVygAwIBAgITFwABTnQA5m6Udb1vlQABAAFOdDANBgkqhkiG9w0BAQsF
+ADB5MQswCQYDVQQGEwJNWDEZMBcGCgmSJomT8ixkARkWCWdmYmFub3J0ZTEeMBwG
+A1UEChMVU2VndXJpZGFkIGluZm9ybWF0aWNhMS8wLQYDVQQDEyZHcnVwbyBGaW5h
+bmNpZXJvIEJhbm9ydGUgQ0EgRW50ZXJwcmlzZTAeFw0yNTAyMjEyMDAwMzVaFw0y
+NjAyMjEyMDAwMzVaMIGoMQswCQYDVQQGEwJNWDELMAkGA1UECBMCREYxDzANBgNV
+BAcTBk1leGljbzErMCkGA1UEChMiR3J1cG8gRmluYW5jaWVybyBCYW5vcnRlIFNB
+QiBkZSBDVjEkMCIGA1UECxMbU2VndXJpZGFkIGRlIGxhIEluZm9ybWFjaW9uMSgw
+JgYDVQQDEx9tdWx0aWNvYnJvc2tleS51bml4LmJhbm9ydGUuY29tMIIBIjANBgkq
+hkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvp69wp3Z6ZXCHS+OQ2k8H26dWwuF/cSv
+f37YT7NYfz4YvvXeahNv0CCStL5tATSoYj8MDKzNbwidXq/7e6JQpV1bcZjYXcjL
+qli0GrOaJ00wUdR3zFS5F85Ks7ycTW6wNl/n7X8QXFVAh+HJyO7yrKdopcPyNLfJ
+xBeXlvvuGfAKLJ7mCDdPN2UROg/35yLKil+VMB8OgF/KXEajmR0a+FiEe96+AkW3
+oWMslb9fXm8+Kc4IqXKTZQg52CHPlbSnY8vaBqZd0sH5W60NILFFXgNFXsQAHhUt
+njvcL+MY6NOHGeRYyrafP7Vwoog2kQiIUZafH/D1dWmB0r9qCv3VkQIDAQABo4IC
+wzCCAr8wMgYDVR0RBCswKYIKbG54c2lzYTAxcIIbbG54c2lzYTAxcC51bml4LmJh
+bm9ydGUuY29tMB0GA1UdDgQWBBR3lYj1Ic4B/MjmXVpM+fSAo3YxhTAfBgNVHSME
+GDAWgBTQBPbPr59ruX3bXiA0YK0zB6UM0zCB7QYDVR0fBIHlMIHiMIHfoIHcoIHZ
+hoHWbGRhcDovLy9DTj1HcnVwbyUyMEZpbmFuY2llcm8lMjBCYW5vcnRlJTIwQ0El
+MjBFbnRlcnByaXNlLENOPUNBLUJBTk9SVEUtUkEsQ049Q0RQLENOPVB1YmxpYyUy
+MEtleSUyMFNlcnZpY2VzLENOPVNlcnZpY2VzLENOPUNvbmZpZ3VyYXRpb24sREM9
+Z2ZiYW5vcnRlP2NlcnRpZmljYXRlUmV2b2NhdGlvbkxpc3Q/YmFzZT9vYmplY3RD
+bGFzcz1jUkxEaXN0cmlidXRpb25Qb2ludDCB2wYIKwYBBQUHAQEEgc4wgcswgcgG
+CCsGAQUFBzAChoG7bGRhcDovLy9DTj1HcnVwbyUyMEZpbmFuY2llcm8lMjBCYW5v
+cnRlJTIwQ0ElMjBFbnRlcnByaXNlLENOPUFJQSxDTj1QdWJsaWMlMjBLZXklMjBT
+ZXJ2aWNlcyxDTj1TZXJ2aWNlcyxDTj1Db25maWd1cmF0aW9uLERDPWdmYmFub3J0
+ZT9jQUNlcnRpZmljYXRlP2Jhc2U/b2JqZWN0Q2xhc3M9Y2VydGlmaWNhdGlvbkF1
+dGhvcml0eTALBgNVHQ8EBAMCBaAwPAYJKwYBBAGCNxUHBC8wLQYlKwYBBAGCNxUI
+g+v5BoK1j0eNkROCp58GguHddCKCxphfgtj9DwIBZAIBEjATBgNVHSUEDDAKBggr
+BgEFBQcDATAbBgkrBgEEAYI3FQoEDjAMMAoGCCsGAQUFBwMBMA0GCSqGSIb3DQEB
+CwUAA4IBAQBicj3sAYJZTkjNo+HcqhPGDSA8vJ3rTEvDDqcaNiWlfPFaXLNBxfk2
+aKuV6Ibf1nSE9lfrpqVz+RwKCrtc4jXx9lO6BkgAuG7H2h6Tg53TbYPUJnr5ynwi
+jRlOacsJFvj5c6MLoM0Jrdw9ozd8UVjbqHTWo9iClPOGm9GX3FSc21bUWkSlp/Re
+MeWXKhMhCtKdWPqQGYIW3skpUYzhgGTDdEaUvXFYK79Pud7mxS1761P1qt7s1Axo
+61dvEM9gwtPuqcARkrwMroAqUhPmda71sndN3Z1CAh1khviyowwA2dZdxdT8ZqZy
+01+dEnuNx6BtEq8aht+M2u01BOXiqj1U
+]
+2025-10-16 16:23:15,473 [http-nio-8888-exec-2] - [DEBUG] - com.cifrado.controller.CifradoController: 2.- Resultado cifrado AES ( Subcadena2 ) [Lqq9fQcWQOyc54Ik+dLK8jmeu7mJxIpQvkGI8BnGponKYJ+fvt8O4lPQVr2RV8Qgkd3+di8i9gbksapqDr5pBNYbA+/Cf76n09qIHmjwWN+isgAMM0ppYGK1sWiK2OOyhPS8sMKcz7dX2D2TMEzrGpczNa7FX0/vkusU4zuIhyu+j7w5KtvdcrYwIjVlCnraTxn1VRLIKqyav5cJIg+Y0G0o+uyzGbiqrNgMZy/Vfcu6D55ZUIBa4GwlF7fd/59GrG1+3Ejr2Bc702rTN3ksMsHr1tnMFlbDTqEK6LGLt/N/WVQPPQ/2mXQT0elK3Z+9ycSUvV8uoHSXSJLmD9nCysowU8e1dP4TgckQEnRpDaapccg0KLYWc+WosvWMq7FnkmYcMQEH+o7H2FHC0mgV97pgx3rOZYOG/TGKJr8W6nX4ggvUn+w=]
+2025-10-16 16:23:15,476 [http-nio-8888-exec-2] - [DEBUG] - com.cifrado.controller.CifradoController: 3.- Prueba decifrado AES (JSON Datos) [{"merchantId":"9709884","name":"ANGIE","password":"Mar?toN2!5","mode":"PRD","controlNumber":"REF1760631792","terminalId":"97098841","amount":"20.00","merchantName":"INSCRIP MARATHON MTY","merchantCity":"Monterrey","lang":"ES","customerRef1":"NA","customerRef2":"NA","customerRef3":"NA","customerRef4":"NA","customerRef5":"NA"}]
+
+------------ JSON a utilizar en el servicio de Descifrado ------------
+{
+    "vi": "6b6933316e676b66787339757033656f",
+    "salt": "3578343332693679636c666735736471",
+    "passphrase": "PDvUH(HTGec*N-fn",
+    "cypherData": "Sustituir_por_el_valor_de_cadena_cifrada_(data)_de_la_respuesta_de_VCE"
+}
+----------------------------------------------------------------------
+
+2025-10-16 16:23:15,476 [http-nio-8888-exec-2] - [DEBUG] - com.cifrado.controller.CifradoController: 4.- AES Llaves Generada [6b6933316e676b66787339757033656f::3578343332693679636c666735736471::PDvUH(HTGec*N-fn]
+2025-10-16 16:23:15,476 [http-nio-8888-exec-2] - [DEBUG] - com.cifrado.controller.CifradoController: -
+2025-10-16 16:23:15,485 [http-nio-8888-exec-2] - [DEBUG] - com.cifrado.utils.CifradoRSA: RSA Encrypt Provider: [SunJCE], [RSA/ECB/OAEPWITHSHA-256ANDMGF1PADDING]
+2025-10-16 16:23:15,485 [http-nio-8888-exec-2] - [DEBUG] - com.cifrado.controller.CifradoController: 5.- Resultado cifrado de Llaves AES ( Subcadena1 ) [Igx54e07qBxfpjc2XfuUjDdKmn7CAm8nY1DHRV64pZeNPK30LV0oL1MS/laD3rvnGDSQoiMqZFZ1MprItEHRM041jZLTjU8s0hZyw0FU/bqpp4hyBFWLet9C8XEqc0RIFmjUFZt+HqpU5l3kZBDICaz4RjJdzCnlN5HVF0cSlAVbVDjbJZ+1bwQzy7Z2i3Phd5pzPGXj2eC0qEW+hs1I6fqlFEguhx0FnU1m4D0li3vMPS8ccavC8UGj9LSmSfkMWezenw/B7PZssQrLV1ukuGg0P/cv6IikY26k5xRui9v28ri5D2J+TVaFuGztZgsJerdU71cwEBZOxiaL1wXLhQ==]
+2025-10-16 16:23:15,485 [http-nio-8888-exec-2] - [DEBUG] - com.cifrado.controller.CifradoController: Cadena para enviar al Orquestador (Subcadena1:::Subcadena2) [Igx54e07qBxfpjc2XfuUjDdKmn7CAm8nY1DHRV64pZeNPK30LV0oL1MS/laD3rvnGDSQoiMqZFZ1MprItEHRM041jZLTjU8s0hZyw0FU/bqpp4hyBFWLet9C8XEqc0RIFmjUFZt+HqpU5l3kZBDICaz4RjJdzCnlN5HVF0cSlAVbVDjbJZ+1bwQzy7Z2i3Phd5pzPGXj2eC0qEW+hs1I6fqlFEguhx0FnU1m4D0li3vMPS8ccavC8UGj9LSmSfkMWezenw/B7PZssQrLV1ukuGg0P/cv6IikY26k5xRui9v28ri5D2J+TVaFuGztZgsJerdU71cwEBZOxiaL1wXLhQ==:::Lqq9fQcWQOyc54Ik+dLK8jmeu7mJxIpQvkGI8BnGponKYJ+fvt8O4lPQVr2RV8Qgkd3+di8i9gbksapqDr5pBNYbA+/Cf76n09qIHmjwWN+isgAMM0ppYGK1sWiK2OOyhPS8sMKcz7dX2D2TMEzrGpczNa7FX0/vkusU4zuIhyu+j7w5KtvdcrYwIjVlCnraTxn1VRLIKqyav5cJIg+Y0G0o+uyzGbiqrNgMZy/Vfcu6D55ZUIBa4GwlF7fd/59GrG1+3Ejr2Bc702rTN3ksMsHr1tnMFlbDTqEK6LGLt/N/WVQPPQ/2mXQT0elK3Z+9ycSUvV8uoHSXSJLmD9nCysowU8e1dP4TgckQEnRpDaapccg0KLYWc+WosvWMq7FnkmYcMQEH+o7H2FHC0mgV97pgx3rOZYOG/TGKJr8W6nX4ggvUn+w=]
+
+----------------------------------------------------------------------
+----------------------------- wsCifrado ------------------------------
+----------------------------------------------------------------------
+
+2025-10-16 16:57:07,769 [http-nio-8888-exec-4] - [DEBUG] - com.cifrado.controller.CifradoController: Obteniendo Base64 (JSON Datos) [eyJtZXJjaGFudElkIjoiOTcwOTg4NCIsIm5hbWUiOiJBTkdJRSIsInBhc3N3b3JkIjoiTWFyP3RvTjIhNSIsIm1vZGUiOiJQUkQiLCJjb250cm9sTnVtYmVyIjoiUkVGMTc2MDYzMzc4NyIsInRlcm1pbmFsSWQiOiI5NzA5ODg0MSIsImFtb3VudCI6IjIwLjAwIiwibWVyY2hhbnROYW1lIjoiSU5TQ1JJUCBNQVJBVEhPTiBNVFkiLCJtZXJjaGFudENpdHkiOiJNb250ZXJyZXkiLCJsYW5nIjoiRVMiLCJjdXN0b21lclJlZjEiOiJOQSIsImN1c3RvbWVyUmVmMiI6Ik5BIiwiY3VzdG9tZXJSZWYzIjoiTkEiLCJjdXN0b21lclJlZjQiOiJOQSIsImN1c3RvbWVyUmVmNSI6Ik5BIn0=]... 
+2025-10-16 16:57:07,771 [http-nio-8888-exec-4] - [DEBUG] - com.cifrado.controller.CifradoController: Resultado Decodificado de Base64 (JSON Datos) [{"merchantId":"9709884","name":"ANGIE","password":"Mar?toN2!5","mode":"PRD","controlNumber":"REF1760633787","terminalId":"97098841","amount":"20.00","merchantName":"INSCRIP MARATHON MTY","merchantCity":"Monterrey","lang":"ES","customerRef1":"NA","customerRef2":"NA","customerRef3":"NA","customerRef4":"NA","customerRef5":"NA"}]
+
+2025-10-16 16:57:07,771 [http-nio-8888-exec-4] - [DEBUG] - com.cifrado.controller.CifradoController: 1.- Se cifrará JSON Datos con la llave pública -> [MIIGdDCCBVygAwIBAgITFwABTnQA5m6Udb1vlQABAAFOdDANBgkqhkiG9w0BAQsF
+ADB5MQswCQYDVQQGEwJNWDEZMBcGCgmSJomT8ixkARkWCWdmYmFub3J0ZTEeMBwG
+A1UEChMVU2VndXJpZGFkIGluZm9ybWF0aWNhMS8wLQYDVQQDEyZHcnVwbyBGaW5h
+bmNpZXJvIEJhbm9ydGUgQ0EgRW50ZXJwcmlzZTAeFw0yNTAyMjEyMDAwMzVaFw0y
+NjAyMjEyMDAwMzVaMIGoMQswCQYDVQQGEwJNWDELMAkGA1UECBMCREYxDzANBgNV
+BAcTBk1leGljbzErMCkGA1UEChMiR3J1cG8gRmluYW5jaWVybyBCYW5vcnRlIFNB
+QiBkZSBDVjEkMCIGA1UECxMbU2VndXJpZGFkIGRlIGxhIEluZm9ybWFjaW9uMSgw
+JgYDVQQDEx9tdWx0aWNvYnJvc2tleS51bml4LmJhbm9ydGUuY29tMIIBIjANBgkq
+hkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvp69wp3Z6ZXCHS+OQ2k8H26dWwuF/cSv
+f37YT7NYfz4YvvXeahNv0CCStL5tATSoYj8MDKzNbwidXq/7e6JQpV1bcZjYXcjL
+qli0GrOaJ00wUdR3zFS5F85Ks7ycTW6wNl/n7X8QXFVAh+HJyO7yrKdopcPyNLfJ
+xBeXlvvuGfAKLJ7mCDdPN2UROg/35yLKil+VMB8OgF/KXEajmR0a+FiEe96+AkW3
+oWMslb9fXm8+Kc4IqXKTZQg52CHPlbSnY8vaBqZd0sH5W60NILFFXgNFXsQAHhUt
+njvcL+MY6NOHGeRYyrafP7Vwoog2kQiIUZafH/D1dWmB0r9qCv3VkQIDAQABo4IC
+wzCCAr8wMgYDVR0RBCswKYIKbG54c2lzYTAxcIIbbG54c2lzYTAxcC51bml4LmJh
+bm9ydGUuY29tMB0GA1UdDgQWBBR3lYj1Ic4B/MjmXVpM+fSAo3YxhTAfBgNVHSME
+GDAWgBTQBPbPr59ruX3bXiA0YK0zB6UM0zCB7QYDVR0fBIHlMIHiMIHfoIHcoIHZ
+hoHWbGRhcDovLy9DTj1HcnVwbyUyMEZpbmFuY2llcm8lMjBCYW5vcnRlJTIwQ0El
+MjBFbnRlcnByaXNlLENOPUNBLUJBTk9SVEUtUkEsQ049Q0RQLENOPVB1YmxpYyUy
+MEtleSUyMFNlcnZpY2VzLENOPVNlcnZpY2VzLENOPUNvbmZpZ3VyYXRpb24sREM9
+Z2ZiYW5vcnRlP2NlcnRpZmljYXRlUmV2b2NhdGlvbkxpc3Q/YmFzZT9vYmplY3RD
+bGFzcz1jUkxEaXN0cmlidXRpb25Qb2ludDCB2wYIKwYBBQUHAQEEgc4wgcswgcgG
+CCsGAQUFBzAChoG7bGRhcDovLy9DTj1HcnVwbyUyMEZpbmFuY2llcm8lMjBCYW5v
+cnRlJTIwQ0ElMjBFbnRlcnByaXNlLENOPUFJQSxDTj1QdWJsaWMlMjBLZXklMjBT
+ZXJ2aWNlcyxDTj1TZXJ2aWNlcyxDTj1Db25maWd1cmF0aW9uLERDPWdmYmFub3J0
+ZT9jQUNlcnRpZmljYXRlP2Jhc2U/b2JqZWN0Q2xhc3M9Y2VydGlmaWNhdGlvbkF1
+dGhvcml0eTALBgNVHQ8EBAMCBaAwPAYJKwYBBAGCNxUHBC8wLQYlKwYBBAGCNxUI
+g+v5BoK1j0eNkROCp58GguHddCKCxphfgtj9DwIBZAIBEjATBgNVHSUEDDAKBggr
+BgEFBQcDATAbBgkrBgEEAYI3FQoEDjAMMAoGCCsGAQUFBwMBMA0GCSqGSIb3DQEB
+CwUAA4IBAQBicj3sAYJZTkjNo+HcqhPGDSA8vJ3rTEvDDqcaNiWlfPFaXLNBxfk2
+aKuV6Ibf1nSE9lfrpqVz+RwKCrtc4jXx9lO6BkgAuG7H2h6Tg53TbYPUJnr5ynwi
+jRlOacsJFvj5c6MLoM0Jrdw9ozd8UVjbqHTWo9iClPOGm9GX3FSc21bUWkSlp/Re
+MeWXKhMhCtKdWPqQGYIW3skpUYzhgGTDdEaUvXFYK79Pud7mxS1761P1qt7s1Axo
+61dvEM9gwtPuqcARkrwMroAqUhPmda71sndN3Z1CAh1khviyowwA2dZdxdT8ZqZy
+01+dEnuNx6BtEq8aht+M2u01BOXiqj1U
+]
+2025-10-16 16:57:07,775 [http-nio-8888-exec-4] - [DEBUG] - com.cifrado.controller.CifradoController: 2.- Resultado cifrado AES ( Subcadena2 ) [IL31dNa/aPKDfOTYaOqfPyvvpVGXGX95Dq7zFce3nRs5cdRvqB5pnobBdhy8Yp9V8Uxg8JX1DP1UbFSFeAqoUE5IqBsqwL0pGgb6VGoj3ZtbSQuPHwx+bzpfHvHwcXWKGihx25pU1RW1sT3SBPNP+16xrPbJz9Bt2zDlc7mY/xb0PoJyATAzm+sc/e2W4oJEuPugXTcRTmwnDXJMKlgpyM1Ur+sBr7GE1ovbj2OXxtTsV99yq+ejgMKGFK73MEhBrWBO93Gw5oo8a3eKCvLDDoykrYse3yx+Jtxlf9WFrGBxC/M0bTlXYpXM8wJVA5XzoGP4RkgDXMcqXYSGQO6p/dHQqtBka3jve0e2YD3mkRFtZHvIaIWnBuwaOKbiBfU8daNuq4TUZE+JaKS/Scadf/acPZmWNQq3LpYEdGZsyMfq0Pq/Ffg=]
+2025-10-16 16:57:07,778 [http-nio-8888-exec-4] - [DEBUG] - com.cifrado.controller.CifradoController: 3.- Prueba decifrado AES (JSON Datos) [{"merchantId":"9709884","name":"ANGIE","password":"Mar?toN2!5","mode":"PRD","controlNumber":"REF1760633787","terminalId":"97098841","amount":"20.00","merchantName":"INSCRIP MARATHON MTY","merchantCity":"Monterrey","lang":"ES","customerRef1":"NA","customerRef2":"NA","customerRef3":"NA","customerRef4":"NA","customerRef5":"NA"}]
+
+------------ JSON a utilizar en el servicio de Descifrado ------------
+{
+    "vi": "7a6533726361686c327839706d753631",
+    "salt": "6230683071396d78696f6b7668386764",
+    "passphrase": "t+qH0EBTMcXWAHpL",
+    "cypherData": "Sustituir_por_el_valor_de_cadena_cifrada_(data)_de_la_respuesta_de_VCE"
+}
+----------------------------------------------------------------------
+
+2025-10-16 16:57:07,778 [http-nio-8888-exec-4] - [DEBUG] - com.cifrado.controller.CifradoController: 4.- AES Llaves Generada [7a6533726361686c327839706d753631::6230683071396d78696f6b7668386764::t+qH0EBTMcXWAHpL]
+2025-10-16 16:57:07,778 [http-nio-8888-exec-4] - [DEBUG] - com.cifrado.controller.CifradoController: -
+2025-10-16 16:57:07,792 [http-nio-8888-exec-4] - [DEBUG] - com.cifrado.utils.CifradoRSA: RSA Encrypt Provider: [SunJCE], [RSA/ECB/OAEPWITHSHA-256ANDMGF1PADDING]
+2025-10-16 16:57:07,792 [http-nio-8888-exec-4] - [DEBUG] - com.cifrado.controller.CifradoController: 5.- Resultado cifrado de Llaves AES ( Subcadena1 ) [pf/5VUGIobfQdiu3AM/jJuvF89w889+STfvfUnBmhu3kAaA3hjEJnNyaXChBB/j0OPVytg8WkUEM7MkHlVzBmtoX1BsDbLluVs03/n8EdFdP51o69EWKWCWKK3cVPP7ustxu7dMtJA5mHAfGTkpro2vOtmb24q+X5SpanHGDVnPj+YU2JR9i+aC8MJXi+mXSU9Flx/TnbcC//g7VSgIZBOHGLHLnWmIQN9gFqyLZKUlJg64oHRE6U0Vwi1dTXqfrrrsw89JsJEb7LIq2qOfTvLNyJ6Q/ltXdcIzZHbEHZdxIjmtDvfNGIPcrl3aYUV7lxYqwZi1u0FD5LWh86nT3Zg==]
+2025-10-16 16:57:07,793 [http-nio-8888-exec-4] - [DEBUG] - com.cifrado.controller.CifradoController: Cadena para enviar al Orquestador (Subcadena1:::Subcadena2) [pf/5VUGIobfQdiu3AM/jJuvF89w889+STfvfUnBmhu3kAaA3hjEJnNyaXChBB/j0OPVytg8WkUEM7MkHlVzBmtoX1BsDbLluVs03/n8EdFdP51o69EWKWCWKK3cVPP7ustxu7dMtJA5mHAfGTkpro2vOtmb24q+X5SpanHGDVnPj+YU2JR9i+aC8MJXi+mXSU9Flx/TnbcC//g7VSgIZBOHGLHLnWmIQN9gFqyLZKUlJg64oHRE6U0Vwi1dTXqfrrrsw89JsJEb7LIq2qOfTvLNyJ6Q/ltXdcIzZHbEHZdxIjmtDvfNGIPcrl3aYUV7lxYqwZi1u0FD5LWh86nT3Zg==:::IL31dNa/aPKDfOTYaOqfPyvvpVGXGX95Dq7zFce3nRs5cdRvqB5pnobBdhy8Yp9V8Uxg8JX1DP1UbFSFeAqoUE5IqBsqwL0pGgb6VGoj3ZtbSQuPHwx+bzpfHvHwcXWKGihx25pU1RW1sT3SBPNP+16xrPbJz9Bt2zDlc7mY/xb0PoJyATAzm+sc/e2W4oJEuPugXTcRTmwnDXJMKlgpyM1Ur+sBr7GE1ovbj2OXxtTsV99yq+ejgMKGFK73MEhBrWBO93Gw5oo8a3eKCvLDDoykrYse3yx+Jtxlf9WFrGBxC/M0bTlXYpXM8wJVA5XzoGP4RkgDXMcqXYSGQO6p/dHQqtBka3jve0e2YD3mkRFtZHvIaIWnBuwaOKbiBfU8daNuq4TUZE+JaKS/Scadf/acPZmWNQq3LpYEdGZsyMfq0Pq/Ffg=]
+
+----------------------------------------------------------------------
+----------------------------- wsCifrado ------------------------------
+----------------------------------------------------------------------
+
+2025-10-16 17:03:34,906 [http-nio-8888-exec-6] - [DEBUG] - com.cifrado.controller.CifradoController: Obteniendo Base64 (JSON Datos) [eyJtZXJjaGFudElkIjoiOTcwOTg4NCIsIm5hbWUiOiJBTkdJRSIsInBhc3N3b3JkIjoiTWFyP3RvTjIhNSIsIm1vZGUiOiJQUkQiLCJjb250cm9sTnVtYmVyIjoiUkVGMTc2MDYzNDIxMiIsInRlcm1pbmFsSWQiOiI5NzA5ODg0MSIsImFtb3VudCI6IjIwLjAwIiwibWVyY2hhbnROYW1lIjoiSU5TQ1JJUCBNQVJBVEhPTiBNVFkiLCJtZXJjaGFudENpdHkiOiJNb250ZXJyZXkiLCJsYW5nIjoiRVMiLCJjdXN0b21lclJlZjEiOiJOQSIsImN1c3RvbWVyUmVmMiI6Ik5BIiwiY3VzdG9tZXJSZWYzIjoiTkEiLCJjdXN0b21lclJlZjQiOiJOQSIsImN1c3RvbWVyUmVmNSI6Ik5BIn0=]... 
+2025-10-16 17:03:34,907 [http-nio-8888-exec-6] - [DEBUG] - com.cifrado.controller.CifradoController: Resultado Decodificado de Base64 (JSON Datos) [{"merchantId":"9709884","name":"ANGIE","password":"Mar?toN2!5","mode":"PRD","controlNumber":"REF1760634212","terminalId":"97098841","amount":"20.00","merchantName":"INSCRIP MARATHON MTY","merchantCity":"Monterrey","lang":"ES","customerRef1":"NA","customerRef2":"NA","customerRef3":"NA","customerRef4":"NA","customerRef5":"NA"}]
+
+2025-10-16 17:03:34,907 [http-nio-8888-exec-6] - [DEBUG] - com.cifrado.controller.CifradoController: 1.- Se cifrará JSON Datos con la llave pública -> [MIIGdDCCBVygAwIBAgITFwABTnQA5m6Udb1vlQABAAFOdDANBgkqhkiG9w0BAQsF
+ADB5MQswCQYDVQQGEwJNWDEZMBcGCgmSJomT8ixkARkWCWdmYmFub3J0ZTEeMBwG
+A1UEChMVU2VndXJpZGFkIGluZm9ybWF0aWNhMS8wLQYDVQQDEyZHcnVwbyBGaW5h
+bmNpZXJvIEJhbm9ydGUgQ0EgRW50ZXJwcmlzZTAeFw0yNTAyMjEyMDAwMzVaFw0y
+NjAyMjEyMDAwMzVaMIGoMQswCQYDVQQGEwJNWDELMAkGA1UECBMCREYxDzANBgNV
+BAcTBk1leGljbzErMCkGA1UEChMiR3J1cG8gRmluYW5jaWVybyBCYW5vcnRlIFNB
+QiBkZSBDVjEkMCIGA1UECxMbU2VndXJpZGFkIGRlIGxhIEluZm9ybWFjaW9uMSgw
+JgYDVQQDEx9tdWx0aWNvYnJvc2tleS51bml4LmJhbm9ydGUuY29tMIIBIjANBgkq
+hkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvp69wp3Z6ZXCHS+OQ2k8H26dWwuF/cSv
+f37YT7NYfz4YvvXeahNv0CCStL5tATSoYj8MDKzNbwidXq/7e6JQpV1bcZjYXcjL
+qli0GrOaJ00wUdR3zFS5F85Ks7ycTW6wNl/n7X8QXFVAh+HJyO7yrKdopcPyNLfJ
+xBeXlvvuGfAKLJ7mCDdPN2UROg/35yLKil+VMB8OgF/KXEajmR0a+FiEe96+AkW3
+oWMslb9fXm8+Kc4IqXKTZQg52CHPlbSnY8vaBqZd0sH5W60NILFFXgNFXsQAHhUt
+njvcL+MY6NOHGeRYyrafP7Vwoog2kQiIUZafH/D1dWmB0r9qCv3VkQIDAQABo4IC
+wzCCAr8wMgYDVR0RBCswKYIKbG54c2lzYTAxcIIbbG54c2lzYTAxcC51bml4LmJh
+bm9ydGUuY29tMB0GA1UdDgQWBBR3lYj1Ic4B/MjmXVpM+fSAo3YxhTAfBgNVHSME
+GDAWgBTQBPbPr59ruX3bXiA0YK0zB6UM0zCB7QYDVR0fBIHlMIHiMIHfoIHcoIHZ
+hoHWbGRhcDovLy9DTj1HcnVwbyUyMEZpbmFuY2llcm8lMjBCYW5vcnRlJTIwQ0El
+MjBFbnRlcnByaXNlLENOPUNBLUJBTk9SVEUtUkEsQ049Q0RQLENOPVB1YmxpYyUy
+MEtleSUyMFNlcnZpY2VzLENOPVNlcnZpY2VzLENOPUNvbmZpZ3VyYXRpb24sREM9
+Z2ZiYW5vcnRlP2NlcnRpZmljYXRlUmV2b2NhdGlvbkxpc3Q/YmFzZT9vYmplY3RD
+bGFzcz1jUkxEaXN0cmlidXRpb25Qb2ludDCB2wYIKwYBBQUHAQEEgc4wgcswgcgG
+CCsGAQUFBzAChoG7bGRhcDovLy9DTj1HcnVwbyUyMEZpbmFuY2llcm8lMjBCYW5v
+cnRlJTIwQ0ElMjBFbnRlcnByaXNlLENOPUFJQSxDTj1QdWJsaWMlMjBLZXklMjBT
+ZXJ2aWNlcyxDTj1TZXJ2aWNlcyxDTj1Db25maWd1cmF0aW9uLERDPWdmYmFub3J0
+ZT9jQUNlcnRpZmljYXRlP2Jhc2U/b2JqZWN0Q2xhc3M9Y2VydGlmaWNhdGlvbkF1
+dGhvcml0eTALBgNVHQ8EBAMCBaAwPAYJKwYBBAGCNxUHBC8wLQYlKwYBBAGCNxUI
+g+v5BoK1j0eNkROCp58GguHddCKCxphfgtj9DwIBZAIBEjATBgNVHSUEDDAKBggr
+BgEFBQcDATAbBgkrBgEEAYI3FQoEDjAMMAoGCCsGAQUFBwMBMA0GCSqGSIb3DQEB
+CwUAA4IBAQBicj3sAYJZTkjNo+HcqhPGDSA8vJ3rTEvDDqcaNiWlfPFaXLNBxfk2
+aKuV6Ibf1nSE9lfrpqVz+RwKCrtc4jXx9lO6BkgAuG7H2h6Tg53TbYPUJnr5ynwi
+jRlOacsJFvj5c6MLoM0Jrdw9ozd8UVjbqHTWo9iClPOGm9GX3FSc21bUWkSlp/Re
+MeWXKhMhCtKdWPqQGYIW3skpUYzhgGTDdEaUvXFYK79Pud7mxS1761P1qt7s1Axo
+61dvEM9gwtPuqcARkrwMroAqUhPmda71sndN3Z1CAh1khviyowwA2dZdxdT8ZqZy
+01+dEnuNx6BtEq8aht+M2u01BOXiqj1U
+]
+2025-10-16 17:03:34,911 [http-nio-8888-exec-6] - [DEBUG] - com.cifrado.controller.CifradoController: 2.- Resultado cifrado AES ( Subcadena2 ) [EZobeyu39ttXQ7E4ZPjJpkkB9g1Iw1rpioEmKHgA+30T+hsufZ2DmtYAIddr3X/qyNSnuTTsF3TLYzxCTuPEovCxgQh/jsMl89c2il5RzEx2gBvIybbuAWqPA3kEa8RpObmOhYIKxSQUL09DynwAHtsTCgd6dfAVFquHUEnhjca7N1ZQ6eOE01/D5yeinnIfTW0Bq1UAcnTEv/Ci8hltUuK8GbnrO6QVsOvWLAbhN4sobIktOgJm0dWqVxOIB6p87CxyMKBLiU0FoTREWhOUcoWgnWoDS8iYuuuIn/jeXYBhzejgq/jHZkGxfC8eJ/5CyNejBiWDOLXsj2ooQvgjCiZsy2WWhdMiYKzrIcFe2TrPTWzCerDRGCNMCaEK2bxt2euMEn7IqwjrBELcX9js84PQ9/03Z+7PiNXiDC/hOAGmX/JLni8=]
+2025-10-16 17:03:34,913 [http-nio-8888-exec-6] - [DEBUG] - com.cifrado.controller.CifradoController: 3.- Prueba decifrado AES (JSON Datos) [{"merchantId":"9709884","name":"ANGIE","password":"Mar?toN2!5","mode":"PRD","controlNumber":"REF1760634212","terminalId":"97098841","amount":"20.00","merchantName":"INSCRIP MARATHON MTY","merchantCity":"Monterrey","lang":"ES","customerRef1":"NA","customerRef2":"NA","customerRef3":"NA","customerRef4":"NA","customerRef5":"NA"}]
+
+------------ JSON a utilizar en el servicio de Descifrado ------------
+{
+    "vi": "726161793835383066356d74726c6638",
+    "salt": "696f6b666c6769717479786d7a386b77",
+    "passphrase": "&-w7UuJqJa*nAHq6",
+    "cypherData": "Sustituir_por_el_valor_de_cadena_cifrada_(data)_de_la_respuesta_de_VCE"
+}
+----------------------------------------------------------------------
+
+2025-10-16 17:03:34,913 [http-nio-8888-exec-6] - [DEBUG] - com.cifrado.controller.CifradoController: 4.- AES Llaves Generada [726161793835383066356d74726c6638::696f6b666c6769717479786d7a386b77::&-w7UuJqJa*nAHq6]
+2025-10-16 17:03:34,914 [http-nio-8888-exec-6] - [DEBUG] - com.cifrado.controller.CifradoController: -
+2025-10-16 17:03:34,916 [http-nio-8888-exec-6] - [DEBUG] - com.cifrado.utils.CifradoRSA: RSA Encrypt Provider: [SunJCE], [RSA/ECB/OAEPWITHSHA-256ANDMGF1PADDING]
+2025-10-16 17:03:34,917 [http-nio-8888-exec-6] - [DEBUG] - com.cifrado.controller.CifradoController: 5.- Resultado cifrado de Llaves AES ( Subcadena1 ) [L1zyGTZ1sSuJwShgZDm7HVBJHCGGJeI7KTZpFLlhJbUfmCkc4qmFozOSsdnLPvIhG/v3nOyKhpKwM4TlCyyaTyb+20jTs/EER+j1Z0Pa078NyNwQj9gqm5Sg5z9kDOTarV7qFYJoQur6Hni0QE5R2rVaPGSQ6hZm54BgkV8723GNBsEQaBXm9HsM3pi7MXZOq+ubgiZA/w6Ocv0qtQB4dO+BDIINE3X9CLjEAMvyNCJlSSYzXLXDUqujmvCr/TSW4zo8/LEqbcLxx0kL4Gzqwc0R0Ajxx7/FjiAl4jLyKDcSuVJvp4b8AT3K8YMJ8gL0DYma7WCooRiIeT39Or9LBw==]
+2025-10-16 17:03:34,917 [http-nio-8888-exec-6] - [DEBUG] - com.cifrado.controller.CifradoController: Cadena para enviar al Orquestador (Subcadena1:::Subcadena2) [L1zyGTZ1sSuJwShgZDm7HVBJHCGGJeI7KTZpFLlhJbUfmCkc4qmFozOSsdnLPvIhG/v3nOyKhpKwM4TlCyyaTyb+20jTs/EER+j1Z0Pa078NyNwQj9gqm5Sg5z9kDOTarV7qFYJoQur6Hni0QE5R2rVaPGSQ6hZm54BgkV8723GNBsEQaBXm9HsM3pi7MXZOq+ubgiZA/w6Ocv0qtQB4dO+BDIINE3X9CLjEAMvyNCJlSSYzXLXDUqujmvCr/TSW4zo8/LEqbcLxx0kL4Gzqwc0R0Ajxx7/FjiAl4jLyKDcSuVJvp4b8AT3K8YMJ8gL0DYma7WCooRiIeT39Or9LBw==:::EZobeyu39ttXQ7E4ZPjJpkkB9g1Iw1rpioEmKHgA+30T+hsufZ2DmtYAIddr3X/qyNSnuTTsF3TLYzxCTuPEovCxgQh/jsMl89c2il5RzEx2gBvIybbuAWqPA3kEa8RpObmOhYIKxSQUL09DynwAHtsTCgd6dfAVFquHUEnhjca7N1ZQ6eOE01/D5yeinnIfTW0Bq1UAcnTEv/Ci8hltUuK8GbnrO6QVsOvWLAbhN4sobIktOgJm0dWqVxOIB6p87CxyMKBLiU0FoTREWhOUcoWgnWoDS8iYuuuIn/jeXYBhzejgq/jHZkGxfC8eJ/5CyNejBiWDOLXsj2ooQvgjCiZsy2WWhdMiYKzrIcFe2TrPTWzCerDRGCNMCaEK2bxt2euMEn7IqwjrBELcX9js84PQ9/03Z+7PiNXiDC/hOAGmX/JLni8=]
+
+----------------------------------------------------------------------
+----------------------------- wsCifrado ------------------------------
+----------------------------------------------------------------------
+
+2025-10-16 17:33:19,129 [http-nio-8888-exec-8] - [DEBUG] - com.cifrado.controller.CifradoController: Obteniendo Base64 (JSON Datos) [eyJtZXJjaGFudElkIjoiOTcwOTg4NCIsIm5hbWUiOiJBTkdJRSIsInBhc3N3b3JkIjoiTWFyP3RvTjIhNSIsIm1vZGUiOiJQUkQiLCJjb250cm9sTnVtYmVyIjoiUkVGMTc2MDYzNTk5NiIsInRlcm1pbmFsSWQiOiI5NzA5ODg0MSIsImFtb3VudCI6IjIwLjAwIiwibWVyY2hhbnROYW1lIjoiSU5TQ1JJUCBNQVJBVEhPTiBNVFkiLCJtZXJjaGFudENpdHkiOiJNb250ZXJyZXkiLCJsYW5nIjoiRVMiLCJjdXN0b21lclJlZjEiOiJOQSIsImN1c3RvbWVyUmVmMiI6Ik5BIiwiY3VzdG9tZXJSZWYzIjoiTkEiLCJjdXN0b21lclJlZjQiOiJOQSIsImN1c3RvbWVyUmVmNSI6Ik5BIn0=]... 
+2025-10-16 17:33:19,131 [http-nio-8888-exec-8] - [DEBUG] - com.cifrado.controller.CifradoController: Resultado Decodificado de Base64 (JSON Datos) [{"merchantId":"9709884","name":"ANGIE","password":"Mar?toN2!5","mode":"PRD","controlNumber":"REF1760635996","terminalId":"97098841","amount":"20.00","merchantName":"INSCRIP MARATHON MTY","merchantCity":"Monterrey","lang":"ES","customerRef1":"NA","customerRef2":"NA","customerRef3":"NA","customerRef4":"NA","customerRef5":"NA"}]
+
+2025-10-16 17:33:19,132 [http-nio-8888-exec-8] - [DEBUG] - com.cifrado.controller.CifradoController: 1.- Se cifrará JSON Datos con la llave pública -> [MIIGdDCCBVygAwIBAgITFwABTnQA5m6Udb1vlQABAAFOdDANBgkqhkiG9w0BAQsF
+ADB5MQswCQYDVQQGEwJNWDEZMBcGCgmSJomT8ixkARkWCWdmYmFub3J0ZTEeMBwG
+A1UEChMVU2VndXJpZGFkIGluZm9ybWF0aWNhMS8wLQYDVQQDEyZHcnVwbyBGaW5h
+bmNpZXJvIEJhbm9ydGUgQ0EgRW50ZXJwcmlzZTAeFw0yNTAyMjEyMDAwMzVaFw0y
+NjAyMjEyMDAwMzVaMIGoMQswCQYDVQQGEwJNWDELMAkGA1UECBMCREYxDzANBgNV
+BAcTBk1leGljbzErMCkGA1UEChMiR3J1cG8gRmluYW5jaWVybyBCYW5vcnRlIFNB
+QiBkZSBDVjEkMCIGA1UECxMbU2VndXJpZGFkIGRlIGxhIEluZm9ybWFjaW9uMSgw
+JgYDVQQDEx9tdWx0aWNvYnJvc2tleS51bml4LmJhbm9ydGUuY29tMIIBIjANBgkq
+hkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvp69wp3Z6ZXCHS+OQ2k8H26dWwuF/cSv
+f37YT7NYfz4YvvXeahNv0CCStL5tATSoYj8MDKzNbwidXq/7e6JQpV1bcZjYXcjL
+qli0GrOaJ00wUdR3zFS5F85Ks7ycTW6wNl/n7X8QXFVAh+HJyO7yrKdopcPyNLfJ
+xBeXlvvuGfAKLJ7mCDdPN2UROg/35yLKil+VMB8OgF/KXEajmR0a+FiEe96+AkW3
+oWMslb9fXm8+Kc4IqXKTZQg52CHPlbSnY8vaBqZd0sH5W60NILFFXgNFXsQAHhUt
+njvcL+MY6NOHGeRYyrafP7Vwoog2kQiIUZafH/D1dWmB0r9qCv3VkQIDAQABo4IC
+wzCCAr8wMgYDVR0RBCswKYIKbG54c2lzYTAxcIIbbG54c2lzYTAxcC51bml4LmJh
+bm9ydGUuY29tMB0GA1UdDgQWBBR3lYj1Ic4B/MjmXVpM+fSAo3YxhTAfBgNVHSME
+GDAWgBTQBPbPr59ruX3bXiA0YK0zB6UM0zCB7QYDVR0fBIHlMIHiMIHfoIHcoIHZ
+hoHWbGRhcDovLy9DTj1HcnVwbyUyMEZpbmFuY2llcm8lMjBCYW5vcnRlJTIwQ0El
+MjBFbnRlcnByaXNlLENOPUNBLUJBTk9SVEUtUkEsQ049Q0RQLENOPVB1YmxpYyUy
+MEtleSUyMFNlcnZpY2VzLENOPVNlcnZpY2VzLENOPUNvbmZpZ3VyYXRpb24sREM9
+Z2ZiYW5vcnRlP2NlcnRpZmljYXRlUmV2b2NhdGlvbkxpc3Q/YmFzZT9vYmplY3RD
+bGFzcz1jUkxEaXN0cmlidXRpb25Qb2ludDCB2wYIKwYBBQUHAQEEgc4wgcswgcgG
+CCsGAQUFBzAChoG7bGRhcDovLy9DTj1HcnVwbyUyMEZpbmFuY2llcm8lMjBCYW5v
+cnRlJTIwQ0ElMjBFbnRlcnByaXNlLENOPUFJQSxDTj1QdWJsaWMlMjBLZXklMjBT
+ZXJ2aWNlcyxDTj1TZXJ2aWNlcyxDTj1Db25maWd1cmF0aW9uLERDPWdmYmFub3J0
+ZT9jQUNlcnRpZmljYXRlP2Jhc2U/b2JqZWN0Q2xhc3M9Y2VydGlmaWNhdGlvbkF1
+dGhvcml0eTALBgNVHQ8EBAMCBaAwPAYJKwYBBAGCNxUHBC8wLQYlKwYBBAGCNxUI
+g+v5BoK1j0eNkROCp58GguHddCKCxphfgtj9DwIBZAIBEjATBgNVHSUEDDAKBggr
+BgEFBQcDATAbBgkrBgEEAYI3FQoEDjAMMAoGCCsGAQUFBwMBMA0GCSqGSIb3DQEB
+CwUAA4IBAQBicj3sAYJZTkjNo+HcqhPGDSA8vJ3rTEvDDqcaNiWlfPFaXLNBxfk2
+aKuV6Ibf1nSE9lfrpqVz+RwKCrtc4jXx9lO6BkgAuG7H2h6Tg53TbYPUJnr5ynwi
+jRlOacsJFvj5c6MLoM0Jrdw9ozd8UVjbqHTWo9iClPOGm9GX3FSc21bUWkSlp/Re
+MeWXKhMhCtKdWPqQGYIW3skpUYzhgGTDdEaUvXFYK79Pud7mxS1761P1qt7s1Axo
+61dvEM9gwtPuqcARkrwMroAqUhPmda71sndN3Z1CAh1khviyowwA2dZdxdT8ZqZy
+01+dEnuNx6BtEq8aht+M2u01BOXiqj1U
+]
+2025-10-16 17:33:19,138 [http-nio-8888-exec-8] - [DEBUG] - com.cifrado.controller.CifradoController: 2.- Resultado cifrado AES ( Subcadena2 ) [uarxKmitzbpPi+TjYu8cS0hoO0VTu3w4yPFina9RhLRvLOSlSRrBfDxmIILxjdeIuMd6PqYf74FTJBIBY20aW+rORLHlsNZnGu0gCcjegFasRhqgiaXGa3xKsVjC/TB0/ckyeY9k7DyG72yYmEs3vcbOEoCGXiSlw7TnbekXvntb+n/4lU34aZG6g6ElcAEDWbRJOwXYTqU//PPmDxJDls/jlJs4CaqnVN3y+Ma1SN6KcSEi66hE9J+dzK3y/LuKD/p6hrrvplGGQCtpGZLNq5BZ0P57jQDfw0Vtv5443u/H4TsqU/A6B3hNiJ0/gjXMrXG3Q8CMmxZmbAnTtAHb6VyEDW7/fYEVK5ftubSr3pW7Rprw/jcKqJVPeb5cV76c9jtIegL1l7ko6KBdMuL2WW/h9ge7kTFWOWmyMPzg9tERAc4m/qY=]
+2025-10-16 17:33:19,140 [http-nio-8888-exec-8] - [DEBUG] - com.cifrado.controller.CifradoController: 3.- Prueba decifrado AES (JSON Datos) [{"merchantId":"9709884","name":"ANGIE","password":"Mar?toN2!5","mode":"PRD","controlNumber":"REF1760635996","terminalId":"97098841","amount":"20.00","merchantName":"INSCRIP MARATHON MTY","merchantCity":"Monterrey","lang":"ES","customerRef1":"NA","customerRef2":"NA","customerRef3":"NA","customerRef4":"NA","customerRef5":"NA"}]
+
+------------ JSON a utilizar en el servicio de Descifrado ------------
+{
+    "vi": "77766f75767030316567373071363571",
+    "salt": "7363346b37727439346b667832727576",
+    "passphrase": "te/u-4T9po8bHmT(",
+    "cypherData": "Sustituir_por_el_valor_de_cadena_cifrada_(data)_de_la_respuesta_de_VCE"
+}
+----------------------------------------------------------------------
+
+2025-10-16 17:33:19,140 [http-nio-8888-exec-8] - [DEBUG] - com.cifrado.controller.CifradoController: 4.- AES Llaves Generada [77766f75767030316567373071363571::7363346b37727439346b667832727576::te/u-4T9po8bHmT(]
+2025-10-16 17:33:19,141 [http-nio-8888-exec-8] - [DEBUG] - com.cifrado.controller.CifradoController: -
+2025-10-16 17:33:19,146 [http-nio-8888-exec-8] - [DEBUG] - com.cifrado.utils.CifradoRSA: RSA Encrypt Provider: [SunJCE], [RSA/ECB/OAEPWITHSHA-256ANDMGF1PADDING]
+2025-10-16 17:33:19,146 [http-nio-8888-exec-8] - [DEBUG] - com.cifrado.controller.CifradoController: 5.- Resultado cifrado de Llaves AES ( Subcadena1 ) [srpfOFpT6KqWgCFikCu9eW24Tgs+Zabdiy6xCLbjDkSnApeuwsS1Eh6o8EXk5OwhftTAUSuozAcAHr7zYHfNniR8QJs5RLS0rQgeRrRGJIWSMm8hdCanXzTJzJ/JbukUg6KjkNzRkmt4BfTRZ9ZIgKJYoCFpDyrLn9j6mNu9AOzzYM1dTQ8rPDPgr1qusjeisk7iNvsvj07FRNRpZvxp3tSu8jSXbVWQ9U9mDCbXfxuCzW2iijDzybTfWwNNaLgit8Qs66cCdphaOftfDtSbZeI1fq7fOyqAJfrzvraru13lMy1mwgIaTnBUbAbFHuoIZDysOYSMYjd/rD/h+/fcUA==]
+2025-10-16 17:33:19,146 [http-nio-8888-exec-8] - [DEBUG] - com.cifrado.controller.CifradoController: Cadena para enviar al Orquestador (Subcadena1:::Subcadena2) [srpfOFpT6KqWgCFikCu9eW24Tgs+Zabdiy6xCLbjDkSnApeuwsS1Eh6o8EXk5OwhftTAUSuozAcAHr7zYHfNniR8QJs5RLS0rQgeRrRGJIWSMm8hdCanXzTJzJ/JbukUg6KjkNzRkmt4BfTRZ9ZIgKJYoCFpDyrLn9j6mNu9AOzzYM1dTQ8rPDPgr1qusjeisk7iNvsvj07FRNRpZvxp3tSu8jSXbVWQ9U9mDCbXfxuCzW2iijDzybTfWwNNaLgit8Qs66cCdphaOftfDtSbZeI1fq7fOyqAJfrzvraru13lMy1mwgIaTnBUbAbFHuoIZDysOYSMYjd/rD/h+/fcUA==:::uarxKmitzbpPi+TjYu8cS0hoO0VTu3w4yPFina9RhLRvLOSlSRrBfDxmIILxjdeIuMd6PqYf74FTJBIBY20aW+rORLHlsNZnGu0gCcjegFasRhqgiaXGa3xKsVjC/TB0/ckyeY9k7DyG72yYmEs3vcbOEoCGXiSlw7TnbekXvntb+n/4lU34aZG6g6ElcAEDWbRJOwXYTqU//PPmDxJDls/jlJs4CaqnVN3y+Ma1SN6KcSEi66hE9J+dzK3y/LuKD/p6hrrvplGGQCtpGZLNq5BZ0P57jQDfw0Vtv5443u/H4TsqU/A6B3hNiJ0/gjXMrXG3Q8CMmxZmbAnTtAHb6VyEDW7/fYEVK5ftubSr3pW7Rprw/jcKqJVPeb5cV76c9jtIegL1l7ko6KBdMuL2WW/h9ge7kTFWOWmyMPzg9tERAc4m/qY=]
+
+----------------------------------------------------------------------
+----------------------------- wsCifrado ------------------------------
+----------------------------------------------------------------------
+
+2025-10-16 17:37:06,955 [http-nio-8888-exec-10] - [DEBUG] - com.cifrado.controller.CifradoController: Obteniendo Base64 (JSON Datos) [eyJtZXJjaGFudElkIjoiOTcwOTg4NCIsIm5hbWUiOiJBTkdJRSIsInBhc3N3b3JkIjoiTWFyP3RvTjIhNSIsIm1vZGUiOiJQUkQiLCJjb250cm9sTnVtYmVyIjoiUkVGMTc2MDYzNjIyNCIsInRlcm1pbmFsSWQiOiI5NzA5ODg0MSIsImFtb3VudCI6IjIwLjAwIiwibWVyY2hhbnROYW1lIjoiSU5TQ1JJUCBNQVJBVEhPTiBNVFkiLCJtZXJjaGFudENpdHkiOiJNb250ZXJyZXkiLCJsYW5nIjoiRVMiLCJjdXN0b21lclJlZjEiOiJOQSIsImN1c3RvbWVyUmVmMiI6Ik5BIiwiY3VzdG9tZXJSZWYzIjoiTkEiLCJjdXN0b21lclJlZjQiOiJOQSIsImN1c3RvbWVyUmVmNSI6Ik5BIn0=]... 
+2025-10-16 17:37:06,956 [http-nio-8888-exec-10] - [DEBUG] - com.cifrado.controller.CifradoController: Resultado Decodificado de Base64 (JSON Datos) [{"merchantId":"9709884","name":"ANGIE","password":"Mar?toN2!5","mode":"PRD","controlNumber":"REF1760636224","terminalId":"97098841","amount":"20.00","merchantName":"INSCRIP MARATHON MTY","merchantCity":"Monterrey","lang":"ES","customerRef1":"NA","customerRef2":"NA","customerRef3":"NA","customerRef4":"NA","customerRef5":"NA"}]
+
+2025-10-16 17:37:06,957 [http-nio-8888-exec-10] - [DEBUG] - com.cifrado.controller.CifradoController: 1.- Se cifrará JSON Datos con la llave pública -> [MIIGdDCCBVygAwIBAgITFwABTnQA5m6Udb1vlQABAAFOdDANBgkqhkiG9w0BAQsF
+ADB5MQswCQYDVQQGEwJNWDEZMBcGCgmSJomT8ixkARkWCWdmYmFub3J0ZTEeMBwG
+A1UEChMVU2VndXJpZGFkIGluZm9ybWF0aWNhMS8wLQYDVQQDEyZHcnVwbyBGaW5h
+bmNpZXJvIEJhbm9ydGUgQ0EgRW50ZXJwcmlzZTAeFw0yNTAyMjEyMDAwMzVaFw0y
+NjAyMjEyMDAwMzVaMIGoMQswCQYDVQQGEwJNWDELMAkGA1UECBMCREYxDzANBgNV
+BAcTBk1leGljbzErMCkGA1UEChMiR3J1cG8gRmluYW5jaWVybyBCYW5vcnRlIFNB
+QiBkZSBDVjEkMCIGA1UECxMbU2VndXJpZGFkIGRlIGxhIEluZm9ybWFjaW9uMSgw
+JgYDVQQDEx9tdWx0aWNvYnJvc2tleS51bml4LmJhbm9ydGUuY29tMIIBIjANBgkq
+hkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvp69wp3Z6ZXCHS+OQ2k8H26dWwuF/cSv
+f37YT7NYfz4YvvXeahNv0CCStL5tATSoYj8MDKzNbwidXq/7e6JQpV1bcZjYXcjL
+qli0GrOaJ00wUdR3zFS5F85Ks7ycTW6wNl/n7X8QXFVAh+HJyO7yrKdopcPyNLfJ
+xBeXlvvuGfAKLJ7mCDdPN2UROg/35yLKil+VMB8OgF/KXEajmR0a+FiEe96+AkW3
+oWMslb9fXm8+Kc4IqXKTZQg52CHPlbSnY8vaBqZd0sH5W60NILFFXgNFXsQAHhUt
+njvcL+MY6NOHGeRYyrafP7Vwoog2kQiIUZafH/D1dWmB0r9qCv3VkQIDAQABo4IC
+wzCCAr8wMgYDVR0RBCswKYIKbG54c2lzYTAxcIIbbG54c2lzYTAxcC51bml4LmJh
+bm9ydGUuY29tMB0GA1UdDgQWBBR3lYj1Ic4B/MjmXVpM+fSAo3YxhTAfBgNVHSME
+GDAWgBTQBPbPr59ruX3bXiA0YK0zB6UM0zCB7QYDVR0fBIHlMIHiMIHfoIHcoIHZ
+hoHWbGRhcDovLy9DTj1HcnVwbyUyMEZpbmFuY2llcm8lMjBCYW5vcnRlJTIwQ0El
+MjBFbnRlcnByaXNlLENOPUNBLUJBTk9SVEUtUkEsQ049Q0RQLENOPVB1YmxpYyUy
+MEtleSUyMFNlcnZpY2VzLENOPVNlcnZpY2VzLENOPUNvbmZpZ3VyYXRpb24sREM9
+Z2ZiYW5vcnRlP2NlcnRpZmljYXRlUmV2b2NhdGlvbkxpc3Q/YmFzZT9vYmplY3RD
+bGFzcz1jUkxEaXN0cmlidXRpb25Qb2ludDCB2wYIKwYBBQUHAQEEgc4wgcswgcgG
+CCsGAQUFBzAChoG7bGRhcDovLy9DTj1HcnVwbyUyMEZpbmFuY2llcm8lMjBCYW5v
+cnRlJTIwQ0ElMjBFbnRlcnByaXNlLENOPUFJQSxDTj1QdWJsaWMlMjBLZXklMjBT
+ZXJ2aWNlcyxDTj1TZXJ2aWNlcyxDTj1Db25maWd1cmF0aW9uLERDPWdmYmFub3J0
+ZT9jQUNlcnRpZmljYXRlP2Jhc2U/b2JqZWN0Q2xhc3M9Y2VydGlmaWNhdGlvbkF1
+dGhvcml0eTALBgNVHQ8EBAMCBaAwPAYJKwYBBAGCNxUHBC8wLQYlKwYBBAGCNxUI
+g+v5BoK1j0eNkROCp58GguHddCKCxphfgtj9DwIBZAIBEjATBgNVHSUEDDAKBggr
+BgEFBQcDATAbBgkrBgEEAYI3FQoEDjAMMAoGCCsGAQUFBwMBMA0GCSqGSIb3DQEB
+CwUAA4IBAQBicj3sAYJZTkjNo+HcqhPGDSA8vJ3rTEvDDqcaNiWlfPFaXLNBxfk2
+aKuV6Ibf1nSE9lfrpqVz+RwKCrtc4jXx9lO6BkgAuG7H2h6Tg53TbYPUJnr5ynwi
+jRlOacsJFvj5c6MLoM0Jrdw9ozd8UVjbqHTWo9iClPOGm9GX3FSc21bUWkSlp/Re
+MeWXKhMhCtKdWPqQGYIW3skpUYzhgGTDdEaUvXFYK79Pud7mxS1761P1qt7s1Axo
+61dvEM9gwtPuqcARkrwMroAqUhPmda71sndN3Z1CAh1khviyowwA2dZdxdT8ZqZy
+01+dEnuNx6BtEq8aht+M2u01BOXiqj1U
+]
+2025-10-16 17:37:06,960 [http-nio-8888-exec-10] - [DEBUG] - com.cifrado.controller.CifradoController: 2.- Resultado cifrado AES ( Subcadena2 ) [zZf8LsT/2TgC1rNIkIpN8/Xad+IPFbVijkm0pnZawcYAk5LCenLOO4gOAc2fRhOeXKR39XrmFi9lGxigaHbX2Cz4wNlensy+N9wbZIZhJDwimjp9w/7JA7/ogQSTaBFXA0uZb8AsNUImhbVdfg5l48jWv+QtoNvnjgTgHT10SJGg9rZegsZ0eAdMR3uVlOikBDOA7FSYEGGrepPPt1zW2whuhQUHRUIMbm5xvVhsf64TnZMegbcFsj+527AUaPei/mILcP0d5mnynyE413qv7S+R/7pDT9esA+qhC03jsxwBn/xU0cWIu82n8p8YZxEHDQQQNKW5RxZ0plidL9OtFZYNGk4PIE3YWuMATSgqGt8wEtLp1WsJL4IKlxera4YLJ1a/fvVnUw4OBu741is1gj/Q5nUYA5EE5FKbhTjFV63OPTDZ8Jk=]
+2025-10-16 17:37:06,961 [http-nio-8888-exec-10] - [DEBUG] - com.cifrado.controller.CifradoController: 3.- Prueba decifrado AES (JSON Datos) [{"merchantId":"9709884","name":"ANGIE","password":"Mar?toN2!5","mode":"PRD","controlNumber":"REF1760636224","terminalId":"97098841","amount":"20.00","merchantName":"INSCRIP MARATHON MTY","merchantCity":"Monterrey","lang":"ES","customerRef1":"NA","customerRef2":"NA","customerRef3":"NA","customerRef4":"NA","customerRef5":"NA"}]
+
+------------ JSON a utilizar en el servicio de Descifrado ------------
+{
+    "vi": "7975717a6431336c7338763531666b6e",
+    "salt": "76676d357431693265686b7365373736",
+    "passphrase": "(/PrM8wvbeVDZau?",
+    "cypherData": "Sustituir_por_el_valor_de_cadena_cifrada_(data)_de_la_respuesta_de_VCE"
+}
+----------------------------------------------------------------------
+
+2025-10-16 17:37:06,962 [http-nio-8888-exec-10] - [DEBUG] - com.cifrado.controller.CifradoController: 4.- AES Llaves Generada [7975717a6431336c7338763531666b6e::76676d357431693265686b7365373736::(/PrM8wvbeVDZau?]
+2025-10-16 17:37:06,962 [http-nio-8888-exec-10] - [DEBUG] - com.cifrado.controller.CifradoController: -
+2025-10-16 17:37:06,964 [http-nio-8888-exec-10] - [DEBUG] - com.cifrado.utils.CifradoRSA: RSA Encrypt Provider: [SunJCE], [RSA/ECB/OAEPWITHSHA-256ANDMGF1PADDING]
+2025-10-16 17:37:06,965 [http-nio-8888-exec-10] - [DEBUG] - com.cifrado.controller.CifradoController: 5.- Resultado cifrado de Llaves AES ( Subcadena1 ) [JexArT8xZLEST86z6pfp0KZbQLYorS5CXCXawQE6JO96DLxLxGl3n1S7APDwBH0zzaG4A5l0h/kQ+Wo7/pagyf8FnkUdxkyPzJpMiuXMkTK+EsoOeKOkm0Typ44U3qnCgAflTqR8jT/TdhKhO4awKjMAzTYwCnaSqA5IARzPXwAGlZVXjXPUmUFN+1jOd7YFrOzBOcjK6snaYqeYo8JrDQhzEW/BnPj6HD7IM5YS/3Ml4g6ufowYhCWegNoBxk9pL4hfVTgvRkl8Iryb3U8/ViTKciKXm+Z2oIV+9H6VuGptWpGStqfkN7Cb2kCB10VSOFJOWmFZuHsa8LqSggXw1Q==]
+2025-10-16 17:37:06,965 [http-nio-8888-exec-10] - [DEBUG] - com.cifrado.controller.CifradoController: Cadena para enviar al Orquestador (Subcadena1:::Subcadena2) [JexArT8xZLEST86z6pfp0KZbQLYorS5CXCXawQE6JO96DLxLxGl3n1S7APDwBH0zzaG4A5l0h/kQ+Wo7/pagyf8FnkUdxkyPzJpMiuXMkTK+EsoOeKOkm0Typ44U3qnCgAflTqR8jT/TdhKhO4awKjMAzTYwCnaSqA5IARzPXwAGlZVXjXPUmUFN+1jOd7YFrOzBOcjK6snaYqeYo8JrDQhzEW/BnPj6HD7IM5YS/3Ml4g6ufowYhCWegNoBxk9pL4hfVTgvRkl8Iryb3U8/ViTKciKXm+Z2oIV+9H6VuGptWpGStqfkN7Cb2kCB10VSOFJOWmFZuHsa8LqSggXw1Q==:::zZf8LsT/2TgC1rNIkIpN8/Xad+IPFbVijkm0pnZawcYAk5LCenLOO4gOAc2fRhOeXKR39XrmFi9lGxigaHbX2Cz4wNlensy+N9wbZIZhJDwimjp9w/7JA7/ogQSTaBFXA0uZb8AsNUImhbVdfg5l48jWv+QtoNvnjgTgHT10SJGg9rZegsZ0eAdMR3uVlOikBDOA7FSYEGGrepPPt1zW2whuhQUHRUIMbm5xvVhsf64TnZMegbcFsj+527AUaPei/mILcP0d5mnynyE413qv7S+R/7pDT9esA+qhC03jsxwBn/xU0cWIu82n8p8YZxEHDQQQNKW5RxZ0plidL9OtFZYNGk4PIE3YWuMATSgqGt8wEtLp1WsJL4IKlxera4YLJ1a/fvVnUw4OBu741is1gj/Q5nUYA5EE5FKbhTjFV63OPTDZ8Jk=]
+
+----------------------------------------------------------------------
+----------------------------- wsCifrado ------------------------------
+----------------------------------------------------------------------
+
+2025-10-16 17:44:26,091 [http-nio-8888-exec-2] - [DEBUG] - com.cifrado.controller.CifradoController: Obteniendo Base64 (JSON Datos) [eyJtZXJjaGFudElkIjoiOTcwOTg4NCIsIm5hbWUiOiJBTkdJRSIsInBhc3N3b3JkIjoiTWFyP3RvTjIhNSIsIm1vZGUiOiJQUkQiLCJjb250cm9sTnVtYmVyIjoiUkVGMTc2MDYzNjY2MiIsInRlcm1pbmFsSWQiOiI5NzA5ODg0MSIsImFtb3VudCI6IjIwLjAwIiwibWVyY2hhbnROYW1lIjoiSU5TQ1JJUCBNQVJBVEhPTiBNVFkiLCJtZXJjaGFudENpdHkiOiJNb250ZXJyZXkiLCJsYW5nIjoiRVMiLCJjdXN0b21lclJlZjEiOiJOQSIsImN1c3RvbWVyUmVmMiI6Ik5BIiwiY3VzdG9tZXJSZWYzIjoiTkEiLCJjdXN0b21lclJlZjQiOiJOQSIsImN1c3RvbWVyUmVmNSI6Ik5BIn0=]... 
+2025-10-16 17:44:26,092 [http-nio-8888-exec-2] - [DEBUG] - com.cifrado.controller.CifradoController: Resultado Decodificado de Base64 (JSON Datos) [{"merchantId":"9709884","name":"ANGIE","password":"Mar?toN2!5","mode":"PRD","controlNumber":"REF1760636662","terminalId":"97098841","amount":"20.00","merchantName":"INSCRIP MARATHON MTY","merchantCity":"Monterrey","lang":"ES","customerRef1":"NA","customerRef2":"NA","customerRef3":"NA","customerRef4":"NA","customerRef5":"NA"}]
+
+2025-10-16 17:44:26,092 [http-nio-8888-exec-2] - [DEBUG] - com.cifrado.controller.CifradoController: 1.- Se cifrará JSON Datos con la llave pública -> [MIIGdDCCBVygAwIBAgITFwABTnQA5m6Udb1vlQABAAFOdDANBgkqhkiG9w0BAQsF
+ADB5MQswCQYDVQQGEwJNWDEZMBcGCgmSJomT8ixkARkWCWdmYmFub3J0ZTEeMBwG
+A1UEChMVU2VndXJpZGFkIGluZm9ybWF0aWNhMS8wLQYDVQQDEyZHcnVwbyBGaW5h
+bmNpZXJvIEJhbm9ydGUgQ0EgRW50ZXJwcmlzZTAeFw0yNTAyMjEyMDAwMzVaFw0y
+NjAyMjEyMDAwMzVaMIGoMQswCQYDVQQGEwJNWDELMAkGA1UECBMCREYxDzANBgNV
+BAcTBk1leGljbzErMCkGA1UEChMiR3J1cG8gRmluYW5jaWVybyBCYW5vcnRlIFNB
+QiBkZSBDVjEkMCIGA1UECxMbU2VndXJpZGFkIGRlIGxhIEluZm9ybWFjaW9uMSgw
+JgYDVQQDEx9tdWx0aWNvYnJvc2tleS51bml4LmJhbm9ydGUuY29tMIIBIjANBgkq
+hkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvp69wp3Z6ZXCHS+OQ2k8H26dWwuF/cSv
+f37YT7NYfz4YvvXeahNv0CCStL5tATSoYj8MDKzNbwidXq/7e6JQpV1bcZjYXcjL
+qli0GrOaJ00wUdR3zFS5F85Ks7ycTW6wNl/n7X8QXFVAh+HJyO7yrKdopcPyNLfJ
+xBeXlvvuGfAKLJ7mCDdPN2UROg/35yLKil+VMB8OgF/KXEajmR0a+FiEe96+AkW3
+oWMslb9fXm8+Kc4IqXKTZQg52CHPlbSnY8vaBqZd0sH5W60NILFFXgNFXsQAHhUt
+njvcL+MY6NOHGeRYyrafP7Vwoog2kQiIUZafH/D1dWmB0r9qCv3VkQIDAQABo4IC
+wzCCAr8wMgYDVR0RBCswKYIKbG54c2lzYTAxcIIbbG54c2lzYTAxcC51bml4LmJh
+bm9ydGUuY29tMB0GA1UdDgQWBBR3lYj1Ic4B/MjmXVpM+fSAo3YxhTAfBgNVHSME
+GDAWgBTQBPbPr59ruX3bXiA0YK0zB6UM0zCB7QYDVR0fBIHlMIHiMIHfoIHcoIHZ
+hoHWbGRhcDovLy9DTj1HcnVwbyUyMEZpbmFuY2llcm8lMjBCYW5vcnRlJTIwQ0El
+MjBFbnRlcnByaXNlLENOPUNBLUJBTk9SVEUtUkEsQ049Q0RQLENOPVB1YmxpYyUy
+MEtleSUyMFNlcnZpY2VzLENOPVNlcnZpY2VzLENOPUNvbmZpZ3VyYXRpb24sREM9
+Z2ZiYW5vcnRlP2NlcnRpZmljYXRlUmV2b2NhdGlvbkxpc3Q/YmFzZT9vYmplY3RD
+bGFzcz1jUkxEaXN0cmlidXRpb25Qb2ludDCB2wYIKwYBBQUHAQEEgc4wgcswgcgG
+CCsGAQUFBzAChoG7bGRhcDovLy9DTj1HcnVwbyUyMEZpbmFuY2llcm8lMjBCYW5v
+cnRlJTIwQ0ElMjBFbnRlcnByaXNlLENOPUFJQSxDTj1QdWJsaWMlMjBLZXklMjBT
+ZXJ2aWNlcyxDTj1TZXJ2aWNlcyxDTj1Db25maWd1cmF0aW9uLERDPWdmYmFub3J0
+ZT9jQUNlcnRpZmljYXRlP2Jhc2U/b2JqZWN0Q2xhc3M9Y2VydGlmaWNhdGlvbkF1
+dGhvcml0eTALBgNVHQ8EBAMCBaAwPAYJKwYBBAGCNxUHBC8wLQYlKwYBBAGCNxUI
+g+v5BoK1j0eNkROCp58GguHddCKCxphfgtj9DwIBZAIBEjATBgNVHSUEDDAKBggr
+BgEFBQcDATAbBgkrBgEEAYI3FQoEDjAMMAoGCCsGAQUFBwMBMA0GCSqGSIb3DQEB
+CwUAA4IBAQBicj3sAYJZTkjNo+HcqhPGDSA8vJ3rTEvDDqcaNiWlfPFaXLNBxfk2
+aKuV6Ibf1nSE9lfrpqVz+RwKCrtc4jXx9lO6BkgAuG7H2h6Tg53TbYPUJnr5ynwi
+jRlOacsJFvj5c6MLoM0Jrdw9ozd8UVjbqHTWo9iClPOGm9GX3FSc21bUWkSlp/Re
+MeWXKhMhCtKdWPqQGYIW3skpUYzhgGTDdEaUvXFYK79Pud7mxS1761P1qt7s1Axo
+61dvEM9gwtPuqcARkrwMroAqUhPmda71sndN3Z1CAh1khviyowwA2dZdxdT8ZqZy
+01+dEnuNx6BtEq8aht+M2u01BOXiqj1U
+]
+2025-10-16 17:44:26,094 [http-nio-8888-exec-2] - [DEBUG] - com.cifrado.controller.CifradoController: 2.- Resultado cifrado AES ( Subcadena2 ) [c/TDbhwgREU+UiBChbiQIM/HkI3cXGZqxbHq2AlEVIUkE0rgi1JOABXYNOYRaVk2MokU1Wb84CyLHg1vSOWq0yHs5BbnZ49UcJkRy9IRIcwFv+YP5zqZz+Igsej84ZkbIIMmPlU9c1MGH1GKrscwZib4SE84HnIH41ZZUd+7FvED98b6TwtcJNKmtrQgYfr/C1vdefbDBZftaP+oBoII66LsNklWgsxyaHv6e+u8xBlWQsOFScCEyPaoex4fITvZo6++6heL5b6p/OGqMoBNmNZf2+sXZ5m4TbaYvn+uqFVFDytCFDV18U863ge6LuC1EU8g9USjroZJJ9u25D+yIjEszNDQdirTQ8vFzpGWfVw+F1GzHoLMJHLjPUZ0sQ/mJJCMieFwjVLbIM0T75CBFhCKsNmNQ1iLi0V+x/paDR16fkA505A=]
+2025-10-16 17:44:26,096 [http-nio-8888-exec-2] - [DEBUG] - com.cifrado.controller.CifradoController: 3.- Prueba decifrado AES (JSON Datos) [{"merchantId":"9709884","name":"ANGIE","password":"Mar?toN2!5","mode":"PRD","controlNumber":"REF1760636662","terminalId":"97098841","amount":"20.00","merchantName":"INSCRIP MARATHON MTY","merchantCity":"Monterrey","lang":"ES","customerRef1":"NA","customerRef2":"NA","customerRef3":"NA","customerRef4":"NA","customerRef5":"NA"}]
+
+------------ JSON a utilizar en el servicio de Descifrado ------------
+{
+    "vi": "61356e6b3234737235346b306178676d",
+    "salt": "666176346f746b69633467756b756d61",
+    "passphrase": "BUtCKEuC2oL&-W)W",
+    "cypherData": "Sustituir_por_el_valor_de_cadena_cifrada_(data)_de_la_respuesta_de_VCE"
+}
+----------------------------------------------------------------------
+
+2025-10-16 17:44:26,096 [http-nio-8888-exec-2] - [DEBUG] - com.cifrado.controller.CifradoController: 4.- AES Llaves Generada [61356e6b3234737235346b306178676d::666176346f746b69633467756b756d61::BUtCKEuC2oL&-W)W]
+2025-10-16 17:44:26,097 [http-nio-8888-exec-2] - [DEBUG] - com.cifrado.controller.CifradoController: -
+2025-10-16 17:44:26,099 [http-nio-8888-exec-2] - [DEBUG] - com.cifrado.utils.CifradoRSA: RSA Encrypt Provider: [SunJCE], [RSA/ECB/OAEPWITHSHA-256ANDMGF1PADDING]
+2025-10-16 17:44:26,099 [http-nio-8888-exec-2] - [DEBUG] - com.cifrado.controller.CifradoController: 5.- Resultado cifrado de Llaves AES ( Subcadena1 ) [THXMJemZt2xsZfVKOB5IpYO5X2dP329plGYa/nbj9zX0oB0bQup/X/EBbZlSnnniGqsiKqivDJVm2h+AwoK6HXzcr5YiTHeBk8E9f73QYshs+NJK+n4q4fL8xZsE9ffdwOFKxWxi04ITvsH/rCvEp5U0n5loJ8JrRZLZlpDhyabBzv3Ix76G+jZtUIYfM2hZa7hT0pFRZBE4Qhom3yj4EZf5LiEQk90764YROGS7DFhTpwgkeNHiMh8x+RPj/exhAT0iofMwYfB335PS2vCdXZNT327MsRppzZc+76dLebzPto+57oFvxDpmsFvVeEyZVpmkP7eNUmq79wDXsTuJQw==]
+2025-10-16 17:44:26,099 [http-nio-8888-exec-2] - [DEBUG] - com.cifrado.controller.CifradoController: Cadena para enviar al Orquestador (Subcadena1:::Subcadena2) [THXMJemZt2xsZfVKOB5IpYO5X2dP329plGYa/nbj9zX0oB0bQup/X/EBbZlSnnniGqsiKqivDJVm2h+AwoK6HXzcr5YiTHeBk8E9f73QYshs+NJK+n4q4fL8xZsE9ffdwOFKxWxi04ITvsH/rCvEp5U0n5loJ8JrRZLZlpDhyabBzv3Ix76G+jZtUIYfM2hZa7hT0pFRZBE4Qhom3yj4EZf5LiEQk90764YROGS7DFhTpwgkeNHiMh8x+RPj/exhAT0iofMwYfB335PS2vCdXZNT327MsRppzZc+76dLebzPto+57oFvxDpmsFvVeEyZVpmkP7eNUmq79wDXsTuJQw==:::c/TDbhwgREU+UiBChbiQIM/HkI3cXGZqxbHq2AlEVIUkE0rgi1JOABXYNOYRaVk2MokU1Wb84CyLHg1vSOWq0yHs5BbnZ49UcJkRy9IRIcwFv+YP5zqZz+Igsej84ZkbIIMmPlU9c1MGH1GKrscwZib4SE84HnIH41ZZUd+7FvED98b6TwtcJNKmtrQgYfr/C1vdefbDBZftaP+oBoII66LsNklWgsxyaHv6e+u8xBlWQsOFScCEyPaoex4fITvZo6++6heL5b6p/OGqMoBNmNZf2+sXZ5m4TbaYvn+uqFVFDytCFDV18U863ge6LuC1EU8g9USjroZJJ9u25D+yIjEszNDQdirTQ8vFzpGWfVw+F1GzHoLMJHLjPUZ0sQ/mJJCMieFwjVLbIM0T75CBFhCKsNmNQ1iLi0V+x/paDR16fkA505A=]
+
+----------------------------------------------------------------------
+----------------------------- wsCifrado ------------------------------
+----------------------------------------------------------------------
+
+2025-10-16 17:47:21,836 [http-nio-8888-exec-4] - [DEBUG] - com.cifrado.controller.CifradoController: Obteniendo Base64 (JSON Datos) [eyJtZXJjaGFudElkIjoiOTcwOTg4NCIsIm5hbWUiOiJBTkdJRSIsInBhc3N3b3JkIjoiTWFyP3RvTjIhNSIsIm1vZGUiOiJQUkQiLCJjb250cm9sTnVtYmVyIjoiUkVGMTc2MDYzNjgzOSIsInRlcm1pbmFsSWQiOiI5NzA5ODg0MSIsImFtb3VudCI6IjQuMDAiLCJtZXJjaGFudE5hbWUiOiJJTlNDUklQIE1BUkFUSE9OIE1UWSIsIm1lcmNoYW50Q2l0eSI6Ik1vbnRlcnJleSIsImxhbmciOiJFUyIsImN1c3RvbWVyUmVmMSI6Ik5BIiwiY3VzdG9tZXJSZWYyIjoiTkEiLCJjdXN0b21lclJlZjMiOiJOQSIsImN1c3RvbWVyUmVmNCI6Ik5BIiwiY3VzdG9tZXJSZWY1IjoiTkEifQ==]... 
+2025-10-16 17:47:21,837 [http-nio-8888-exec-4] - [DEBUG] - com.cifrado.controller.CifradoController: Resultado Decodificado de Base64 (JSON Datos) [{"merchantId":"9709884","name":"ANGIE","password":"Mar?toN2!5","mode":"PRD","controlNumber":"REF1760636839","terminalId":"97098841","amount":"4.00","merchantName":"INSCRIP MARATHON MTY","merchantCity":"Monterrey","lang":"ES","customerRef1":"NA","customerRef2":"NA","customerRef3":"NA","customerRef4":"NA","customerRef5":"NA"}]
+
+2025-10-16 17:47:21,838 [http-nio-8888-exec-4] - [DEBUG] - com.cifrado.controller.CifradoController: 1.- Se cifrará JSON Datos con la llave pública -> [MIIGdDCCBVygAwIBAgITFwABTnQA5m6Udb1vlQABAAFOdDANBgkqhkiG9w0BAQsF
+ADB5MQswCQYDVQQGEwJNWDEZMBcGCgmSJomT8ixkARkWCWdmYmFub3J0ZTEeMBwG
+A1UEChMVU2VndXJpZGFkIGluZm9ybWF0aWNhMS8wLQYDVQQDEyZHcnVwbyBGaW5h
+bmNpZXJvIEJhbm9ydGUgQ0EgRW50ZXJwcmlzZTAeFw0yNTAyMjEyMDAwMzVaFw0y
+NjAyMjEyMDAwMzVaMIGoMQswCQYDVQQGEwJNWDELMAkGA1UECBMCREYxDzANBgNV
+BAcTBk1leGljbzErMCkGA1UEChMiR3J1cG8gRmluYW5jaWVybyBCYW5vcnRlIFNB
+QiBkZSBDVjEkMCIGA1UECxMbU2VndXJpZGFkIGRlIGxhIEluZm9ybWFjaW9uMSgw
+JgYDVQQDEx9tdWx0aWNvYnJvc2tleS51bml4LmJhbm9ydGUuY29tMIIBIjANBgkq
+hkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvp69wp3Z6ZXCHS+OQ2k8H26dWwuF/cSv
+f37YT7NYfz4YvvXeahNv0CCStL5tATSoYj8MDKzNbwidXq/7e6JQpV1bcZjYXcjL
+qli0GrOaJ00wUdR3zFS5F85Ks7ycTW6wNl/n7X8QXFVAh+HJyO7yrKdopcPyNLfJ
+xBeXlvvuGfAKLJ7mCDdPN2UROg/35yLKil+VMB8OgF/KXEajmR0a+FiEe96+AkW3
+oWMslb9fXm8+Kc4IqXKTZQg52CHPlbSnY8vaBqZd0sH5W60NILFFXgNFXsQAHhUt
+njvcL+MY6NOHGeRYyrafP7Vwoog2kQiIUZafH/D1dWmB0r9qCv3VkQIDAQABo4IC
+wzCCAr8wMgYDVR0RBCswKYIKbG54c2lzYTAxcIIbbG54c2lzYTAxcC51bml4LmJh
+bm9ydGUuY29tMB0GA1UdDgQWBBR3lYj1Ic4B/MjmXVpM+fSAo3YxhTAfBgNVHSME
+GDAWgBTQBPbPr59ruX3bXiA0YK0zB6UM0zCB7QYDVR0fBIHlMIHiMIHfoIHcoIHZ
+hoHWbGRhcDovLy9DTj1HcnVwbyUyMEZpbmFuY2llcm8lMjBCYW5vcnRlJTIwQ0El
+MjBFbnRlcnByaXNlLENOPUNBLUJBTk9SVEUtUkEsQ049Q0RQLENOPVB1YmxpYyUy
+MEtleSUyMFNlcnZpY2VzLENOPVNlcnZpY2VzLENOPUNvbmZpZ3VyYXRpb24sREM9
+Z2ZiYW5vcnRlP2NlcnRpZmljYXRlUmV2b2NhdGlvbkxpc3Q/YmFzZT9vYmplY3RD
+bGFzcz1jUkxEaXN0cmlidXRpb25Qb2ludDCB2wYIKwYBBQUHAQEEgc4wgcswgcgG
+CCsGAQUFBzAChoG7bGRhcDovLy9DTj1HcnVwbyUyMEZpbmFuY2llcm8lMjBCYW5v
+cnRlJTIwQ0ElMjBFbnRlcnByaXNlLENOPUFJQSxDTj1QdWJsaWMlMjBLZXklMjBT
+ZXJ2aWNlcyxDTj1TZXJ2aWNlcyxDTj1Db25maWd1cmF0aW9uLERDPWdmYmFub3J0
+ZT9jQUNlcnRpZmljYXRlP2Jhc2U/b2JqZWN0Q2xhc3M9Y2VydGlmaWNhdGlvbkF1
+dGhvcml0eTALBgNVHQ8EBAMCBaAwPAYJKwYBBAGCNxUHBC8wLQYlKwYBBAGCNxUI
+g+v5BoK1j0eNkROCp58GguHddCKCxphfgtj9DwIBZAIBEjATBgNVHSUEDDAKBggr
+BgEFBQcDATAbBgkrBgEEAYI3FQoEDjAMMAoGCCsGAQUFBwMBMA0GCSqGSIb3DQEB
+CwUAA4IBAQBicj3sAYJZTkjNo+HcqhPGDSA8vJ3rTEvDDqcaNiWlfPFaXLNBxfk2
+aKuV6Ibf1nSE9lfrpqVz+RwKCrtc4jXx9lO6BkgAuG7H2h6Tg53TbYPUJnr5ynwi
+jRlOacsJFvj5c6MLoM0Jrdw9ozd8UVjbqHTWo9iClPOGm9GX3FSc21bUWkSlp/Re
+MeWXKhMhCtKdWPqQGYIW3skpUYzhgGTDdEaUvXFYK79Pud7mxS1761P1qt7s1Axo
+61dvEM9gwtPuqcARkrwMroAqUhPmda71sndN3Z1CAh1khviyowwA2dZdxdT8ZqZy
+01+dEnuNx6BtEq8aht+M2u01BOXiqj1U
+]
+2025-10-16 17:47:21,844 [http-nio-8888-exec-4] - [DEBUG] - com.cifrado.controller.CifradoController: 2.- Resultado cifrado AES ( Subcadena2 ) [qTdXL/HoayEg9GYaBVuaWoR3AqcdLvMVpUkhx+FF/gt1fiRJLBLcD0GMAb1L6cu82ztjsTP7VWww9Mlwcezp7ZwKG0S3Ai4QywsJ5pf/4Kp4X8ugPUzT+uRcPGXPZwZA2GKs8dwRB3fRhc52WAQ4R005KSE9HKlD9cnAZxSJgDsdX9YyR84/AgCNOZZsu8Bi26GOt2Y5ErAuhHp80DOF7EYEgAe5QqasOJTkxwyQeA4ThQBlEQeZLs3ZGbOr3Aa/iJi4Bem8Htn7ztzSG0ivr3xn0GkFhVsWAqVshXkkYKNg7n7cMQDkJuQvZes8mjvI8q65vUKBeZCnVSg3+Mv/9z0lKjbFMo+CztgnvJDVqGxSaihRALXU0QmRQIRAPrScfxwtOg2Z+9EzEbpap5fdznKg1pZ8bqKhX/MD++Kb34sX6OWHrw==]
+2025-10-16 17:47:21,848 [http-nio-8888-exec-4] - [DEBUG] - com.cifrado.controller.CifradoController: 3.- Prueba decifrado AES (JSON Datos) [{"merchantId":"9709884","name":"ANGIE","password":"Mar?toN2!5","mode":"PRD","controlNumber":"REF1760636839","terminalId":"97098841","amount":"4.00","merchantName":"INSCRIP MARATHON MTY","merchantCity":"Monterrey","lang":"ES","customerRef1":"NA","customerRef2":"NA","customerRef3":"NA","customerRef4":"NA","customerRef5":"NA"}]
+
+------------ JSON a utilizar en el servicio de Descifrado ------------
+{
+    "vi": "66643571366b7061797a74366637326f",
+    "salt": "7738676b7a763271716f6d7670726e6b",
+    "passphrase": "A3fOr)Qk=dSOBis&",
+    "cypherData": "Sustituir_por_el_valor_de_cadena_cifrada_(data)_de_la_respuesta_de_VCE"
+}
+----------------------------------------------------------------------
+
+2025-10-16 17:47:21,849 [http-nio-8888-exec-4] - [DEBUG] - com.cifrado.controller.CifradoController: 4.- AES Llaves Generada [66643571366b7061797a74366637326f::7738676b7a763271716f6d7670726e6b::A3fOr)Qk=dSOBis&]
+2025-10-16 17:47:21,849 [http-nio-8888-exec-4] - [DEBUG] - com.cifrado.controller.CifradoController: -
+2025-10-16 17:47:21,854 [http-nio-8888-exec-4] - [DEBUG] - com.cifrado.utils.CifradoRSA: RSA Encrypt Provider: [SunJCE], [RSA/ECB/OAEPWITHSHA-256ANDMGF1PADDING]
+2025-10-16 17:47:21,854 [http-nio-8888-exec-4] - [DEBUG] - com.cifrado.controller.CifradoController: 5.- Resultado cifrado de Llaves AES ( Subcadena1 ) [grE6m/3JdejakbN2NUVYG4Id41Cwd6JZJob+DxZCmf1qSes/Iurpe9SsK0f3rJX4pHhH+Z9G98k9FDcj2Y6zmiQ7DPMZVXes/iM6VPYr0BOEpXJ74x+ZtnayWlqH4doqIXHxaAN1XOB8rouFPCBHNPg949IMK0DDZjkqkRha2e89J0RXLBehUBkGY47YTz1WF3YifeFWeAi8jdN5lpD3L//4AXrLIWC/g1b4VmIsngKuIup/8UlXEUcevYT6S+CbAm/DDHyEoM8WbPM+A+g1YZeCm7EnHwVhLdaRYvIGWrZck8rVQ+Phy34YDUyNSgU82AlZ9vxk4DCrkIFAUxK0zQ==]
+2025-10-16 17:47:21,854 [http-nio-8888-exec-4] - [DEBUG] - com.cifrado.controller.CifradoController: Cadena para enviar al Orquestador (Subcadena1:::Subcadena2) [grE6m/3JdejakbN2NUVYG4Id41Cwd6JZJob+DxZCmf1qSes/Iurpe9SsK0f3rJX4pHhH+Z9G98k9FDcj2Y6zmiQ7DPMZVXes/iM6VPYr0BOEpXJ74x+ZtnayWlqH4doqIXHxaAN1XOB8rouFPCBHNPg949IMK0DDZjkqkRha2e89J0RXLBehUBkGY47YTz1WF3YifeFWeAi8jdN5lpD3L//4AXrLIWC/g1b4VmIsngKuIup/8UlXEUcevYT6S+CbAm/DDHyEoM8WbPM+A+g1YZeCm7EnHwVhLdaRYvIGWrZck8rVQ+Phy34YDUyNSgU82AlZ9vxk4DCrkIFAUxK0zQ==:::qTdXL/HoayEg9GYaBVuaWoR3AqcdLvMVpUkhx+FF/gt1fiRJLBLcD0GMAb1L6cu82ztjsTP7VWww9Mlwcezp7ZwKG0S3Ai4QywsJ5pf/4Kp4X8ugPUzT+uRcPGXPZwZA2GKs8dwRB3fRhc52WAQ4R005KSE9HKlD9cnAZxSJgDsdX9YyR84/AgCNOZZsu8Bi26GOt2Y5ErAuhHp80DOF7EYEgAe5QqasOJTkxwyQeA4ThQBlEQeZLs3ZGbOr3Aa/iJi4Bem8Htn7ztzSG0ivr3xn0GkFhVsWAqVshXkkYKNg7n7cMQDkJuQvZes8mjvI8q65vUKBeZCnVSg3+Mv/9z0lKjbFMo+CztgnvJDVqGxSaihRALXU0QmRQIRAPrScfxwtOg2Z+9EzEbpap5fdznKg1pZ8bqKhX/MD++Kb34sX6OWHrw==]
+
+----------------------------------------------------------------------
+----------------------------- wsCifrado ------------------------------
+----------------------------------------------------------------------
+
+2025-10-16 17:47:33,563 [http-nio-8888-exec-6] - [DEBUG] - com.cifrado.controller.CifradoController: Obteniendo Base64 (JSON Datos) [eyJtZXJjaGFudElkIjoiOTcwOTg4NCIsIm5hbWUiOiJBTkdJRSIsInBhc3N3b3JkIjoiTWFyP3RvTjIhNSIsIm1vZGUiOiJQUkQiLCJjb250cm9sTnVtYmVyIjoiUkVGMTc2MDYzNjg1MSIsInRlcm1pbmFsSWQiOiI5NzA5ODg0MSIsImFtb3VudCI6IjIwLjAwIiwibWVyY2hhbnROYW1lIjoiSU5TQ1JJUCBNQVJBVEhPTiBNVFkiLCJtZXJjaGFudENpdHkiOiJNb250ZXJyZXkiLCJsYW5nIjoiRVMiLCJjdXN0b21lclJlZjEiOiJOQSIsImN1c3RvbWVyUmVmMiI6Ik5BIiwiY3VzdG9tZXJSZWYzIjoiTkEiLCJjdXN0b21lclJlZjQiOiJOQSIsImN1c3RvbWVyUmVmNSI6Ik5BIn0=]... 
+2025-10-16 17:47:33,564 [http-nio-8888-exec-6] - [DEBUG] - com.cifrado.controller.CifradoController: Resultado Decodificado de Base64 (JSON Datos) [{"merchantId":"9709884","name":"ANGIE","password":"Mar?toN2!5","mode":"PRD","controlNumber":"REF1760636851","terminalId":"97098841","amount":"20.00","merchantName":"INSCRIP MARATHON MTY","merchantCity":"Monterrey","lang":"ES","customerRef1":"NA","customerRef2":"NA","customerRef3":"NA","customerRef4":"NA","customerRef5":"NA"}]
+
+2025-10-16 17:47:33,564 [http-nio-8888-exec-6] - [DEBUG] - com.cifrado.controller.CifradoController: 1.- Se cifrará JSON Datos con la llave pública -> [MIIGdDCCBVygAwIBAgITFwABTnQA5m6Udb1vlQABAAFOdDANBgkqhkiG9w0BAQsF
+ADB5MQswCQYDVQQGEwJNWDEZMBcGCgmSJomT8ixkARkWCWdmYmFub3J0ZTEeMBwG
+A1UEChMVU2VndXJpZGFkIGluZm9ybWF0aWNhMS8wLQYDVQQDEyZHcnVwbyBGaW5h
+bmNpZXJvIEJhbm9ydGUgQ0EgRW50ZXJwcmlzZTAeFw0yNTAyMjEyMDAwMzVaFw0y
+NjAyMjEyMDAwMzVaMIGoMQswCQYDVQQGEwJNWDELMAkGA1UECBMCREYxDzANBgNV
+BAcTBk1leGljbzErMCkGA1UEChMiR3J1cG8gRmluYW5jaWVybyBCYW5vcnRlIFNB
+QiBkZSBDVjEkMCIGA1UECxMbU2VndXJpZGFkIGRlIGxhIEluZm9ybWFjaW9uMSgw
+JgYDVQQDEx9tdWx0aWNvYnJvc2tleS51bml4LmJhbm9ydGUuY29tMIIBIjANBgkq
+hkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvp69wp3Z6ZXCHS+OQ2k8H26dWwuF/cSv
+f37YT7NYfz4YvvXeahNv0CCStL5tATSoYj8MDKzNbwidXq/7e6JQpV1bcZjYXcjL
+qli0GrOaJ00wUdR3zFS5F85Ks7ycTW6wNl/n7X8QXFVAh+HJyO7yrKdopcPyNLfJ
+xBeXlvvuGfAKLJ7mCDdPN2UROg/35yLKil+VMB8OgF/KXEajmR0a+FiEe96+AkW3
+oWMslb9fXm8+Kc4IqXKTZQg52CHPlbSnY8vaBqZd0sH5W60NILFFXgNFXsQAHhUt
+njvcL+MY6NOHGeRYyrafP7Vwoog2kQiIUZafH/D1dWmB0r9qCv3VkQIDAQABo4IC
+wzCCAr8wMgYDVR0RBCswKYIKbG54c2lzYTAxcIIbbG54c2lzYTAxcC51bml4LmJh
+bm9ydGUuY29tMB0GA1UdDgQWBBR3lYj1Ic4B/MjmXVpM+fSAo3YxhTAfBgNVHSME
+GDAWgBTQBPbPr59ruX3bXiA0YK0zB6UM0zCB7QYDVR0fBIHlMIHiMIHfoIHcoIHZ
+hoHWbGRhcDovLy9DTj1HcnVwbyUyMEZpbmFuY2llcm8lMjBCYW5vcnRlJTIwQ0El
+MjBFbnRlcnByaXNlLENOPUNBLUJBTk9SVEUtUkEsQ049Q0RQLENOPVB1YmxpYyUy
+MEtleSUyMFNlcnZpY2VzLENOPVNlcnZpY2VzLENOPUNvbmZpZ3VyYXRpb24sREM9
+Z2ZiYW5vcnRlP2NlcnRpZmljYXRlUmV2b2NhdGlvbkxpc3Q/YmFzZT9vYmplY3RD
+bGFzcz1jUkxEaXN0cmlidXRpb25Qb2ludDCB2wYIKwYBBQUHAQEEgc4wgcswgcgG
+CCsGAQUFBzAChoG7bGRhcDovLy9DTj1HcnVwbyUyMEZpbmFuY2llcm8lMjBCYW5v
+cnRlJTIwQ0ElMjBFbnRlcnByaXNlLENOPUFJQSxDTj1QdWJsaWMlMjBLZXklMjBT
+ZXJ2aWNlcyxDTj1TZXJ2aWNlcyxDTj1Db25maWd1cmF0aW9uLERDPWdmYmFub3J0
+ZT9jQUNlcnRpZmljYXRlP2Jhc2U/b2JqZWN0Q2xhc3M9Y2VydGlmaWNhdGlvbkF1
+dGhvcml0eTALBgNVHQ8EBAMCBaAwPAYJKwYBBAGCNxUHBC8wLQYlKwYBBAGCNxUI
+g+v5BoK1j0eNkROCp58GguHddCKCxphfgtj9DwIBZAIBEjATBgNVHSUEDDAKBggr
+BgEFBQcDATAbBgkrBgEEAYI3FQoEDjAMMAoGCCsGAQUFBwMBMA0GCSqGSIb3DQEB
+CwUAA4IBAQBicj3sAYJZTkjNo+HcqhPGDSA8vJ3rTEvDDqcaNiWlfPFaXLNBxfk2
+aKuV6Ibf1nSE9lfrpqVz+RwKCrtc4jXx9lO6BkgAuG7H2h6Tg53TbYPUJnr5ynwi
+jRlOacsJFvj5c6MLoM0Jrdw9ozd8UVjbqHTWo9iClPOGm9GX3FSc21bUWkSlp/Re
+MeWXKhMhCtKdWPqQGYIW3skpUYzhgGTDdEaUvXFYK79Pud7mxS1761P1qt7s1Axo
+61dvEM9gwtPuqcARkrwMroAqUhPmda71sndN3Z1CAh1khviyowwA2dZdxdT8ZqZy
+01+dEnuNx6BtEq8aht+M2u01BOXiqj1U
+]
+2025-10-16 17:47:33,567 [http-nio-8888-exec-6] - [DEBUG] - com.cifrado.controller.CifradoController: 2.- Resultado cifrado AES ( Subcadena2 ) [qp/wWRPHQZfY21Epoj/j9/jmwDRWRN0J1J0u6Si/lzFNkTuFX5/i1amJmzjLagaetFS7mX2fpxxfoxwP6A3nllQosWr0swZLCuZr+69u6cKktT11ni6gBAXNMe/a1P2tUSUauzFiFScIHR8571KIM1gNTTIaSAg2Sfb3/dvRHEp65TVY+q2TP5sUsVps6nDX1B6l7vnFXVM89IbIvkarAgdFRv0sGJIicBiwyvnwj+ms4AxwFq0UAI8DfiOniM8sr05YtmCRp74zbZ+QmxJkGKUTm5XdqdFRz6gCZru6NSxzPnMy4gBWe0G89xpiJc1dAGPDUAoqp3ZPygkGu3qrNuaU9Nj37PQcScryQsHFBgQU18EduqslV9vNtgQkozGPrUuEQiHUuv4NB07kLgQwmpL+vySeM5t6sCAst+EgOPlhOXSylWg=]
+2025-10-16 17:47:33,570 [http-nio-8888-exec-6] - [DEBUG] - com.cifrado.controller.CifradoController: 3.- Prueba decifrado AES (JSON Datos) [{"merchantId":"9709884","name":"ANGIE","password":"Mar?toN2!5","mode":"PRD","controlNumber":"REF1760636851","terminalId":"97098841","amount":"20.00","merchantName":"INSCRIP MARATHON MTY","merchantCity":"Monterrey","lang":"ES","customerRef1":"NA","customerRef2":"NA","customerRef3":"NA","customerRef4":"NA","customerRef5":"NA"}]
+
+------------ JSON a utilizar en el servicio de Descifrado ------------
+{
+    "vi": "7833656c76356435636e686c396d6f75",
+    "salt": "76366575767878716f363735316b357a",
+    "passphrase": "VV5zC27bUNxVT!6k",
+    "cypherData": "Sustituir_por_el_valor_de_cadena_cifrada_(data)_de_la_respuesta_de_VCE"
+}
+----------------------------------------------------------------------
+
+2025-10-16 17:47:33,570 [http-nio-8888-exec-6] - [DEBUG] - com.cifrado.controller.CifradoController: 4.- AES Llaves Generada [7833656c76356435636e686c396d6f75::76366575767878716f363735316b357a::VV5zC27bUNxVT!6k]
+2025-10-16 17:47:33,570 [http-nio-8888-exec-6] - [DEBUG] - com.cifrado.controller.CifradoController: -
+2025-10-16 17:47:33,572 [http-nio-8888-exec-6] - [DEBUG] - com.cifrado.utils.CifradoRSA: RSA Encrypt Provider: [SunJCE], [RSA/ECB/OAEPWITHSHA-256ANDMGF1PADDING]
+2025-10-16 17:47:33,573 [http-nio-8888-exec-6] - [DEBUG] - com.cifrado.controller.CifradoController: 5.- Resultado cifrado de Llaves AES ( Subcadena1 ) [s8sDD8wpb95jtuhIAkoZiJ9L+SaNHS2Gu4Kcs9piejMk1iMjbcClUxmFD1BoZ0aKcQ/mspW4ncWqgL4wX9468hU3qrOfVCSo+UhzfA06s0YSBdmOBjJ5ZRo1PQ7bg5JsxXGbO/Wnn+fRko+0zHFl0ZW9vHTzEEPfpZ7a87Ig0xoLWRnv4c0UxIu1gkvk1xxwPFYtyuuN0b/c/sHmMu7wn9njA3Etw9gkrgZcedo4qdRUcrSebXhOB0KQrUa1Bo+0yFinol3GAvMBBiEiwrBkWA8ZhlbEiReDeNY2F4m/+nK8xOXBN2onhZ+gQ7elN5SWJEC+vNQKhhhTN9oNtsNZYg==]
+2025-10-16 17:47:33,573 [http-nio-8888-exec-6] - [DEBUG] - com.cifrado.controller.CifradoController: Cadena para enviar al Orquestador (Subcadena1:::Subcadena2) [s8sDD8wpb95jtuhIAkoZiJ9L+SaNHS2Gu4Kcs9piejMk1iMjbcClUxmFD1BoZ0aKcQ/mspW4ncWqgL4wX9468hU3qrOfVCSo+UhzfA06s0YSBdmOBjJ5ZRo1PQ7bg5JsxXGbO/Wnn+fRko+0zHFl0ZW9vHTzEEPfpZ7a87Ig0xoLWRnv4c0UxIu1gkvk1xxwPFYtyuuN0b/c/sHmMu7wn9njA3Etw9gkrgZcedo4qdRUcrSebXhOB0KQrUa1Bo+0yFinol3GAvMBBiEiwrBkWA8ZhlbEiReDeNY2F4m/+nK8xOXBN2onhZ+gQ7elN5SWJEC+vNQKhhhTN9oNtsNZYg==:::qp/wWRPHQZfY21Epoj/j9/jmwDRWRN0J1J0u6Si/lzFNkTuFX5/i1amJmzjLagaetFS7mX2fpxxfoxwP6A3nllQosWr0swZLCuZr+69u6cKktT11ni6gBAXNMe/a1P2tUSUauzFiFScIHR8571KIM1gNTTIaSAg2Sfb3/dvRHEp65TVY+q2TP5sUsVps6nDX1B6l7vnFXVM89IbIvkarAgdFRv0sGJIicBiwyvnwj+ms4AxwFq0UAI8DfiOniM8sr05YtmCRp74zbZ+QmxJkGKUTm5XdqdFRz6gCZru6NSxzPnMy4gBWe0G89xpiJc1dAGPDUAoqp3ZPygkGu3qrNuaU9Nj37PQcScryQsHFBgQU18EduqslV9vNtgQkozGPrUuEQiHUuv4NB07kLgQwmpL+vySeM5t6sCAst+EgOPlhOXSylWg=]
+
+----------------------------------------------------------------------
+----------------------------- wsCifrado ------------------------------
+----------------------------------------------------------------------
+
+2025-10-16 17:51:19,422 [http-nio-8888-exec-8] - [DEBUG] - com.cifrado.controller.CifradoController: Obteniendo Base64 (JSON Datos) [eyJtZXJjaGFudElkIjoiOTcwOTg4NCIsIm5hbWUiOiJBTkdJRSIsInBhc3N3b3JkIjoiTWFyP3RvTjIhNSIsIm1vZGUiOiJQUkQiLCJjb250cm9sTnVtYmVyIjoiUkVGMTc2MDYzNzA3MiIsInRlcm1pbmFsSWQiOiI5NzA5ODg0MSIsImFtb3VudCI6IjEyMjAuMDAiLCJtZXJjaGFudE5hbWUiOiJJTlNDUklQIE1BUkFUSE9OIE1UWSIsIm1lcmNoYW50Q2l0eSI6Ik1vbnRlcnJleSIsImxhbmciOiJFUyIsImN1c3RvbWVyUmVmMSI6Ik5BIiwiY3VzdG9tZXJSZWYyIjoiTkEiLCJjdXN0b21lclJlZjMiOiJOQSIsImN1c3RvbWVyUmVmNCI6Ik5BIiwiY3VzdG9tZXJSZWY1IjoiTkEifQ==]... 
+2025-10-16 17:51:19,423 [http-nio-8888-exec-8] - [DEBUG] - com.cifrado.controller.CifradoController: Resultado Decodificado de Base64 (JSON Datos) [{"merchantId":"9709884","name":"ANGIE","password":"Mar?toN2!5","mode":"PRD","controlNumber":"REF1760637072","terminalId":"97098841","amount":"1220.00","merchantName":"INSCRIP MARATHON MTY","merchantCity":"Monterrey","lang":"ES","customerRef1":"NA","customerRef2":"NA","customerRef3":"NA","customerRef4":"NA","customerRef5":"NA"}]
+
+2025-10-16 17:51:19,423 [http-nio-8888-exec-8] - [DEBUG] - com.cifrado.controller.CifradoController: 1.- Se cifrará JSON Datos con la llave pública -> [MIIGdDCCBVygAwIBAgITFwABTnQA5m6Udb1vlQABAAFOdDANBgkqhkiG9w0BAQsF
+ADB5MQswCQYDVQQGEwJNWDEZMBcGCgmSJomT8ixkARkWCWdmYmFub3J0ZTEeMBwG
+A1UEChMVU2VndXJpZGFkIGluZm9ybWF0aWNhMS8wLQYDVQQDEyZHcnVwbyBGaW5h
+bmNpZXJvIEJhbm9ydGUgQ0EgRW50ZXJwcmlzZTAeFw0yNTAyMjEyMDAwMzVaFw0y
+NjAyMjEyMDAwMzVaMIGoMQswCQYDVQQGEwJNWDELMAkGA1UECBMCREYxDzANBgNV
+BAcTBk1leGljbzErMCkGA1UEChMiR3J1cG8gRmluYW5jaWVybyBCYW5vcnRlIFNB
+QiBkZSBDVjEkMCIGA1UECxMbU2VndXJpZGFkIGRlIGxhIEluZm9ybWFjaW9uMSgw
+JgYDVQQDEx9tdWx0aWNvYnJvc2tleS51bml4LmJhbm9ydGUuY29tMIIBIjANBgkq
+hkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvp69wp3Z6ZXCHS+OQ2k8H26dWwuF/cSv
+f37YT7NYfz4YvvXeahNv0CCStL5tATSoYj8MDKzNbwidXq/7e6JQpV1bcZjYXcjL
+qli0GrOaJ00wUdR3zFS5F85Ks7ycTW6wNl/n7X8QXFVAh+HJyO7yrKdopcPyNLfJ
+xBeXlvvuGfAKLJ7mCDdPN2UROg/35yLKil+VMB8OgF/KXEajmR0a+FiEe96+AkW3
+oWMslb9fXm8+Kc4IqXKTZQg52CHPlbSnY8vaBqZd0sH5W60NILFFXgNFXsQAHhUt
+njvcL+MY6NOHGeRYyrafP7Vwoog2kQiIUZafH/D1dWmB0r9qCv3VkQIDAQABo4IC
+wzCCAr8wMgYDVR0RBCswKYIKbG54c2lzYTAxcIIbbG54c2lzYTAxcC51bml4LmJh
+bm9ydGUuY29tMB0GA1UdDgQWBBR3lYj1Ic4B/MjmXVpM+fSAo3YxhTAfBgNVHSME
+GDAWgBTQBPbPr59ruX3bXiA0YK0zB6UM0zCB7QYDVR0fBIHlMIHiMIHfoIHcoIHZ
+hoHWbGRhcDovLy9DTj1HcnVwbyUyMEZpbmFuY2llcm8lMjBCYW5vcnRlJTIwQ0El
+MjBFbnRlcnByaXNlLENOPUNBLUJBTk9SVEUtUkEsQ049Q0RQLENOPVB1YmxpYyUy
+MEtleSUyMFNlcnZpY2VzLENOPVNlcnZpY2VzLENOPUNvbmZpZ3VyYXRpb24sREM9
+Z2ZiYW5vcnRlP2NlcnRpZmljYXRlUmV2b2NhdGlvbkxpc3Q/YmFzZT9vYmplY3RD
+bGFzcz1jUkxEaXN0cmlidXRpb25Qb2ludDCB2wYIKwYBBQUHAQEEgc4wgcswgcgG
+CCsGAQUFBzAChoG7bGRhcDovLy9DTj1HcnVwbyUyMEZpbmFuY2llcm8lMjBCYW5v
+cnRlJTIwQ0ElMjBFbnRlcnByaXNlLENOPUFJQSxDTj1QdWJsaWMlMjBLZXklMjBT
+ZXJ2aWNlcyxDTj1TZXJ2aWNlcyxDTj1Db25maWd1cmF0aW9uLERDPWdmYmFub3J0
+ZT9jQUNlcnRpZmljYXRlP2Jhc2U/b2JqZWN0Q2xhc3M9Y2VydGlmaWNhdGlvbkF1
+dGhvcml0eTALBgNVHQ8EBAMCBaAwPAYJKwYBBAGCNxUHBC8wLQYlKwYBBAGCNxUI
+g+v5BoK1j0eNkROCp58GguHddCKCxphfgtj9DwIBZAIBEjATBgNVHSUEDDAKBggr
+BgEFBQcDATAbBgkrBgEEAYI3FQoEDjAMMAoGCCsGAQUFBwMBMA0GCSqGSIb3DQEB
+CwUAA4IBAQBicj3sAYJZTkjNo+HcqhPGDSA8vJ3rTEvDDqcaNiWlfPFaXLNBxfk2
+aKuV6Ibf1nSE9lfrpqVz+RwKCrtc4jXx9lO6BkgAuG7H2h6Tg53TbYPUJnr5ynwi
+jRlOacsJFvj5c6MLoM0Jrdw9ozd8UVjbqHTWo9iClPOGm9GX3FSc21bUWkSlp/Re
+MeWXKhMhCtKdWPqQGYIW3skpUYzhgGTDdEaUvXFYK79Pud7mxS1761P1qt7s1Axo
+61dvEM9gwtPuqcARkrwMroAqUhPmda71sndN3Z1CAh1khviyowwA2dZdxdT8ZqZy
+01+dEnuNx6BtEq8aht+M2u01BOXiqj1U
+]
+2025-10-16 17:51:19,426 [http-nio-8888-exec-8] - [DEBUG] - com.cifrado.controller.CifradoController: 2.- Resultado cifrado AES ( Subcadena2 ) [m8OXLDSO8GjOCA6nAvViJ6wWhGscPFXqUriUibnO/ZjqQ/2oheS31VodNnTEQp3GTGMVexSPExcg9ADQ6AHI48zWkqEBxTqrjh/1TAv7mzXjcynY23L3QTdm9Y16JXFr5GdCisRfokHck8CYHz7zvWKnOp9egYVmL7Pna/W23A78kiW4GRTZh4TEb3aHiW/skv6VHqkbNLMRYmhBxvCVFhncqgrwwMEKS/Oq0sRz2NdlYsQRo9airL3qccQXLOD5ecUvjhy+FRDw/inYYhUJvMFW64AUNsbgxcYizLPav0afz+AGep+6YS3yh0RehFr8O4xxoVJxlUSscLl3Mlecoy6Pd4eLH4ceiX/gAsfxdq/hh519D+j3+CF22KGtuei4v9aBgcovGvAmP4+tfqpqTVkqx0vbciQHSKNjcefsE4Xs33Pgf5rdqQ==]
+2025-10-16 17:51:19,428 [http-nio-8888-exec-8] - [DEBUG] - com.cifrado.controller.CifradoController: 3.- Prueba decifrado AES (JSON Datos) [{"merchantId":"9709884","name":"ANGIE","password":"Mar?toN2!5","mode":"PRD","controlNumber":"REF1760637072","terminalId":"97098841","amount":"1220.00","merchantName":"INSCRIP MARATHON MTY","merchantCity":"Monterrey","lang":"ES","customerRef1":"NA","customerRef2":"NA","customerRef3":"NA","customerRef4":"NA","customerRef5":"NA"}]
+
+------------ JSON a utilizar en el servicio de Descifrado ------------
+{
+    "vi": "306c396976706b6e7472347837643462",
+    "salt": "3064307a6b37746e676b766b76713878",
+    "passphrase": "U3&56LPcTIXyP/-m",
+    "cypherData": "Sustituir_por_el_valor_de_cadena_cifrada_(data)_de_la_respuesta_de_VCE"
+}
+----------------------------------------------------------------------
+
+2025-10-16 17:51:19,428 [http-nio-8888-exec-8] - [DEBUG] - com.cifrado.controller.CifradoController: 4.- AES Llaves Generada [306c396976706b6e7472347837643462::3064307a6b37746e676b766b76713878::U3&56LPcTIXyP/-m]
+2025-10-16 17:51:19,428 [http-nio-8888-exec-8] - [DEBUG] - com.cifrado.controller.CifradoController: -
+2025-10-16 17:51:19,430 [http-nio-8888-exec-8] - [DEBUG] - com.cifrado.utils.CifradoRSA: RSA Encrypt Provider: [SunJCE], [RSA/ECB/OAEPWITHSHA-256ANDMGF1PADDING]
+2025-10-16 17:51:19,430 [http-nio-8888-exec-8] - [DEBUG] - com.cifrado.controller.CifradoController: 5.- Resultado cifrado de Llaves AES ( Subcadena1 ) [CFReVy1T1OFJJMBMHV88bGeXPITg7djtcTa7YWnjJZYvY2H6ss0m6ReQLYdY+ztOdWfGDeM/Yqtxm7fC6RQhRZd9K7qPLLGN8c7TdfYgrBzI5YSO/nCHFiKpi2agfLmVZnNTa/JrIdanVip7ePF3xJL0iUnLg/YQSoI/cCsgs+ZJwxqiMD0WMGzYq6Pjf7Lukscn1srYnbfvSVNFUjhoovR5ViJENNCCmIxjaldMZZwBC1jAtMxZ2rYu05GZp5YAz4PXkU9YcfPQqaNUyV69D/xiBahAxG7dNtPHUet7V7GErBzYUwWpTKiwa4Hiy8xsUq1QATHGbCP4pYJ74uAwnA==]
+2025-10-16 17:51:19,430 [http-nio-8888-exec-8] - [DEBUG] - com.cifrado.controller.CifradoController: Cadena para enviar al Orquestador (Subcadena1:::Subcadena2) [CFReVy1T1OFJJMBMHV88bGeXPITg7djtcTa7YWnjJZYvY2H6ss0m6ReQLYdY+ztOdWfGDeM/Yqtxm7fC6RQhRZd9K7qPLLGN8c7TdfYgrBzI5YSO/nCHFiKpi2agfLmVZnNTa/JrIdanVip7ePF3xJL0iUnLg/YQSoI/cCsgs+ZJwxqiMD0WMGzYq6Pjf7Lukscn1srYnbfvSVNFUjhoovR5ViJENNCCmIxjaldMZZwBC1jAtMxZ2rYu05GZp5YAz4PXkU9YcfPQqaNUyV69D/xiBahAxG7dNtPHUet7V7GErBzYUwWpTKiwa4Hiy8xsUq1QATHGbCP4pYJ74uAwnA==:::m8OXLDSO8GjOCA6nAvViJ6wWhGscPFXqUriUibnO/ZjqQ/2oheS31VodNnTEQp3GTGMVexSPExcg9ADQ6AHI48zWkqEBxTqrjh/1TAv7mzXjcynY23L3QTdm9Y16JXFr5GdCisRfokHck8CYHz7zvWKnOp9egYVmL7Pna/W23A78kiW4GRTZh4TEb3aHiW/skv6VHqkbNLMRYmhBxvCVFhncqgrwwMEKS/Oq0sRz2NdlYsQRo9airL3qccQXLOD5ecUvjhy+FRDw/inYYhUJvMFW64AUNsbgxcYizLPav0afz+AGep+6YS3yh0RehFr8O4xxoVJxlUSscLl3Mlecoy6Pd4eLH4ceiX/gAsfxdq/hh519D+j3+CF22KGtuei4v9aBgcovGvAmP4+tfqpqTVkqx0vbciQHSKNjcefsE4Xs33Pgf5rdqQ==]
+
+----------------------------------------------------------------------
+----------------------------- wsCifrado ------------------------------
+----------------------------------------------------------------------
+
+2025-10-16 18:00:28,212 [http-nio-8888-exec-10] - [DEBUG] - com.cifrado.controller.CifradoController: Obteniendo Base64 (JSON Datos) [eyJtZXJjaGFudElkIjoiOTcwOTg4NCIsIm5hbWUiOiJBTkdJRSIsInBhc3N3b3JkIjoiTWFyP3RvTjIhNSIsIm1vZGUiOiJQUkQiLCJjb250cm9sTnVtYmVyIjoiUkVGMTc2MDYzNzYyMSIsInRlcm1pbmFsSWQiOiI5NzA5ODg0MSIsImFtb3VudCI6IjIwLjAwIiwibWVyY2hhbnROYW1lIjoiSU5TQ1JJUCBNQVJBVEhPTiBNVFkiLCJtZXJjaGFudENpdHkiOiJNb250ZXJyZXkiLCJsYW5nIjoiRVMiLCJjdXN0b21lclJlZjEiOiJOQSIsImN1c3RvbWVyUmVmMiI6Ik5BIiwiY3VzdG9tZXJSZWYzIjoiTkEiLCJjdXN0b21lclJlZjQiOiJOQSIsImN1c3RvbWVyUmVmNSI6Ik5BIn0=]... 
+2025-10-16 18:00:28,213 [http-nio-8888-exec-10] - [DEBUG] - com.cifrado.controller.CifradoController: Resultado Decodificado de Base64 (JSON Datos) [{"merchantId":"9709884","name":"ANGIE","password":"Mar?toN2!5","mode":"PRD","controlNumber":"REF1760637621","terminalId":"97098841","amount":"20.00","merchantName":"INSCRIP MARATHON MTY","merchantCity":"Monterrey","lang":"ES","customerRef1":"NA","customerRef2":"NA","customerRef3":"NA","customerRef4":"NA","customerRef5":"NA"}]
+
+2025-10-16 18:00:28,213 [http-nio-8888-exec-10] - [DEBUG] - com.cifrado.controller.CifradoController: 1.- Se cifrará JSON Datos con la llave pública -> [MIIGdDCCBVygAwIBAgITFwABTnQA5m6Udb1vlQABAAFOdDANBgkqhkiG9w0BAQsF
+ADB5MQswCQYDVQQGEwJNWDEZMBcGCgmSJomT8ixkARkWCWdmYmFub3J0ZTEeMBwG
+A1UEChMVU2VndXJpZGFkIGluZm9ybWF0aWNhMS8wLQYDVQQDEyZHcnVwbyBGaW5h
+bmNpZXJvIEJhbm9ydGUgQ0EgRW50ZXJwcmlzZTAeFw0yNTAyMjEyMDAwMzVaFw0y
+NjAyMjEyMDAwMzVaMIGoMQswCQYDVQQGEwJNWDELMAkGA1UECBMCREYxDzANBgNV
+BAcTBk1leGljbzErMCkGA1UEChMiR3J1cG8gRmluYW5jaWVybyBCYW5vcnRlIFNB
+QiBkZSBDVjEkMCIGA1UECxMbU2VndXJpZGFkIGRlIGxhIEluZm9ybWFjaW9uMSgw
+JgYDVQQDEx9tdWx0aWNvYnJvc2tleS51bml4LmJhbm9ydGUuY29tMIIBIjANBgkq
+hkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvp69wp3Z6ZXCHS+OQ2k8H26dWwuF/cSv
+f37YT7NYfz4YvvXeahNv0CCStL5tATSoYj8MDKzNbwidXq/7e6JQpV1bcZjYXcjL
+qli0GrOaJ00wUdR3zFS5F85Ks7ycTW6wNl/n7X8QXFVAh+HJyO7yrKdopcPyNLfJ
+xBeXlvvuGfAKLJ7mCDdPN2UROg/35yLKil+VMB8OgF/KXEajmR0a+FiEe96+AkW3
+oWMslb9fXm8+Kc4IqXKTZQg52CHPlbSnY8vaBqZd0sH5W60NILFFXgNFXsQAHhUt
+njvcL+MY6NOHGeRYyrafP7Vwoog2kQiIUZafH/D1dWmB0r9qCv3VkQIDAQABo4IC
+wzCCAr8wMgYDVR0RBCswKYIKbG54c2lzYTAxcIIbbG54c2lzYTAxcC51bml4LmJh
+bm9ydGUuY29tMB0GA1UdDgQWBBR3lYj1Ic4B/MjmXVpM+fSAo3YxhTAfBgNVHSME
+GDAWgBTQBPbPr59ruX3bXiA0YK0zB6UM0zCB7QYDVR0fBIHlMIHiMIHfoIHcoIHZ
+hoHWbGRhcDovLy9DTj1HcnVwbyUyMEZpbmFuY2llcm8lMjBCYW5vcnRlJTIwQ0El
+MjBFbnRlcnByaXNlLENOPUNBLUJBTk9SVEUtUkEsQ049Q0RQLENOPVB1YmxpYyUy
+MEtleSUyMFNlcnZpY2VzLENOPVNlcnZpY2VzLENOPUNvbmZpZ3VyYXRpb24sREM9
+Z2ZiYW5vcnRlP2NlcnRpZmljYXRlUmV2b2NhdGlvbkxpc3Q/YmFzZT9vYmplY3RD
+bGFzcz1jUkxEaXN0cmlidXRpb25Qb2ludDCB2wYIKwYBBQUHAQEEgc4wgcswgcgG
+CCsGAQUFBzAChoG7bGRhcDovLy9DTj1HcnVwbyUyMEZpbmFuY2llcm8lMjBCYW5v
+cnRlJTIwQ0ElMjBFbnRlcnByaXNlLENOPUFJQSxDTj1QdWJsaWMlMjBLZXklMjBT
+ZXJ2aWNlcyxDTj1TZXJ2aWNlcyxDTj1Db25maWd1cmF0aW9uLERDPWdmYmFub3J0
+ZT9jQUNlcnRpZmljYXRlP2Jhc2U/b2JqZWN0Q2xhc3M9Y2VydGlmaWNhdGlvbkF1
+dGhvcml0eTALBgNVHQ8EBAMCBaAwPAYJKwYBBAGCNxUHBC8wLQYlKwYBBAGCNxUI
+g+v5BoK1j0eNkROCp58GguHddCKCxphfgtj9DwIBZAIBEjATBgNVHSUEDDAKBggr
+BgEFBQcDATAbBgkrBgEEAYI3FQoEDjAMMAoGCCsGAQUFBwMBMA0GCSqGSIb3DQEB
+CwUAA4IBAQBicj3sAYJZTkjNo+HcqhPGDSA8vJ3rTEvDDqcaNiWlfPFaXLNBxfk2
+aKuV6Ibf1nSE9lfrpqVz+RwKCrtc4jXx9lO6BkgAuG7H2h6Tg53TbYPUJnr5ynwi
+jRlOacsJFvj5c6MLoM0Jrdw9ozd8UVjbqHTWo9iClPOGm9GX3FSc21bUWkSlp/Re
+MeWXKhMhCtKdWPqQGYIW3skpUYzhgGTDdEaUvXFYK79Pud7mxS1761P1qt7s1Axo
+61dvEM9gwtPuqcARkrwMroAqUhPmda71sndN3Z1CAh1khviyowwA2dZdxdT8ZqZy
+01+dEnuNx6BtEq8aht+M2u01BOXiqj1U
+]
+2025-10-16 18:00:28,216 [http-nio-8888-exec-10] - [DEBUG] - com.cifrado.controller.CifradoController: 2.- Resultado cifrado AES ( Subcadena2 ) [esqzFlI3cjZOSw3+Sk3IY473tHb+xiP7flSLjO3qGuPR/F9UN0DAIIwEGkWaB1RbueRtXr5LMGupLKIi2tcgR7tOxNy/WKYuoH3lWxxrDi/jzl4c4YWzMcobzqYQz3MUYMFnrhqxEraAmFgG4LsHztKQknttYNzW5KWJenkpgBCj03bcuHZGOMtuGSlRAWGgkSWrrWOFPk/JBkaboZ/lgCvCFF+M2u84w822PLi6KoE9dtd7iM7xeQizqkTadalw4sJSpM6YXWRiZTqwiDVCGo0p1gC3ml5PbBrj+3S6NCwS1tF6gjsSpFTjm0nrihafxjnfGpQBCJnPcuhoZIB7roJLffxj2pJiJjyBDZLRyBuCwYBbGjuawzs4CCo+duQIw6M4gwZ4N3MzkWTu31sQ86eMvFiYf52tC7FZYBLOVREIxK4esag=]
+2025-10-16 18:00:28,219 [http-nio-8888-exec-10] - [DEBUG] - com.cifrado.controller.CifradoController: 3.- Prueba decifrado AES (JSON Datos) [{"merchantId":"9709884","name":"ANGIE","password":"Mar?toN2!5","mode":"PRD","controlNumber":"REF1760637621","terminalId":"97098841","amount":"20.00","merchantName":"INSCRIP MARATHON MTY","merchantCity":"Monterrey","lang":"ES","customerRef1":"NA","customerRef2":"NA","customerRef3":"NA","customerRef4":"NA","customerRef5":"NA"}]
+
+------------ JSON a utilizar en el servicio de Descifrado ------------
+{
+    "vi": "75686b376d687173356478306775647a",
+    "salt": "69677578683465636e7a386e34363937",
+    "passphrase": "f5&G4I/x1vu?84uC",
+    "cypherData": "Sustituir_por_el_valor_de_cadena_cifrada_(data)_de_la_respuesta_de_VCE"
+}
+----------------------------------------------------------------------
+
+2025-10-16 18:00:28,219 [http-nio-8888-exec-10] - [DEBUG] - com.cifrado.controller.CifradoController: 4.- AES Llaves Generada [75686b376d687173356478306775647a::69677578683465636e7a386e34363937::f5&G4I/x1vu?84uC]
+2025-10-16 18:00:28,219 [http-nio-8888-exec-10] - [DEBUG] - com.cifrado.controller.CifradoController: -
+2025-10-16 18:00:28,223 [http-nio-8888-exec-10] - [DEBUG] - com.cifrado.utils.CifradoRSA: RSA Encrypt Provider: [SunJCE], [RSA/ECB/OAEPWITHSHA-256ANDMGF1PADDING]
+2025-10-16 18:00:28,224 [http-nio-8888-exec-10] - [DEBUG] - com.cifrado.controller.CifradoController: 5.- Resultado cifrado de Llaves AES ( Subcadena1 ) [l66HSmEap1c8zw3Vhf9E+o63l7VarI/kTJOGFwxJtPUnjHzqzx4gxYHsxEDlJ7fuAa4iA0xkjoASeF0JiBZSUrwq+r0+8iIe2wT6ia3s3jkxRxVUV8kktJmmrXxa7q3zssZ2PLCgQaD8fhiybix727gZ4ALZwLXeXWgErypC7Mrvm41JTy3o9Qauk1gPac0FxgAJdr2Vrlt6s+NSj2B/CrHMZLa92JUMJrITMXNGYyogd5ydzU/+Z2cK/BQkXLokmAm5OZCG8tZPPio0u9XtDFAkXQvP3siOO6ZdQ571wgchcFLtIJQlPIiIPJN0EN7Ft0XLssnNF5QWHEkM9Q/rdw==]
+2025-10-16 18:00:28,224 [http-nio-8888-exec-10] - [DEBUG] - com.cifrado.controller.CifradoController: Cadena para enviar al Orquestador (Subcadena1:::Subcadena2) [l66HSmEap1c8zw3Vhf9E+o63l7VarI/kTJOGFwxJtPUnjHzqzx4gxYHsxEDlJ7fuAa4iA0xkjoASeF0JiBZSUrwq+r0+8iIe2wT6ia3s3jkxRxVUV8kktJmmrXxa7q3zssZ2PLCgQaD8fhiybix727gZ4ALZwLXeXWgErypC7Mrvm41JTy3o9Qauk1gPac0FxgAJdr2Vrlt6s+NSj2B/CrHMZLa92JUMJrITMXNGYyogd5ydzU/+Z2cK/BQkXLokmAm5OZCG8tZPPio0u9XtDFAkXQvP3siOO6ZdQ571wgchcFLtIJQlPIiIPJN0EN7Ft0XLssnNF5QWHEkM9Q/rdw==:::esqzFlI3cjZOSw3+Sk3IY473tHb+xiP7flSLjO3qGuPR/F9UN0DAIIwEGkWaB1RbueRtXr5LMGupLKIi2tcgR7tOxNy/WKYuoH3lWxxrDi/jzl4c4YWzMcobzqYQz3MUYMFnrhqxEraAmFgG4LsHztKQknttYNzW5KWJenkpgBCj03bcuHZGOMtuGSlRAWGgkSWrrWOFPk/JBkaboZ/lgCvCFF+M2u84w822PLi6KoE9dtd7iM7xeQizqkTadalw4sJSpM6YXWRiZTqwiDVCGo0p1gC3ml5PbBrj+3S6NCwS1tF6gjsSpFTjm0nrihafxjnfGpQBCJnPcuhoZIB7roJLffxj2pJiJjyBDZLRyBuCwYBbGjuawzs4CCo+duQIw6M4gwZ4N3MzkWTu31sQ86eMvFiYf52tC7FZYBLOVREIxK4esag=]
+
+----------------------------------------------------------------------
+----------------------------- wsCifrado ------------------------------
+----------------------------------------------------------------------
+
+2025-10-16 18:16:06,232 [http-nio-8888-exec-2] - [DEBUG] - com.cifrado.controller.CifradoController: Obteniendo Base64 (JSON Datos) [eyJtZXJjaGFudElkIjoiOTcwOTg4NCIsIm5hbWUiOiJBTkdJRSIsInBhc3N3b3JkIjoiTWFyP3RvTjIhNSIsIm1vZGUiOiJQUkQiLCJjb250cm9sTnVtYmVyIjoiUkVGMTc2MDYzODU2NCIsInRlcm1pbmFsSWQiOiI5NzA5ODg0MSIsImFtb3VudCI6IjIwLjAwIiwibWVyY2hhbnROYW1lIjoiSU5TQ1JJUCBNQVJBVEhPTiBNVFkiLCJtZXJjaGFudENpdHkiOiJNb250ZXJyZXkiLCJsYW5nIjoiRVMiLCJjdXN0b21lclJlZjEiOiJOQSIsImN1c3RvbWVyUmVmMiI6Ik5BIiwiY3VzdG9tZXJSZWYzIjoiTkEiLCJjdXN0b21lclJlZjQiOiJOQSIsImN1c3RvbWVyUmVmNSI6Ik5BIn0=]... 
+2025-10-16 18:16:06,235 [http-nio-8888-exec-2] - [DEBUG] - com.cifrado.controller.CifradoController: Resultado Decodificado de Base64 (JSON Datos) [{"merchantId":"9709884","name":"ANGIE","password":"Mar?toN2!5","mode":"PRD","controlNumber":"REF1760638564","terminalId":"97098841","amount":"20.00","merchantName":"INSCRIP MARATHON MTY","merchantCity":"Monterrey","lang":"ES","customerRef1":"NA","customerRef2":"NA","customerRef3":"NA","customerRef4":"NA","customerRef5":"NA"}]
+
+2025-10-16 18:16:06,235 [http-nio-8888-exec-2] - [DEBUG] - com.cifrado.controller.CifradoController: 1.- Se cifrará JSON Datos con la llave pública -> [MIIGdDCCBVygAwIBAgITFwABTnQA5m6Udb1vlQABAAFOdDANBgkqhkiG9w0BAQsF
+ADB5MQswCQYDVQQGEwJNWDEZMBcGCgmSJomT8ixkARkWCWdmYmFub3J0ZTEeMBwG
+A1UEChMVU2VndXJpZGFkIGluZm9ybWF0aWNhMS8wLQYDVQQDEyZHcnVwbyBGaW5h
+bmNpZXJvIEJhbm9ydGUgQ0EgRW50ZXJwcmlzZTAeFw0yNTAyMjEyMDAwMzVaFw0y
+NjAyMjEyMDAwMzVaMIGoMQswCQYDVQQGEwJNWDELMAkGA1UECBMCREYxDzANBgNV
+BAcTBk1leGljbzErMCkGA1UEChMiR3J1cG8gRmluYW5jaWVybyBCYW5vcnRlIFNB
+QiBkZSBDVjEkMCIGA1UECxMbU2VndXJpZGFkIGRlIGxhIEluZm9ybWFjaW9uMSgw
+JgYDVQQDEx9tdWx0aWNvYnJvc2tleS51bml4LmJhbm9ydGUuY29tMIIBIjANBgkq
+hkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvp69wp3Z6ZXCHS+OQ2k8H26dWwuF/cSv
+f37YT7NYfz4YvvXeahNv0CCStL5tATSoYj8MDKzNbwidXq/7e6JQpV1bcZjYXcjL
+qli0GrOaJ00wUdR3zFS5F85Ks7ycTW6wNl/n7X8QXFVAh+HJyO7yrKdopcPyNLfJ
+xBeXlvvuGfAKLJ7mCDdPN2UROg/35yLKil+VMB8OgF/KXEajmR0a+FiEe96+AkW3
+oWMslb9fXm8+Kc4IqXKTZQg52CHPlbSnY8vaBqZd0sH5W60NILFFXgNFXsQAHhUt
+njvcL+MY6NOHGeRYyrafP7Vwoog2kQiIUZafH/D1dWmB0r9qCv3VkQIDAQABo4IC
+wzCCAr8wMgYDVR0RBCswKYIKbG54c2lzYTAxcIIbbG54c2lzYTAxcC51bml4LmJh
+bm9ydGUuY29tMB0GA1UdDgQWBBR3lYj1Ic4B/MjmXVpM+fSAo3YxhTAfBgNVHSME
+GDAWgBTQBPbPr59ruX3bXiA0YK0zB6UM0zCB7QYDVR0fBIHlMIHiMIHfoIHcoIHZ
+hoHWbGRhcDovLy9DTj1HcnVwbyUyMEZpbmFuY2llcm8lMjBCYW5vcnRlJTIwQ0El
+MjBFbnRlcnByaXNlLENOPUNBLUJBTk9SVEUtUkEsQ049Q0RQLENOPVB1YmxpYyUy
+MEtleSUyMFNlcnZpY2VzLENOPVNlcnZpY2VzLENOPUNvbmZpZ3VyYXRpb24sREM9
+Z2ZiYW5vcnRlP2NlcnRpZmljYXRlUmV2b2NhdGlvbkxpc3Q/YmFzZT9vYmplY3RD
+bGFzcz1jUkxEaXN0cmlidXRpb25Qb2ludDCB2wYIKwYBBQUHAQEEgc4wgcswgcgG
+CCsGAQUFBzAChoG7bGRhcDovLy9DTj1HcnVwbyUyMEZpbmFuY2llcm8lMjBCYW5v
+cnRlJTIwQ0ElMjBFbnRlcnByaXNlLENOPUFJQSxDTj1QdWJsaWMlMjBLZXklMjBT
+ZXJ2aWNlcyxDTj1TZXJ2aWNlcyxDTj1Db25maWd1cmF0aW9uLERDPWdmYmFub3J0
+ZT9jQUNlcnRpZmljYXRlP2Jhc2U/b2JqZWN0Q2xhc3M9Y2VydGlmaWNhdGlvbkF1
+dGhvcml0eTALBgNVHQ8EBAMCBaAwPAYJKwYBBAGCNxUHBC8wLQYlKwYBBAGCNxUI
+g+v5BoK1j0eNkROCp58GguHddCKCxphfgtj9DwIBZAIBEjATBgNVHSUEDDAKBggr
+BgEFBQcDATAbBgkrBgEEAYI3FQoEDjAMMAoGCCsGAQUFBwMBMA0GCSqGSIb3DQEB
+CwUAA4IBAQBicj3sAYJZTkjNo+HcqhPGDSA8vJ3rTEvDDqcaNiWlfPFaXLNBxfk2
+aKuV6Ibf1nSE9lfrpqVz+RwKCrtc4jXx9lO6BkgAuG7H2h6Tg53TbYPUJnr5ynwi
+jRlOacsJFvj5c6MLoM0Jrdw9ozd8UVjbqHTWo9iClPOGm9GX3FSc21bUWkSlp/Re
+MeWXKhMhCtKdWPqQGYIW3skpUYzhgGTDdEaUvXFYK79Pud7mxS1761P1qt7s1Axo
+61dvEM9gwtPuqcARkrwMroAqUhPmda71sndN3Z1CAh1khviyowwA2dZdxdT8ZqZy
+01+dEnuNx6BtEq8aht+M2u01BOXiqj1U
+]
+2025-10-16 18:16:06,242 [http-nio-8888-exec-2] - [DEBUG] - com.cifrado.controller.CifradoController: 2.- Resultado cifrado AES ( Subcadena2 ) [PVsfirTITkcSL+63iGFAZNNN8MuwTY+VcjvKm85ye7eVPY8zCk5k/s0hD6GEuySlxAZlw26HIRnPaz2PzuwN8gi1vXacibGxDIcGwBTcZwim4gYBD5e6zfmuv43hyVOVD8JqABelkiSbi/pPV5btymfgvDWvNuLgHZA4RfX3NwQ63qQLx6GbW/gb0/EBCk3cObBT7fplu5SLxWgWC53eY2i06o7f6xHAuzOiscTgEnSOqBJ+euTYWKkINz76J7ehjV++bec3XBMhH6i/J5geojkn59jdFxLmTBgbSK5EnG2xGGMlH/9cLqRqtvrcO2jrAXFzaM0el6g2xhpXXcuMsBd0R6nHDcz49M2E28H7B108rP5OmE7elkhRWtPPUvf3lFuKUrdCd7kYAlA2oC6ssfctePSESJEGSMv7LVaYLlNjptD18KA=]
+2025-10-16 18:16:06,244 [http-nio-8888-exec-2] - [DEBUG] - com.cifrado.controller.CifradoController: 3.- Prueba decifrado AES (JSON Datos) [{"merchantId":"9709884","name":"ANGIE","password":"Mar?toN2!5","mode":"PRD","controlNumber":"REF1760638564","terminalId":"97098841","amount":"20.00","merchantName":"INSCRIP MARATHON MTY","merchantCity":"Monterrey","lang":"ES","customerRef1":"NA","customerRef2":"NA","customerRef3":"NA","customerRef4":"NA","customerRef5":"NA"}]
+
+------------ JSON a utilizar en el servicio de Descifrado ------------
+{
+    "vi": "33366278737a72667136736e75687067",
+    "salt": "783172313461687a3177386e70763974",
+    "passphrase": "Ha!oc)xRmraSG=F)",
+    "cypherData": "Sustituir_por_el_valor_de_cadena_cifrada_(data)_de_la_respuesta_de_VCE"
+}
+----------------------------------------------------------------------
+
+2025-10-16 18:16:06,245 [http-nio-8888-exec-2] - [DEBUG] - com.cifrado.controller.CifradoController: 4.- AES Llaves Generada [33366278737a72667136736e75687067::783172313461687a3177386e70763974::Ha!oc)xRmraSG=F)]
+2025-10-16 18:16:06,245 [http-nio-8888-exec-2] - [DEBUG] - com.cifrado.controller.CifradoController: -
+2025-10-16 18:16:06,250 [http-nio-8888-exec-2] - [DEBUG] - com.cifrado.utils.CifradoRSA: RSA Encrypt Provider: [SunJCE], [RSA/ECB/OAEPWITHSHA-256ANDMGF1PADDING]
+2025-10-16 18:16:06,251 [http-nio-8888-exec-2] - [DEBUG] - com.cifrado.controller.CifradoController: 5.- Resultado cifrado de Llaves AES ( Subcadena1 ) [tF+xrnj1WZCWIsap9WjOTCZBQdjF6BxznlMfUBKOzCSj87A/JTqt6bkqTzNv/X7iBachIcPeb5RX2wffPM3icnD7G+VHWf0u/Q2Tbyp8kBlnyAcd7woC+EMh8BQj2QQoIF+7ttP+eSdtkFglJz4rO4lGizCFaCTgHtTKJrQehlsFHzi087Mkr7o9BGs6DZtMS8ZKcJimH8dS/iO6S52ipY9tO9yugcdiXI2wjkYf/9XPIQ3+Xt49Hi8MRiBQhVtBjULNljGruLfGHktb4b2zq4C/ZJAPZj7wXKThFfEpZ6DIuy4WvhNW6VqiAcsUaO3+b8axLNJp4AEPDgNS0c6ozQ==]
+2025-10-16 18:16:06,251 [http-nio-8888-exec-2] - [DEBUG] - com.cifrado.controller.CifradoController: Cadena para enviar al Orquestador (Subcadena1:::Subcadena2) [tF+xrnj1WZCWIsap9WjOTCZBQdjF6BxznlMfUBKOzCSj87A/JTqt6bkqTzNv/X7iBachIcPeb5RX2wffPM3icnD7G+VHWf0u/Q2Tbyp8kBlnyAcd7woC+EMh8BQj2QQoIF+7ttP+eSdtkFglJz4rO4lGizCFaCTgHtTKJrQehlsFHzi087Mkr7o9BGs6DZtMS8ZKcJimH8dS/iO6S52ipY9tO9yugcdiXI2wjkYf/9XPIQ3+Xt49Hi8MRiBQhVtBjULNljGruLfGHktb4b2zq4C/ZJAPZj7wXKThFfEpZ6DIuy4WvhNW6VqiAcsUaO3+b8axLNJp4AEPDgNS0c6ozQ==:::PVsfirTITkcSL+63iGFAZNNN8MuwTY+VcjvKm85ye7eVPY8zCk5k/s0hD6GEuySlxAZlw26HIRnPaz2PzuwN8gi1vXacibGxDIcGwBTcZwim4gYBD5e6zfmuv43hyVOVD8JqABelkiSbi/pPV5btymfgvDWvNuLgHZA4RfX3NwQ63qQLx6GbW/gb0/EBCk3cObBT7fplu5SLxWgWC53eY2i06o7f6xHAuzOiscTgEnSOqBJ+euTYWKkINz76J7ehjV++bec3XBMhH6i/J5geojkn59jdFxLmTBgbSK5EnG2xGGMlH/9cLqRqtvrcO2jrAXFzaM0el6g2xhpXXcuMsBd0R6nHDcz49M2E28H7B108rP5OmE7elkhRWtPPUvf3lFuKUrdCd7kYAlA2oC6ssfctePSESJEGSMv7LVaYLlNjptD18KA=]
+
+----------------------------------------------------------------------
+----------------------------- wsCifrado ------------------------------
+----------------------------------------------------------------------
+
+2025-10-16 18:16:20,701 [http-nio-8888-exec-4] - [DEBUG] - com.cifrado.controller.CifradoController: Obteniendo Base64 (JSON Datos) [eyJtZXJjaGFudElkIjoiOTcwOTg4NCIsIm5hbWUiOiJBTkdJRSIsInBhc3N3b3JkIjoiTWFyP3RvTjIhNSIsIm1vZGUiOiJQUkQiLCJjb250cm9sTnVtYmVyIjoiUkVGMTc2MDYzODU3OCIsInRlcm1pbmFsSWQiOiI5NzA5ODg0MSIsImFtb3VudCI6IjIwLjAwIiwibWVyY2hhbnROYW1lIjoiSU5TQ1JJUCBNQVJBVEhPTiBNVFkiLCJtZXJjaGFudENpdHkiOiJNb250ZXJyZXkiLCJsYW5nIjoiRVMiLCJjdXN0b21lclJlZjEiOiJOQSIsImN1c3RvbWVyUmVmMiI6Ik5BIiwiY3VzdG9tZXJSZWYzIjoiTkEiLCJjdXN0b21lclJlZjQiOiJOQSIsImN1c3RvbWVyUmVmNSI6Ik5BIn0=]... 
+2025-10-16 18:16:20,701 [http-nio-8888-exec-4] - [DEBUG] - com.cifrado.controller.CifradoController: Resultado Decodificado de Base64 (JSON Datos) [{"merchantId":"9709884","name":"ANGIE","password":"Mar?toN2!5","mode":"PRD","controlNumber":"REF1760638578","terminalId":"97098841","amount":"20.00","merchantName":"INSCRIP MARATHON MTY","merchantCity":"Monterrey","lang":"ES","customerRef1":"NA","customerRef2":"NA","customerRef3":"NA","customerRef4":"NA","customerRef5":"NA"}]
+
+2025-10-16 18:16:20,701 [http-nio-8888-exec-4] - [DEBUG] - com.cifrado.controller.CifradoController: 1.- Se cifrará JSON Datos con la llave pública -> [MIIGdDCCBVygAwIBAgITFwABTnQA5m6Udb1vlQABAAFOdDANBgkqhkiG9w0BAQsF
+ADB5MQswCQYDVQQGEwJNWDEZMBcGCgmSJomT8ixkARkWCWdmYmFub3J0ZTEeMBwG
+A1UEChMVU2VndXJpZGFkIGluZm9ybWF0aWNhMS8wLQYDVQQDEyZHcnVwbyBGaW5h
+bmNpZXJvIEJhbm9ydGUgQ0EgRW50ZXJwcmlzZTAeFw0yNTAyMjEyMDAwMzVaFw0y
+NjAyMjEyMDAwMzVaMIGoMQswCQYDVQQGEwJNWDELMAkGA1UECBMCREYxDzANBgNV
+BAcTBk1leGljbzErMCkGA1UEChMiR3J1cG8gRmluYW5jaWVybyBCYW5vcnRlIFNB
+QiBkZSBDVjEkMCIGA1UECxMbU2VndXJpZGFkIGRlIGxhIEluZm9ybWFjaW9uMSgw
+JgYDVQQDEx9tdWx0aWNvYnJvc2tleS51bml4LmJhbm9ydGUuY29tMIIBIjANBgkq
+hkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvp69wp3Z6ZXCHS+OQ2k8H26dWwuF/cSv
+f37YT7NYfz4YvvXeahNv0CCStL5tATSoYj8MDKzNbwidXq/7e6JQpV1bcZjYXcjL
+qli0GrOaJ00wUdR3zFS5F85Ks7ycTW6wNl/n7X8QXFVAh+HJyO7yrKdopcPyNLfJ
+xBeXlvvuGfAKLJ7mCDdPN2UROg/35yLKil+VMB8OgF/KXEajmR0a+FiEe96+AkW3
+oWMslb9fXm8+Kc4IqXKTZQg52CHPlbSnY8vaBqZd0sH5W60NILFFXgNFXsQAHhUt
+njvcL+MY6NOHGeRYyrafP7Vwoog2kQiIUZafH/D1dWmB0r9qCv3VkQIDAQABo4IC
+wzCCAr8wMgYDVR0RBCswKYIKbG54c2lzYTAxcIIbbG54c2lzYTAxcC51bml4LmJh
+bm9ydGUuY29tMB0GA1UdDgQWBBR3lYj1Ic4B/MjmXVpM+fSAo3YxhTAfBgNVHSME
+GDAWgBTQBPbPr59ruX3bXiA0YK0zB6UM0zCB7QYDVR0fBIHlMIHiMIHfoIHcoIHZ
+hoHWbGRhcDovLy9DTj1HcnVwbyUyMEZpbmFuY2llcm8lMjBCYW5vcnRlJTIwQ0El
+MjBFbnRlcnByaXNlLENOPUNBLUJBTk9SVEUtUkEsQ049Q0RQLENOPVB1YmxpYyUy
+MEtleSUyMFNlcnZpY2VzLENOPVNlcnZpY2VzLENOPUNvbmZpZ3VyYXRpb24sREM9
+Z2ZiYW5vcnRlP2NlcnRpZmljYXRlUmV2b2NhdGlvbkxpc3Q/YmFzZT9vYmplY3RD
+bGFzcz1jUkxEaXN0cmlidXRpb25Qb2ludDCB2wYIKwYBBQUHAQEEgc4wgcswgcgG
+CCsGAQUFBzAChoG7bGRhcDovLy9DTj1HcnVwbyUyMEZpbmFuY2llcm8lMjBCYW5v
+cnRlJTIwQ0ElMjBFbnRlcnByaXNlLENOPUFJQSxDTj1QdWJsaWMlMjBLZXklMjBT
+ZXJ2aWNlcyxDTj1TZXJ2aWNlcyxDTj1Db25maWd1cmF0aW9uLERDPWdmYmFub3J0
+ZT9jQUNlcnRpZmljYXRlP2Jhc2U/b2JqZWN0Q2xhc3M9Y2VydGlmaWNhdGlvbkF1
+dGhvcml0eTALBgNVHQ8EBAMCBaAwPAYJKwYBBAGCNxUHBC8wLQYlKwYBBAGCNxUI
+g+v5BoK1j0eNkROCp58GguHddCKCxphfgtj9DwIBZAIBEjATBgNVHSUEDDAKBggr
+BgEFBQcDATAbBgkrBgEEAYI3FQoEDjAMMAoGCCsGAQUFBwMBMA0GCSqGSIb3DQEB
+CwUAA4IBAQBicj3sAYJZTkjNo+HcqhPGDSA8vJ3rTEvDDqcaNiWlfPFaXLNBxfk2
+aKuV6Ibf1nSE9lfrpqVz+RwKCrtc4jXx9lO6BkgAuG7H2h6Tg53TbYPUJnr5ynwi
+jRlOacsJFvj5c6MLoM0Jrdw9ozd8UVjbqHTWo9iClPOGm9GX3FSc21bUWkSlp/Re
+MeWXKhMhCtKdWPqQGYIW3skpUYzhgGTDdEaUvXFYK79Pud7mxS1761P1qt7s1Axo
+61dvEM9gwtPuqcARkrwMroAqUhPmda71sndN3Z1CAh1khviyowwA2dZdxdT8ZqZy
+01+dEnuNx6BtEq8aht+M2u01BOXiqj1U
+]
+2025-10-16 18:16:20,703 [http-nio-8888-exec-4] - [DEBUG] - com.cifrado.controller.CifradoController: 2.- Resultado cifrado AES ( Subcadena2 ) [OTBYp1FJQwGRR9WLuSbPIYyXm9DlEXbMW9OBt8S+x9QLCkLDSwLFuP9a40kLXcEHJdV6o7QVp+sNk9CS7EEH82KJ0/oylIfbBTHF9G31osmFoTFnHFpfgdmqfVXlWLfyK8Iy3fxY6rnFWF064rqywYsLGIWDRAGfLe0rOPsmD/LGSLQIXdzOZrjhz58Sf9vN3tNYqT4GZJwpfG/oYfcNk/Q7n2FVhzDwOFCmxMLwsI+mBjMVdnVKxUvhrSU3vSlc+/jkhDKhJaGrVZzJE10vNioOBTAA8lQ/Y1Dsu4iGp2KxbGqb1Bhmr9Nfp59Qj2HAcCzahvNfix4ScX1u88ggyIxDlsD6wttBAPaKKpADfeIjXCeZbIWyJsdN4spRVyLScm1EiJslHPuBh+xfzc1UWG/wCu0a0NmayDwk4OexA9LzOK6f8VE=]
+2025-10-16 18:16:20,732 [http-nio-8888-exec-4] - [DEBUG] - com.cifrado.controller.CifradoController: 3.- Prueba decifrado AES (JSON Datos) [{"merchantId":"9709884","name":"ANGIE","password":"Mar?toN2!5","mode":"PRD","controlNumber":"REF1760638578","terminalId":"97098841","amount":"20.00","merchantName":"INSCRIP MARATHON MTY","merchantCity":"Monterrey","lang":"ES","customerRef1":"NA","customerRef2":"NA","customerRef3":"NA","customerRef4":"NA","customerRef5":"NA"}]
+
+------------ JSON a utilizar en el servicio de Descifrado ------------
+{
+    "vi": "69786e77736864626367797079747163",
+    "salt": "6e6667786e72753871706b33376b6f36",
+    "passphrase": "TIe5=G*)hxcdco&6",
+    "cypherData": "Sustituir_por_el_valor_de_cadena_cifrada_(data)_de_la_respuesta_de_VCE"
+}
+----------------------------------------------------------------------
+
+2025-10-16 18:16:20,733 [http-nio-8888-exec-4] - [DEBUG] - com.cifrado.controller.CifradoController: 4.- AES Llaves Generada [69786e77736864626367797079747163::6e6667786e72753871706b33376b6f36::TIe5=G*)hxcdco&6]
+2025-10-16 18:16:20,733 [http-nio-8888-exec-4] - [DEBUG] - com.cifrado.controller.CifradoController: -
+2025-10-16 18:16:20,734 [http-nio-8888-exec-4] - [DEBUG] - com.cifrado.utils.CifradoRSA: RSA Encrypt Provider: [SunJCE], [RSA/ECB/OAEPWITHSHA-256ANDMGF1PADDING]
+2025-10-16 18:16:20,735 [http-nio-8888-exec-4] - [DEBUG] - com.cifrado.controller.CifradoController: 5.- Resultado cifrado de Llaves AES ( Subcadena1 ) [m+EOe0kIJT8b2zbVx9fZ1BC7FostDzc6Q8/VZyDvya+ToJ1INvwnvlH+8JxvXsj9o0Gb0To2L35cNO8L0Az8u84Wci76XlBkbifCEOVip+kxc6tTBglAhjIljSQnl0zdo2lphYsg+96lCz/XOrNp7p74S1ejfd2+oDEKX1yihL837k0s02cuvQ8rXAk8IujmfhDjzi5u92a2D9Is9GWlmSBLKO9CgT9Xq0z3hKr3RhQdl25lw02NbRv2nvW7BcTbHAd4r2xdiQJOzUThkZ9+4FENG6GcIEJ0cj9Du8EmLTGVq1b9eZYWpNgEAmq8FUsPoLxDgRO53FrpwvBjdzeZdg==]
+2025-10-16 18:16:20,735 [http-nio-8888-exec-4] - [DEBUG] - com.cifrado.controller.CifradoController: Cadena para enviar al Orquestador (Subcadena1:::Subcadena2) [m+EOe0kIJT8b2zbVx9fZ1BC7FostDzc6Q8/VZyDvya+ToJ1INvwnvlH+8JxvXsj9o0Gb0To2L35cNO8L0Az8u84Wci76XlBkbifCEOVip+kxc6tTBglAhjIljSQnl0zdo2lphYsg+96lCz/XOrNp7p74S1ejfd2+oDEKX1yihL837k0s02cuvQ8rXAk8IujmfhDjzi5u92a2D9Is9GWlmSBLKO9CgT9Xq0z3hKr3RhQdl25lw02NbRv2nvW7BcTbHAd4r2xdiQJOzUThkZ9+4FENG6GcIEJ0cj9Du8EmLTGVq1b9eZYWpNgEAmq8FUsPoLxDgRO53FrpwvBjdzeZdg==:::OTBYp1FJQwGRR9WLuSbPIYyXm9DlEXbMW9OBt8S+x9QLCkLDSwLFuP9a40kLXcEHJdV6o7QVp+sNk9CS7EEH82KJ0/oylIfbBTHF9G31osmFoTFnHFpfgdmqfVXlWLfyK8Iy3fxY6rnFWF064rqywYsLGIWDRAGfLe0rOPsmD/LGSLQIXdzOZrjhz58Sf9vN3tNYqT4GZJwpfG/oYfcNk/Q7n2FVhzDwOFCmxMLwsI+mBjMVdnVKxUvhrSU3vSlc+/jkhDKhJaGrVZzJE10vNioOBTAA8lQ/Y1Dsu4iGp2KxbGqb1Bhmr9Nfp59Qj2HAcCzahvNfix4ScX1u88ggyIxDlsD6wttBAPaKKpADfeIjXCeZbIWyJsdN4spRVyLScm1EiJslHPuBh+xfzc1UWG/wCu0a0NmayDwk4OexA9LzOK6f8VE=]
+
+----------------------------------------------------------------------
+----------------------------- wsCifrado ------------------------------
+----------------------------------------------------------------------
+
+2025-10-16 18:16:43,955 [http-nio-8888-exec-6] - [DEBUG] - com.cifrado.controller.CifradoController: Obteniendo Base64 (JSON Datos) [eyJtZXJjaGFudElkIjoiOTcwOTg4NCIsIm5hbWUiOiJBTkdJRSIsInBhc3N3b3JkIjoiTWFyP3RvTjIhNSIsIm1vZGUiOiJQUkQiLCJjb250cm9sTnVtYmVyIjoiUkVGMTc2MDYzODU5OCIsInRlcm1pbmFsSWQiOiI5NzA5ODg0MSIsImFtb3VudCI6IjIwLjAwIiwibWVyY2hhbnROYW1lIjoiSU5TQ1JJUCBNQVJBVEhPTiBNVFkiLCJtZXJjaGFudENpdHkiOiJNb250ZXJyZXkiLCJsYW5nIjoiRVMiLCJjdXN0b21lclJlZjEiOiJOQSIsImN1c3RvbWVyUmVmMiI6Ik5BIiwiY3VzdG9tZXJSZWYzIjoiTkEiLCJjdXN0b21lclJlZjQiOiJOQSIsImN1c3RvbWVyUmVmNSI6Ik5BIn0=]... 
+2025-10-16 18:16:43,955 [http-nio-8888-exec-6] - [DEBUG] - com.cifrado.controller.CifradoController: Resultado Decodificado de Base64 (JSON Datos) [{"merchantId":"9709884","name":"ANGIE","password":"Mar?toN2!5","mode":"PRD","controlNumber":"REF1760638598","terminalId":"97098841","amount":"20.00","merchantName":"INSCRIP MARATHON MTY","merchantCity":"Monterrey","lang":"ES","customerRef1":"NA","customerRef2":"NA","customerRef3":"NA","customerRef4":"NA","customerRef5":"NA"}]
+
+2025-10-16 18:16:43,955 [http-nio-8888-exec-6] - [DEBUG] - com.cifrado.controller.CifradoController: 1.- Se cifrará JSON Datos con la llave pública -> [MIIGdDCCBVygAwIBAgITFwABTnQA5m6Udb1vlQABAAFOdDANBgkqhkiG9w0BAQsF
+ADB5MQswCQYDVQQGEwJNWDEZMBcGCgmSJomT8ixkARkWCWdmYmFub3J0ZTEeMBwG
+A1UEChMVU2VndXJpZGFkIGluZm9ybWF0aWNhMS8wLQYDVQQDEyZHcnVwbyBGaW5h
+bmNpZXJvIEJhbm9ydGUgQ0EgRW50ZXJwcmlzZTAeFw0yNTAyMjEyMDAwMzVaFw0y
+NjAyMjEyMDAwMzVaMIGoMQswCQYDVQQGEwJNWDELMAkGA1UECBMCREYxDzANBgNV
+BAcTBk1leGljbzErMCkGA1UEChMiR3J1cG8gRmluYW5jaWVybyBCYW5vcnRlIFNB
+QiBkZSBDVjEkMCIGA1UECxMbU2VndXJpZGFkIGRlIGxhIEluZm9ybWFjaW9uMSgw
+JgYDVQQDEx9tdWx0aWNvYnJvc2tleS51bml4LmJhbm9ydGUuY29tMIIBIjANBgkq
+hkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvp69wp3Z6ZXCHS+OQ2k8H26dWwuF/cSv
+f37YT7NYfz4YvvXeahNv0CCStL5tATSoYj8MDKzNbwidXq/7e6JQpV1bcZjYXcjL
+qli0GrOaJ00wUdR3zFS5F85Ks7ycTW6wNl/n7X8QXFVAh+HJyO7yrKdopcPyNLfJ
+xBeXlvvuGfAKLJ7mCDdPN2UROg/35yLKil+VMB8OgF/KXEajmR0a+FiEe96+AkW3
+oWMslb9fXm8+Kc4IqXKTZQg52CHPlbSnY8vaBqZd0sH5W60NILFFXgNFXsQAHhUt
+njvcL+MY6NOHGeRYyrafP7Vwoog2kQiIUZafH/D1dWmB0r9qCv3VkQIDAQABo4IC
+wzCCAr8wMgYDVR0RBCswKYIKbG54c2lzYTAxcIIbbG54c2lzYTAxcC51bml4LmJh
+bm9ydGUuY29tMB0GA1UdDgQWBBR3lYj1Ic4B/MjmXVpM+fSAo3YxhTAfBgNVHSME
+GDAWgBTQBPbPr59ruX3bXiA0YK0zB6UM0zCB7QYDVR0fBIHlMIHiMIHfoIHcoIHZ
+hoHWbGRhcDovLy9DTj1HcnVwbyUyMEZpbmFuY2llcm8lMjBCYW5vcnRlJTIwQ0El
+MjBFbnRlcnByaXNlLENOPUNBLUJBTk9SVEUtUkEsQ049Q0RQLENOPVB1YmxpYyUy
+MEtleSUyMFNlcnZpY2VzLENOPVNlcnZpY2VzLENOPUNvbmZpZ3VyYXRpb24sREM9
+Z2ZiYW5vcnRlP2NlcnRpZmljYXRlUmV2b2NhdGlvbkxpc3Q/YmFzZT9vYmplY3RD
+bGFzcz1jUkxEaXN0cmlidXRpb25Qb2ludDCB2wYIKwYBBQUHAQEEgc4wgcswgcgG
+CCsGAQUFBzAChoG7bGRhcDovLy9DTj1HcnVwbyUyMEZpbmFuY2llcm8lMjBCYW5v
+cnRlJTIwQ0ElMjBFbnRlcnByaXNlLENOPUFJQSxDTj1QdWJsaWMlMjBLZXklMjBT
+ZXJ2aWNlcyxDTj1TZXJ2aWNlcyxDTj1Db25maWd1cmF0aW9uLERDPWdmYmFub3J0
+ZT9jQUNlcnRpZmljYXRlP2Jhc2U/b2JqZWN0Q2xhc3M9Y2VydGlmaWNhdGlvbkF1
+dGhvcml0eTALBgNVHQ8EBAMCBaAwPAYJKwYBBAGCNxUHBC8wLQYlKwYBBAGCNxUI
+g+v5BoK1j0eNkROCp58GguHddCKCxphfgtj9DwIBZAIBEjATBgNVHSUEDDAKBggr
+BgEFBQcDATAbBgkrBgEEAYI3FQoEDjAMMAoGCCsGAQUFBwMBMA0GCSqGSIb3DQEB
+CwUAA4IBAQBicj3sAYJZTkjNo+HcqhPGDSA8vJ3rTEvDDqcaNiWlfPFaXLNBxfk2
+aKuV6Ibf1nSE9lfrpqVz+RwKCrtc4jXx9lO6BkgAuG7H2h6Tg53TbYPUJnr5ynwi
+jRlOacsJFvj5c6MLoM0Jrdw9ozd8UVjbqHTWo9iClPOGm9GX3FSc21bUWkSlp/Re
+MeWXKhMhCtKdWPqQGYIW3skpUYzhgGTDdEaUvXFYK79Pud7mxS1761P1qt7s1Axo
+61dvEM9gwtPuqcARkrwMroAqUhPmda71sndN3Z1CAh1khviyowwA2dZdxdT8ZqZy
+01+dEnuNx6BtEq8aht+M2u01BOXiqj1U
+]
+2025-10-16 18:16:43,957 [http-nio-8888-exec-6] - [DEBUG] - com.cifrado.controller.CifradoController: 2.- Resultado cifrado AES ( Subcadena2 ) [opZPrEAYB3PyX5FnHC0U6d3eTGI6YLB/VYoh0hmjwed5V04El6HCv1g9FSwnraR1CLFmNhBHoM0zzRYskf+aiUiYbSbcElrNCy1qjKQkOHqEMTUXlznT9UyucfmVR0AbfdQaf3cfGDfcefqREwWKiZFS0Rwe5aevxYQeEAuJKT6vnwWvoKVToGMUtVgeH+SID/oIFD2nvUfedazZI6s7WCIE8J4zfGq19urDLqbw206xrfGZY6qrjhwmTZk/aTEoamrFjV4JVITMEuwmEysky2uhEwgIJyStDl1vBUKQfOBLzw18xDoF/KO5JymUpAEVceADvtkX4LhSDTjaZzLeYz77SYOGjjOQIKwHXE0dj+Pz555mhJqLCvSsn0Um9i6IeB4PAx3YafoXudyi5CtiOlCGL1Q1MaP3I8ci9L6C21ndeSBhb5k=]
+2025-10-16 18:16:43,959 [http-nio-8888-exec-6] - [DEBUG] - com.cifrado.controller.CifradoController: 3.- Prueba decifrado AES (JSON Datos) [{"merchantId":"9709884","name":"ANGIE","password":"Mar?toN2!5","mode":"PRD","controlNumber":"REF1760638598","terminalId":"97098841","amount":"20.00","merchantName":"INSCRIP MARATHON MTY","merchantCity":"Monterrey","lang":"ES","customerRef1":"NA","customerRef2":"NA","customerRef3":"NA","customerRef4":"NA","customerRef5":"NA"}]
+
+------------ JSON a utilizar en el servicio de Descifrado ------------
+{
+    "vi": "7762616c30716e76746b64306c667439",
+    "salt": "69646d6165756d39756d673530696738",
+    "passphrase": "XJ5icR*IeeylxAOi",
+    "cypherData": "Sustituir_por_el_valor_de_cadena_cifrada_(data)_de_la_respuesta_de_VCE"
+}
+----------------------------------------------------------------------
+
+2025-10-16 18:16:43,959 [http-nio-8888-exec-6] - [DEBUG] - com.cifrado.controller.CifradoController: 4.- AES Llaves Generada [7762616c30716e76746b64306c667439::69646d6165756d39756d673530696738::XJ5icR*IeeylxAOi]
+2025-10-16 18:16:43,959 [http-nio-8888-exec-6] - [DEBUG] - com.cifrado.controller.CifradoController: -
+2025-10-16 18:16:43,961 [http-nio-8888-exec-6] - [DEBUG] - com.cifrado.utils.CifradoRSA: RSA Encrypt Provider: [SunJCE], [RSA/ECB/OAEPWITHSHA-256ANDMGF1PADDING]
+2025-10-16 18:16:43,961 [http-nio-8888-exec-6] - [DEBUG] - com.cifrado.controller.CifradoController: 5.- Resultado cifrado de Llaves AES ( Subcadena1 ) [FpolPeIsK5FQANEFWJqENw9FMi97msQk0dbTql+tyu2/BoIwM+IEA83/MnlEn96hgHU8XxRV0ng5QTxUJ/SzaJhEFoGVMAPSvEusWFX0B86XZUsS7AZzSjRWh0v61s45BCVKdeJ8QUPs1cPLOLmNr3Ebz6c0ahUJjw10JDe8TJ05jYAIaxGX+KiqBAiawSJ5IWI17cV94G066qizU6XOfop4lhpxiQN6qseNQOHspNzT2GJlpa7SyXqJbRT4a5DOYVPzYcrTdxoheUCX0wAQggtplytsYk+EN30E79aR2uPvCIqNwatiDXPCi9FcuIkeViFBPjFI7pjwTZLOaSk+0Q==]
+2025-10-16 18:16:43,961 [http-nio-8888-exec-6] - [DEBUG] - com.cifrado.controller.CifradoController: Cadena para enviar al Orquestador (Subcadena1:::Subcadena2) [FpolPeIsK5FQANEFWJqENw9FMi97msQk0dbTql+tyu2/BoIwM+IEA83/MnlEn96hgHU8XxRV0ng5QTxUJ/SzaJhEFoGVMAPSvEusWFX0B86XZUsS7AZzSjRWh0v61s45BCVKdeJ8QUPs1cPLOLmNr3Ebz6c0ahUJjw10JDe8TJ05jYAIaxGX+KiqBAiawSJ5IWI17cV94G066qizU6XOfop4lhpxiQN6qseNQOHspNzT2GJlpa7SyXqJbRT4a5DOYVPzYcrTdxoheUCX0wAQggtplytsYk+EN30E79aR2uPvCIqNwatiDXPCi9FcuIkeViFBPjFI7pjwTZLOaSk+0Q==:::opZPrEAYB3PyX5FnHC0U6d3eTGI6YLB/VYoh0hmjwed5V04El6HCv1g9FSwnraR1CLFmNhBHoM0zzRYskf+aiUiYbSbcElrNCy1qjKQkOHqEMTUXlznT9UyucfmVR0AbfdQaf3cfGDfcefqREwWKiZFS0Rwe5aevxYQeEAuJKT6vnwWvoKVToGMUtVgeH+SID/oIFD2nvUfedazZI6s7WCIE8J4zfGq19urDLqbw206xrfGZY6qrjhwmTZk/aTEoamrFjV4JVITMEuwmEysky2uhEwgIJyStDl1vBUKQfOBLzw18xDoF/KO5JymUpAEVceADvtkX4LhSDTjaZzLeYz77SYOGjjOQIKwHXE0dj+Pz555mhJqLCvSsn0Um9i6IeB4PAx3YafoXudyi5CtiOlCGL1Q1MaP3I8ci9L6C21ndeSBhb5k=]
+
+----------------------------------------------------------------------
+----------------------------- wsCifrado ------------------------------
+----------------------------------------------------------------------
+
+2025-10-16 18:31:47,396 [http-nio-8888-exec-8] - [DEBUG] - com.cifrado.controller.CifradoController: Obteniendo Base64 (JSON Datos) [eyJtZXJjaGFudElkIjoiOTcwOTg4NCIsIm5hbWUiOiJBTkdJRSIsInBhc3N3b3JkIjoiTWFyP3RvTjIhNSIsIm1vZGUiOiJQUkQiLCJjb250cm9sTnVtYmVyIjoiUkVGMTc2MDYzOTUwMSIsInRlcm1pbmFsSWQiOiI5NzA5ODg0MSIsImFtb3VudCI6IjIwLjAwIiwibWVyY2hhbnROYW1lIjoiSU5TQ1JJUCBNQVJBVEhPTiBNVFkiLCJtZXJjaGFudENpdHkiOiJNb250ZXJyZXkiLCJsYW5nIjoiRVMiLCJjdXN0b21lclJlZjEiOiJOQSIsImN1c3RvbWVyUmVmMiI6Ik5BIiwiY3VzdG9tZXJSZWYzIjoiTkEiLCJjdXN0b21lclJlZjQiOiJOQSIsImN1c3RvbWVyUmVmNSI6Ik5BIn0=]... 
+2025-10-16 18:31:47,398 [http-nio-8888-exec-8] - [DEBUG] - com.cifrado.controller.CifradoController: Resultado Decodificado de Base64 (JSON Datos) [{"merchantId":"9709884","name":"ANGIE","password":"Mar?toN2!5","mode":"PRD","controlNumber":"REF1760639501","terminalId":"97098841","amount":"20.00","merchantName":"INSCRIP MARATHON MTY","merchantCity":"Monterrey","lang":"ES","customerRef1":"NA","customerRef2":"NA","customerRef3":"NA","customerRef4":"NA","customerRef5":"NA"}]
+
+2025-10-16 18:31:47,398 [http-nio-8888-exec-8] - [DEBUG] - com.cifrado.controller.CifradoController: 1.- Se cifrará JSON Datos con la llave pública -> [MIIGdDCCBVygAwIBAgITFwABTnQA5m6Udb1vlQABAAFOdDANBgkqhkiG9w0BAQsF
+ADB5MQswCQYDVQQGEwJNWDEZMBcGCgmSJomT8ixkARkWCWdmYmFub3J0ZTEeMBwG
+A1UEChMVU2VndXJpZGFkIGluZm9ybWF0aWNhMS8wLQYDVQQDEyZHcnVwbyBGaW5h
+bmNpZXJvIEJhbm9ydGUgQ0EgRW50ZXJwcmlzZTAeFw0yNTAyMjEyMDAwMzVaFw0y
+NjAyMjEyMDAwMzVaMIGoMQswCQYDVQQGEwJNWDELMAkGA1UECBMCREYxDzANBgNV
+BAcTBk1leGljbzErMCkGA1UEChMiR3J1cG8gRmluYW5jaWVybyBCYW5vcnRlIFNB
+QiBkZSBDVjEkMCIGA1UECxMbU2VndXJpZGFkIGRlIGxhIEluZm9ybWFjaW9uMSgw
+JgYDVQQDEx9tdWx0aWNvYnJvc2tleS51bml4LmJhbm9ydGUuY29tMIIBIjANBgkq
+hkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvp69wp3Z6ZXCHS+OQ2k8H26dWwuF/cSv
+f37YT7NYfz4YvvXeahNv0CCStL5tATSoYj8MDKzNbwidXq/7e6JQpV1bcZjYXcjL
+qli0GrOaJ00wUdR3zFS5F85Ks7ycTW6wNl/n7X8QXFVAh+HJyO7yrKdopcPyNLfJ
+xBeXlvvuGfAKLJ7mCDdPN2UROg/35yLKil+VMB8OgF/KXEajmR0a+FiEe96+AkW3
+oWMslb9fXm8+Kc4IqXKTZQg52CHPlbSnY8vaBqZd0sH5W60NILFFXgNFXsQAHhUt
+njvcL+MY6NOHGeRYyrafP7Vwoog2kQiIUZafH/D1dWmB0r9qCv3VkQIDAQABo4IC
+wzCCAr8wMgYDVR0RBCswKYIKbG54c2lzYTAxcIIbbG54c2lzYTAxcC51bml4LmJh
+bm9ydGUuY29tMB0GA1UdDgQWBBR3lYj1Ic4B/MjmXVpM+fSAo3YxhTAfBgNVHSME
+GDAWgBTQBPbPr59ruX3bXiA0YK0zB6UM0zCB7QYDVR0fBIHlMIHiMIHfoIHcoIHZ
+hoHWbGRhcDovLy9DTj1HcnVwbyUyMEZpbmFuY2llcm8lMjBCYW5vcnRlJTIwQ0El
+MjBFbnRlcnByaXNlLENOPUNBLUJBTk9SVEUtUkEsQ049Q0RQLENOPVB1YmxpYyUy
+MEtleSUyMFNlcnZpY2VzLENOPVNlcnZpY2VzLENOPUNvbmZpZ3VyYXRpb24sREM9
+Z2ZiYW5vcnRlP2NlcnRpZmljYXRlUmV2b2NhdGlvbkxpc3Q/YmFzZT9vYmplY3RD
+bGFzcz1jUkxEaXN0cmlidXRpb25Qb2ludDCB2wYIKwYBBQUHAQEEgc4wgcswgcgG
+CCsGAQUFBzAChoG7bGRhcDovLy9DTj1HcnVwbyUyMEZpbmFuY2llcm8lMjBCYW5v
+cnRlJTIwQ0ElMjBFbnRlcnByaXNlLENOPUFJQSxDTj1QdWJsaWMlMjBLZXklMjBT
+ZXJ2aWNlcyxDTj1TZXJ2aWNlcyxDTj1Db25maWd1cmF0aW9uLERDPWdmYmFub3J0
+ZT9jQUNlcnRpZmljYXRlP2Jhc2U/b2JqZWN0Q2xhc3M9Y2VydGlmaWNhdGlvbkF1
+dGhvcml0eTALBgNVHQ8EBAMCBaAwPAYJKwYBBAGCNxUHBC8wLQYlKwYBBAGCNxUI
+g+v5BoK1j0eNkROCp58GguHddCKCxphfgtj9DwIBZAIBEjATBgNVHSUEDDAKBggr
+BgEFBQcDATAbBgkrBgEEAYI3FQoEDjAMMAoGCCsGAQUFBwMBMA0GCSqGSIb3DQEB
+CwUAA4IBAQBicj3sAYJZTkjNo+HcqhPGDSA8vJ3rTEvDDqcaNiWlfPFaXLNBxfk2
+aKuV6Ibf1nSE9lfrpqVz+RwKCrtc4jXx9lO6BkgAuG7H2h6Tg53TbYPUJnr5ynwi
+jRlOacsJFvj5c6MLoM0Jrdw9ozd8UVjbqHTWo9iClPOGm9GX3FSc21bUWkSlp/Re
+MeWXKhMhCtKdWPqQGYIW3skpUYzhgGTDdEaUvXFYK79Pud7mxS1761P1qt7s1Axo
+61dvEM9gwtPuqcARkrwMroAqUhPmda71sndN3Z1CAh1khviyowwA2dZdxdT8ZqZy
+01+dEnuNx6BtEq8aht+M2u01BOXiqj1U
+]
+2025-10-16 18:31:47,402 [http-nio-8888-exec-8] - [DEBUG] - com.cifrado.controller.CifradoController: 2.- Resultado cifrado AES ( Subcadena2 ) [NoXYdiPkB62B+y2P5zZDKlDGAjwIiHCRyHjZCvBosnPvMW+ChjIrMJC4Omkly35WhdOpz2nZ+r4PlTVpB/rH2P7JiWus7LNc7fRtyvZR8DSUAFGOEnuS9aISE+M79lSgNoCKg2UR+ePx8vHeMZ+X2zcZKbLiloFY2nIAOau2b6YgLz/xqO+GHBYuly+q5kLIaeHWNKoJsocxNTpB5LscnkBTrG3JXuNgDCotx/9sP+SLqgkLrXWAy/cWE0vSxtrg5SulvuN7AhnT1RTxRDAFJZyVC3F5snw+G2y3QE3nzUYLxSU3gBvzt/xmARNVJFhiweZw+ejfNj+o+DgoMagIJ7ymI+ZarEwG4jwwgq0y4o2fuWwrs/vawJRFhvH5jEHGfQHrCpMbA0wKghcTydq8RZ21oK739Hgm7SF0ifTeySOTHSnb82A=]
+2025-10-16 18:31:47,404 [http-nio-8888-exec-8] - [DEBUG] - com.cifrado.controller.CifradoController: 3.- Prueba decifrado AES (JSON Datos) [{"merchantId":"9709884","name":"ANGIE","password":"Mar?toN2!5","mode":"PRD","controlNumber":"REF1760639501","terminalId":"97098841","amount":"20.00","merchantName":"INSCRIP MARATHON MTY","merchantCity":"Monterrey","lang":"ES","customerRef1":"NA","customerRef2":"NA","customerRef3":"NA","customerRef4":"NA","customerRef5":"NA"}]
+
+------------ JSON a utilizar en el servicio de Descifrado ------------
+{
+    "vi": "78317133713039773538747163663969",
+    "salt": "77696e61746166797038367739726873",
+    "passphrase": "UX?6Dvu/aHML*yPm",
+    "cypherData": "Sustituir_por_el_valor_de_cadena_cifrada_(data)_de_la_respuesta_de_VCE"
+}
+----------------------------------------------------------------------
+
+2025-10-16 18:31:47,405 [http-nio-8888-exec-8] - [DEBUG] - com.cifrado.controller.CifradoController: 4.- AES Llaves Generada [78317133713039773538747163663969::77696e61746166797038367739726873::UX?6Dvu/aHML*yPm]
+2025-10-16 18:31:47,405 [http-nio-8888-exec-8] - [DEBUG] - com.cifrado.controller.CifradoController: -
+2025-10-16 18:31:47,408 [http-nio-8888-exec-8] - [DEBUG] - com.cifrado.utils.CifradoRSA: RSA Encrypt Provider: [SunJCE], [RSA/ECB/OAEPWITHSHA-256ANDMGF1PADDING]
+2025-10-16 18:31:47,410 [http-nio-8888-exec-8] - [DEBUG] - com.cifrado.controller.CifradoController: 5.- Resultado cifrado de Llaves AES ( Subcadena1 ) [Yaqtt6U9YdLJ9Cyg9Ux3EnLKAe+wuHpkTHJdqd6lnaAQS4xHoaeTQSSiwsvRsZVbQPO90lg3h3ID6NjUXrXV/fYlvAByeF1xBqm8j90f9+JUhVWtJNMhpoN1iv0pHYQxuLFdYRGRZDJe8tlaq9maZvrs/9nBVv13jfz3dXNxjX1JX0kGCO9rqdxjSh6YQw2NphAJwqe6n40z8SbIgSeKULoS0GtdnsBAtwWGMFc7OVrThqBQzIaef1tzabQM5NjBvxk+lAGF3Ynw4wogtrgLwYnAhf2bYYvUXNs6cG+g526SDgvdzqp7NoCJxActqE+uaCf+dVwFFauNm92SbORmag==]
+2025-10-16 18:31:47,411 [http-nio-8888-exec-8] - [DEBUG] - com.cifrado.controller.CifradoController: Cadena para enviar al Orquestador (Subcadena1:::Subcadena2) [Yaqtt6U9YdLJ9Cyg9Ux3EnLKAe+wuHpkTHJdqd6lnaAQS4xHoaeTQSSiwsvRsZVbQPO90lg3h3ID6NjUXrXV/fYlvAByeF1xBqm8j90f9+JUhVWtJNMhpoN1iv0pHYQxuLFdYRGRZDJe8tlaq9maZvrs/9nBVv13jfz3dXNxjX1JX0kGCO9rqdxjSh6YQw2NphAJwqe6n40z8SbIgSeKULoS0GtdnsBAtwWGMFc7OVrThqBQzIaef1tzabQM5NjBvxk+lAGF3Ynw4wogtrgLwYnAhf2bYYvUXNs6cG+g526SDgvdzqp7NoCJxActqE+uaCf+dVwFFauNm92SbORmag==:::NoXYdiPkB62B+y2P5zZDKlDGAjwIiHCRyHjZCvBosnPvMW+ChjIrMJC4Omkly35WhdOpz2nZ+r4PlTVpB/rH2P7JiWus7LNc7fRtyvZR8DSUAFGOEnuS9aISE+M79lSgNoCKg2UR+ePx8vHeMZ+X2zcZKbLiloFY2nIAOau2b6YgLz/xqO+GHBYuly+q5kLIaeHWNKoJsocxNTpB5LscnkBTrG3JXuNgDCotx/9sP+SLqgkLrXWAy/cWE0vSxtrg5SulvuN7AhnT1RTxRDAFJZyVC3F5snw+G2y3QE3nzUYLxSU3gBvzt/xmARNVJFhiweZw+ejfNj+o+DgoMagIJ7ymI+ZarEwG4jwwgq0y4o2fuWwrs/vawJRFhvH5jEHGfQHrCpMbA0wKghcTydq8RZ21oK739Hgm7SF0ifTeySOTHSnb82A=]
+
+----------------------------------------------------------------------
+----------------------------- wsCifrado ------------------------------
+----------------------------------------------------------------------
+
+2025-10-16 20:02:35,871 [http-nio-8888-exec-10] - [DEBUG] - com.cifrado.controller.CifradoController: Obteniendo Base64 (JSON Datos) [eyJtZXJjaGFudElkIjoiOTcwOTg4NCIsIm5hbWUiOiJBTkdJRSIsInBhc3N3b3JkIjoiTWFyP3RvTjIhNSIsIm1vZGUiOiJQUkQiLCJjb250cm9sTnVtYmVyIjoiUkVGMTc2MDY0NDk1MiIsInRlcm1pbmFsSWQiOiI5NzA5ODg0MSIsImFtb3VudCI6IjIwLjAwIiwibWVyY2hhbnROYW1lIjoiSU5TQ1JJUCBNQVJBVEhPTiBNVFkiLCJtZXJjaGFudENpdHkiOiJNb250ZXJyZXkiLCJsYW5nIjoiRVMiLCJjdXN0b21lclJlZjEiOiJOQSIsImN1c3RvbWVyUmVmMiI6Ik5BIiwiY3VzdG9tZXJSZWYzIjoiTkEiLCJjdXN0b21lclJlZjQiOiJOQSIsImN1c3RvbWVyUmVmNSI6Ik5BIn0=]... 
+2025-10-16 20:02:35,872 [http-nio-8888-exec-10] - [DEBUG] - com.cifrado.controller.CifradoController: Resultado Decodificado de Base64 (JSON Datos) [{"merchantId":"9709884","name":"ANGIE","password":"Mar?toN2!5","mode":"PRD","controlNumber":"REF1760644952","terminalId":"97098841","amount":"20.00","merchantName":"INSCRIP MARATHON MTY","merchantCity":"Monterrey","lang":"ES","customerRef1":"NA","customerRef2":"NA","customerRef3":"NA","customerRef4":"NA","customerRef5":"NA"}]
+
+2025-10-16 20:02:35,872 [http-nio-8888-exec-10] - [DEBUG] - com.cifrado.controller.CifradoController: 1.- Se cifrará JSON Datos con la llave pública -> [MIIGdDCCBVygAwIBAgITFwABTnQA5m6Udb1vlQABAAFOdDANBgkqhkiG9w0BAQsF
+ADB5MQswCQYDVQQGEwJNWDEZMBcGCgmSJomT8ixkARkWCWdmYmFub3J0ZTEeMBwG
+A1UEChMVU2VndXJpZGFkIGluZm9ybWF0aWNhMS8wLQYDVQQDEyZHcnVwbyBGaW5h
+bmNpZXJvIEJhbm9ydGUgQ0EgRW50ZXJwcmlzZTAeFw0yNTAyMjEyMDAwMzVaFw0y
+NjAyMjEyMDAwMzVaMIGoMQswCQYDVQQGEwJNWDELMAkGA1UECBMCREYxDzANBgNV
+BAcTBk1leGljbzErMCkGA1UEChMiR3J1cG8gRmluYW5jaWVybyBCYW5vcnRlIFNB
+QiBkZSBDVjEkMCIGA1UECxMbU2VndXJpZGFkIGRlIGxhIEluZm9ybWFjaW9uMSgw
+JgYDVQQDEx9tdWx0aWNvYnJvc2tleS51bml4LmJhbm9ydGUuY29tMIIBIjANBgkq
+hkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvp69wp3Z6ZXCHS+OQ2k8H26dWwuF/cSv
+f37YT7NYfz4YvvXeahNv0CCStL5tATSoYj8MDKzNbwidXq/7e6JQpV1bcZjYXcjL
+qli0GrOaJ00wUdR3zFS5F85Ks7ycTW6wNl/n7X8QXFVAh+HJyO7yrKdopcPyNLfJ
+xBeXlvvuGfAKLJ7mCDdPN2UROg/35yLKil+VMB8OgF/KXEajmR0a+FiEe96+AkW3
+oWMslb9fXm8+Kc4IqXKTZQg52CHPlbSnY8vaBqZd0sH5W60NILFFXgNFXsQAHhUt
+njvcL+MY6NOHGeRYyrafP7Vwoog2kQiIUZafH/D1dWmB0r9qCv3VkQIDAQABo4IC
+wzCCAr8wMgYDVR0RBCswKYIKbG54c2lzYTAxcIIbbG54c2lzYTAxcC51bml4LmJh
+bm9ydGUuY29tMB0GA1UdDgQWBBR3lYj1Ic4B/MjmXVpM+fSAo3YxhTAfBgNVHSME
+GDAWgBTQBPbPr59ruX3bXiA0YK0zB6UM0zCB7QYDVR0fBIHlMIHiMIHfoIHcoIHZ
+hoHWbGRhcDovLy9DTj1HcnVwbyUyMEZpbmFuY2llcm8lMjBCYW5vcnRlJTIwQ0El
+MjBFbnRlcnByaXNlLENOPUNBLUJBTk9SVEUtUkEsQ049Q0RQLENOPVB1YmxpYyUy
+MEtleSUyMFNlcnZpY2VzLENOPVNlcnZpY2VzLENOPUNvbmZpZ3VyYXRpb24sREM9
+Z2ZiYW5vcnRlP2NlcnRpZmljYXRlUmV2b2NhdGlvbkxpc3Q/YmFzZT9vYmplY3RD
+bGFzcz1jUkxEaXN0cmlidXRpb25Qb2ludDCB2wYIKwYBBQUHAQEEgc4wgcswgcgG
+CCsGAQUFBzAChoG7bGRhcDovLy9DTj1HcnVwbyUyMEZpbmFuY2llcm8lMjBCYW5v
+cnRlJTIwQ0ElMjBFbnRlcnByaXNlLENOPUFJQSxDTj1QdWJsaWMlMjBLZXklMjBT
+ZXJ2aWNlcyxDTj1TZXJ2aWNlcyxDTj1Db25maWd1cmF0aW9uLERDPWdmYmFub3J0
+ZT9jQUNlcnRpZmljYXRlP2Jhc2U/b2JqZWN0Q2xhc3M9Y2VydGlmaWNhdGlvbkF1
+dGhvcml0eTALBgNVHQ8EBAMCBaAwPAYJKwYBBAGCNxUHBC8wLQYlKwYBBAGCNxUI
+g+v5BoK1j0eNkROCp58GguHddCKCxphfgtj9DwIBZAIBEjATBgNVHSUEDDAKBggr
+BgEFBQcDATAbBgkrBgEEAYI3FQoEDjAMMAoGCCsGAQUFBwMBMA0GCSqGSIb3DQEB
+CwUAA4IBAQBicj3sAYJZTkjNo+HcqhPGDSA8vJ3rTEvDDqcaNiWlfPFaXLNBxfk2
+aKuV6Ibf1nSE9lfrpqVz+RwKCrtc4jXx9lO6BkgAuG7H2h6Tg53TbYPUJnr5ynwi
+jRlOacsJFvj5c6MLoM0Jrdw9ozd8UVjbqHTWo9iClPOGm9GX3FSc21bUWkSlp/Re
+MeWXKhMhCtKdWPqQGYIW3skpUYzhgGTDdEaUvXFYK79Pud7mxS1761P1qt7s1Axo
+61dvEM9gwtPuqcARkrwMroAqUhPmda71sndN3Z1CAh1khviyowwA2dZdxdT8ZqZy
+01+dEnuNx6BtEq8aht+M2u01BOXiqj1U
+]
+2025-10-16 20:02:35,875 [http-nio-8888-exec-10] - [DEBUG] - com.cifrado.controller.CifradoController: 2.- Resultado cifrado AES ( Subcadena2 ) [o/QQ58DyYOJF/av4uLLxgM7VTYD6Xn3IE5ThM9hCZIhGGnUrLPy87Vh5Y4zM7D/vtQPz4xndJBWOS6EVEbeAUOH33yXyNlqr6bAgWujFiCLF3QMBcBC1uwpWn8o8FjBmiPoDgx5rzZkGQo/xkiKaprau7/uTe4P7tunaw4XZDIdWNIYy5kAuNL7pJ6bywrY6SBm1YVPA24KLriz3qVLK+2ya+LEBR8dgLUCTJIYhuVkkf3TO7CU3RZY0IVRg3Wc4q8YLWLtthh2DMD3YRPtOQAKMHDVyS2TcLVeNn2V7rTRdsYA8p5XKBWarLzg3OZNYvySaVEHUDRsXRDmkxDO1bx/mOPKs3lcNg7SNfcXA2c6uObXTJ2A2vKX6VgjmJdDyOV/xXQTc4o+gAJWE7EU/bTxl4xE0hqs9iMIfoZv0UBCvda23Q9A=]
+2025-10-16 20:02:35,878 [http-nio-8888-exec-10] - [DEBUG] - com.cifrado.controller.CifradoController: 3.- Prueba decifrado AES (JSON Datos) [{"merchantId":"9709884","name":"ANGIE","password":"Mar?toN2!5","mode":"PRD","controlNumber":"REF1760644952","terminalId":"97098841","amount":"20.00","merchantName":"INSCRIP MARATHON MTY","merchantCity":"Monterrey","lang":"ES","customerRef1":"NA","customerRef2":"NA","customerRef3":"NA","customerRef4":"NA","customerRef5":"NA"}]
+
+------------ JSON a utilizar en el servicio de Descifrado ------------
+{
+    "vi": "6534693437346f36636c78647a356264",
+    "salt": "30617938757a337a3832387a786d7a6c",
+    "passphrase": "7bXKc8iwzpQkz1zQ",
+    "cypherData": "Sustituir_por_el_valor_de_cadena_cifrada_(data)_de_la_respuesta_de_VCE"
+}
+----------------------------------------------------------------------
+
+2025-10-16 20:02:35,878 [http-nio-8888-exec-10] - [DEBUG] - com.cifrado.controller.CifradoController: 4.- AES Llaves Generada [6534693437346f36636c78647a356264::30617938757a337a3832387a786d7a6c::7bXKc8iwzpQkz1zQ]
+2025-10-16 20:02:35,878 [http-nio-8888-exec-10] - [DEBUG] - com.cifrado.controller.CifradoController: -
+2025-10-16 20:02:35,882 [http-nio-8888-exec-10] - [DEBUG] - com.cifrado.utils.CifradoRSA: RSA Encrypt Provider: [SunJCE], [RSA/ECB/OAEPWITHSHA-256ANDMGF1PADDING]
+2025-10-16 20:02:35,883 [http-nio-8888-exec-10] - [DEBUG] - com.cifrado.controller.CifradoController: 5.- Resultado cifrado de Llaves AES ( Subcadena1 ) [XppSvTEs3Ssd7BKl1zIpGemt6pUSaQulovZfxdok1Bvm8lmDr/VPKJ4Kj/BnxkAXSNBq4kbMWJln7ikx/QS86T88/jl5YHy5Cfc+NiDqo6u7GjSrMYDBZcFafOU3/kQEHG10uYvuP5xu62bLmsk2J14F77DqzSiq678cG4gwiFutsRQer/cePDo+iOHg11SXH87AeZQeFdctEqK1DtK/r1YdZw36gQVj6uP4uXApG0l8pQXnBZ7sYuOKH71ucbmeHOTmhHVF5izqiXKTPQ933BBFAB0/2EcXJCbjyJVSRy8tGS2S/QLPdwnDilldXNm3kabVXwrGqfJEMvPKbRIujQ==]
+2025-10-16 20:02:35,883 [http-nio-8888-exec-10] - [DEBUG] - com.cifrado.controller.CifradoController: Cadena para enviar al Orquestador (Subcadena1:::Subcadena2) [XppSvTEs3Ssd7BKl1zIpGemt6pUSaQulovZfxdok1Bvm8lmDr/VPKJ4Kj/BnxkAXSNBq4kbMWJln7ikx/QS86T88/jl5YHy5Cfc+NiDqo6u7GjSrMYDBZcFafOU3/kQEHG10uYvuP5xu62bLmsk2J14F77DqzSiq678cG4gwiFutsRQer/cePDo+iOHg11SXH87AeZQeFdctEqK1DtK/r1YdZw36gQVj6uP4uXApG0l8pQXnBZ7sYuOKH71ucbmeHOTmhHVF5izqiXKTPQ933BBFAB0/2EcXJCbjyJVSRy8tGS2S/QLPdwnDilldXNm3kabVXwrGqfJEMvPKbRIujQ==:::o/QQ58DyYOJF/av4uLLxgM7VTYD6Xn3IE5ThM9hCZIhGGnUrLPy87Vh5Y4zM7D/vtQPz4xndJBWOS6EVEbeAUOH33yXyNlqr6bAgWujFiCLF3QMBcBC1uwpWn8o8FjBmiPoDgx5rzZkGQo/xkiKaprau7/uTe4P7tunaw4XZDIdWNIYy5kAuNL7pJ6bywrY6SBm1YVPA24KLriz3qVLK+2ya+LEBR8dgLUCTJIYhuVkkf3TO7CU3RZY0IVRg3Wc4q8YLWLtthh2DMD3YRPtOQAKMHDVyS2TcLVeNn2V7rTRdsYA8p5XKBWarLzg3OZNYvySaVEHUDRsXRDmkxDO1bx/mOPKs3lcNg7SNfcXA2c6uObXTJ2A2vKX6VgjmJdDyOV/xXQTc4o+gAJWE7EU/bTxl4xE0hqs9iMIfoZv0UBCvda23Q9A=]
+
+----------------------------------------------------------------------
+----------------------------- wsCifrado ------------------------------
+----------------------------------------------------------------------
+
+2025-10-17 00:36:06,488 [http-nio-8888-exec-2] - [DEBUG] - com.cifrado.controller.CifradoController: Obteniendo Base64 (JSON Datos) [eyJtZXJjaGFudElkIjoiOTcwOTg4NCIsIm5hbWUiOiJBTkdJRSIsInBhc3N3b3JkIjoiTWFyP3RvTjIhNSIsIm1vZGUiOiJQUkQiLCJjb250cm9sTnVtYmVyIjoiUkVGMTc2MDY2MTM2NCIsInRlcm1pbmFsSWQiOiI5NzA5ODg0MSIsImFtb3VudCI6IjIwLjAwIiwibWVyY2hhbnROYW1lIjoiSU5TQ1JJUCBNQVJBVEhPTiBNVFkiLCJtZXJjaGFudENpdHkiOiJNb250ZXJyZXkiLCJsYW5nIjoiRVMiLCJjdXN0b21lclJlZjEiOiJOQSIsImN1c3RvbWVyUmVmMiI6Ik5BIiwiY3VzdG9tZXJSZWYzIjoiTkEiLCJjdXN0b21lclJlZjQiOiJOQSIsImN1c3RvbWVyUmVmNSI6Ik5BIn0=]... 
+2025-10-17 00:36:06,491 [http-nio-8888-exec-2] - [DEBUG] - com.cifrado.controller.CifradoController: Resultado Decodificado de Base64 (JSON Datos) [{"merchantId":"9709884","name":"ANGIE","password":"Mar?toN2!5","mode":"PRD","controlNumber":"REF1760661364","terminalId":"97098841","amount":"20.00","merchantName":"INSCRIP MARATHON MTY","merchantCity":"Monterrey","lang":"ES","customerRef1":"NA","customerRef2":"NA","customerRef3":"NA","customerRef4":"NA","customerRef5":"NA"}]
+
+2025-10-17 00:36:06,491 [http-nio-8888-exec-2] - [DEBUG] - com.cifrado.controller.CifradoController: 1.- Se cifrará JSON Datos con la llave pública -> [MIIGdDCCBVygAwIBAgITFwABTnQA5m6Udb1vlQABAAFOdDANBgkqhkiG9w0BAQsF
+ADB5MQswCQYDVQQGEwJNWDEZMBcGCgmSJomT8ixkARkWCWdmYmFub3J0ZTEeMBwG
+A1UEChMVU2VndXJpZGFkIGluZm9ybWF0aWNhMS8wLQYDVQQDEyZHcnVwbyBGaW5h
+bmNpZXJvIEJhbm9ydGUgQ0EgRW50ZXJwcmlzZTAeFw0yNTAyMjEyMDAwMzVaFw0y
+NjAyMjEyMDAwMzVaMIGoMQswCQYDVQQGEwJNWDELMAkGA1UECBMCREYxDzANBgNV
+BAcTBk1leGljbzErMCkGA1UEChMiR3J1cG8gRmluYW5jaWVybyBCYW5vcnRlIFNB
+QiBkZSBDVjEkMCIGA1UECxMbU2VndXJpZGFkIGRlIGxhIEluZm9ybWFjaW9uMSgw
+JgYDVQQDEx9tdWx0aWNvYnJvc2tleS51bml4LmJhbm9ydGUuY29tMIIBIjANBgkq
+hkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvp69wp3Z6ZXCHS+OQ2k8H26dWwuF/cSv
+f37YT7NYfz4YvvXeahNv0CCStL5tATSoYj8MDKzNbwidXq/7e6JQpV1bcZjYXcjL
+qli0GrOaJ00wUdR3zFS5F85Ks7ycTW6wNl/n7X8QXFVAh+HJyO7yrKdopcPyNLfJ
+xBeXlvvuGfAKLJ7mCDdPN2UROg/35yLKil+VMB8OgF/KXEajmR0a+FiEe96+AkW3
+oWMslb9fXm8+Kc4IqXKTZQg52CHPlbSnY8vaBqZd0sH5W60NILFFXgNFXsQAHhUt
+njvcL+MY6NOHGeRYyrafP7Vwoog2kQiIUZafH/D1dWmB0r9qCv3VkQIDAQABo4IC
+wzCCAr8wMgYDVR0RBCswKYIKbG54c2lzYTAxcIIbbG54c2lzYTAxcC51bml4LmJh
+bm9ydGUuY29tMB0GA1UdDgQWBBR3lYj1Ic4B/MjmXVpM+fSAo3YxhTAfBgNVHSME
+GDAWgBTQBPbPr59ruX3bXiA0YK0zB6UM0zCB7QYDVR0fBIHlMIHiMIHfoIHcoIHZ
+hoHWbGRhcDovLy9DTj1HcnVwbyUyMEZpbmFuY2llcm8lMjBCYW5vcnRlJTIwQ0El
+MjBFbnRlcnByaXNlLENOPUNBLUJBTk9SVEUtUkEsQ049Q0RQLENOPVB1YmxpYyUy
+MEtleSUyMFNlcnZpY2VzLENOPVNlcnZpY2VzLENOPUNvbmZpZ3VyYXRpb24sREM9
+Z2ZiYW5vcnRlP2NlcnRpZmljYXRlUmV2b2NhdGlvbkxpc3Q/YmFzZT9vYmplY3RD
+bGFzcz1jUkxEaXN0cmlidXRpb25Qb2ludDCB2wYIKwYBBQUHAQEEgc4wgcswgcgG
+CCsGAQUFBzAChoG7bGRhcDovLy9DTj1HcnVwbyUyMEZpbmFuY2llcm8lMjBCYW5v
+cnRlJTIwQ0ElMjBFbnRlcnByaXNlLENOPUFJQSxDTj1QdWJsaWMlMjBLZXklMjBT
+ZXJ2aWNlcyxDTj1TZXJ2aWNlcyxDTj1Db25maWd1cmF0aW9uLERDPWdmYmFub3J0
+ZT9jQUNlcnRpZmljYXRlP2Jhc2U/b2JqZWN0Q2xhc3M9Y2VydGlmaWNhdGlvbkF1
+dGhvcml0eTALBgNVHQ8EBAMCBaAwPAYJKwYBBAGCNxUHBC8wLQYlKwYBBAGCNxUI
+g+v5BoK1j0eNkROCp58GguHddCKCxphfgtj9DwIBZAIBEjATBgNVHSUEDDAKBggr
+BgEFBQcDATAbBgkrBgEEAYI3FQoEDjAMMAoGCCsGAQUFBwMBMA0GCSqGSIb3DQEB
+CwUAA4IBAQBicj3sAYJZTkjNo+HcqhPGDSA8vJ3rTEvDDqcaNiWlfPFaXLNBxfk2
+aKuV6Ibf1nSE9lfrpqVz+RwKCrtc4jXx9lO6BkgAuG7H2h6Tg53TbYPUJnr5ynwi
+jRlOacsJFvj5c6MLoM0Jrdw9ozd8UVjbqHTWo9iClPOGm9GX3FSc21bUWkSlp/Re
+MeWXKhMhCtKdWPqQGYIW3skpUYzhgGTDdEaUvXFYK79Pud7mxS1761P1qt7s1Axo
+61dvEM9gwtPuqcARkrwMroAqUhPmda71sndN3Z1CAh1khviyowwA2dZdxdT8ZqZy
+01+dEnuNx6BtEq8aht+M2u01BOXiqj1U
+]
+2025-10-17 00:36:06,494 [http-nio-8888-exec-2] - [DEBUG] - com.cifrado.controller.CifradoController: 2.- Resultado cifrado AES ( Subcadena2 ) [9hKiTiEFcd7Yh9RIZo7dsaeXqjDtZdvULD+jx5NI1AQ4W5NA0kSn/Dzs20b0/jxPfxzoxK7981nH3mcSnEHGFrxGL8tlzzPnIeJlO68nYd5DzrJXzYu7xsDfiVcZJnQwGYCleapBIlxWO3g6ne+aqmLVKAv+/PsBXYYQ13RUYH2jPNCE6iWr1MKJHFh6lZoPFkAum5ebAwg+yntbTpzGXrCkBYVeG7wNeeBZz5nbsY48jsxBdtk4NbkAArhDDFkQ6+9NxEoHJiBtS6PscaEcfCcuGAh6twzYlyT3l6x9JahBB04xlxKWzeHvxE7CoR4kT1ydk6PNmHJer0un14MHDiKQvo6lOhJfn7VE6RJeD9rwcP4PID8KY/ws6toxVcZWnSo8HVFNFDNWa1O4Uga3QMTABmci6utTr/uiKDJ6nbmDdAqRtgw=]
+2025-10-17 00:36:06,495 [http-nio-8888-exec-2] - [DEBUG] - com.cifrado.controller.CifradoController: 3.- Prueba decifrado AES (JSON Datos) [{"merchantId":"9709884","name":"ANGIE","password":"Mar?toN2!5","mode":"PRD","controlNumber":"REF1760661364","terminalId":"97098841","amount":"20.00","merchantName":"INSCRIP MARATHON MTY","merchantCity":"Monterrey","lang":"ES","customerRef1":"NA","customerRef2":"NA","customerRef3":"NA","customerRef4":"NA","customerRef5":"NA"}]
+
+------------ JSON a utilizar en el servicio de Descifrado ------------
+{
+    "vi": "773138656268736f336e76736e683538",
+    "salt": "387a336e657164743936686571797537",
+    "passphrase": "K)9C(%3LD%EZqM=P",
+    "cypherData": "Sustituir_por_el_valor_de_cadena_cifrada_(data)_de_la_respuesta_de_VCE"
+}
+----------------------------------------------------------------------
+
+2025-10-17 00:36:06,496 [http-nio-8888-exec-2] - [DEBUG] - com.cifrado.controller.CifradoController: 4.- AES Llaves Generada [773138656268736f336e76736e683538::387a336e657164743936686571797537::K)9C(%3LD%EZqM=P]
+2025-10-17 00:36:06,496 [http-nio-8888-exec-2] - [DEBUG] - com.cifrado.controller.CifradoController: -
+2025-10-17 00:36:06,498 [http-nio-8888-exec-2] - [DEBUG] - com.cifrado.utils.CifradoRSA: RSA Encrypt Provider: [SunJCE], [RSA/ECB/OAEPWITHSHA-256ANDMGF1PADDING]
+2025-10-17 00:36:06,498 [http-nio-8888-exec-2] - [DEBUG] - com.cifrado.controller.CifradoController: 5.- Resultado cifrado de Llaves AES ( Subcadena1 ) [KLQhNq/0RBEg/o8dywfYu12r2WdaT7+kJ++rKWYWpyA9RElav/BrCt4jOWnv1zW74CqIL+cAle+2U6EJLE0tphcsefu0Y+I5bEDCThBBixvnGptFUf6VU8A7i6hvpxe3oqnlEauWqd0qp0Sv5qQAB/RYzHkHbpSkbupamhjit7BJvrLLglssRH+CKa+f4Zv9hjQHMVALItBN6fJolktqVoIa/6zz9AFAOV3fjmyVIqNjap9LZum3XDHcjP5/OWIQH0xOZ58iJ2ZcoA6OoastTbh6wjncOtc3YhWBf5cfdgSd05f9D+6K0DdnhBXoSoOYECG2dAJlMn4viJFmeWUs7Q==]
+2025-10-17 00:36:06,498 [http-nio-8888-exec-2] - [DEBUG] - com.cifrado.controller.CifradoController: Cadena para enviar al Orquestador (Subcadena1:::Subcadena2) [KLQhNq/0RBEg/o8dywfYu12r2WdaT7+kJ++rKWYWpyA9RElav/BrCt4jOWnv1zW74CqIL+cAle+2U6EJLE0tphcsefu0Y+I5bEDCThBBixvnGptFUf6VU8A7i6hvpxe3oqnlEauWqd0qp0Sv5qQAB/RYzHkHbpSkbupamhjit7BJvrLLglssRH+CKa+f4Zv9hjQHMVALItBN6fJolktqVoIa/6zz9AFAOV3fjmyVIqNjap9LZum3XDHcjP5/OWIQH0xOZ58iJ2ZcoA6OoastTbh6wjncOtc3YhWBf5cfdgSd05f9D+6K0DdnhBXoSoOYECG2dAJlMn4viJFmeWUs7Q==:::9hKiTiEFcd7Yh9RIZo7dsaeXqjDtZdvULD+jx5NI1AQ4W5NA0kSn/Dzs20b0/jxPfxzoxK7981nH3mcSnEHGFrxGL8tlzzPnIeJlO68nYd5DzrJXzYu7xsDfiVcZJnQwGYCleapBIlxWO3g6ne+aqmLVKAv+/PsBXYYQ13RUYH2jPNCE6iWr1MKJHFh6lZoPFkAum5ebAwg+yntbTpzGXrCkBYVeG7wNeeBZz5nbsY48jsxBdtk4NbkAArhDDFkQ6+9NxEoHJiBtS6PscaEcfCcuGAh6twzYlyT3l6x9JahBB04xlxKWzeHvxE7CoR4kT1ydk6PNmHJer0un14MHDiKQvo6lOhJfn7VE6RJeD9rwcP4PID8KY/ws6toxVcZWnSo8HVFNFDNWa1O4Uga3QMTABmci6utTr/uiKDJ6nbmDdAqRtgw=]
+
+----------------------------------------------------------------------
+----------------------------- wsCifrado ------------------------------
+----------------------------------------------------------------------
+
+2025-10-17 16:08:02,303 [http-nio-8888-exec-4] - [DEBUG] - com.cifrado.controller.CifradoController: Obteniendo Base64 (JSON Datos) [eyJtZXJjaGFudElkIjoiOTcwOTg4NCIsIm5hbWUiOiJBTkdJRSIsInBhc3N3b3JkIjoiTWFyP3RvTjIhNSIsIm1vZGUiOiJQUkQiLCJjb250cm9sTnVtYmVyIjoiUkVGMTc2MDcxNzI3OSIsInRlcm1pbmFsSWQiOiI5NzA5ODg0MSIsImFtb3VudCI6IjIwLjAwIiwibWVyY2hhbnROYW1lIjoiSU5TQ1JJUCBNQVJBVEhPTiBNVFkiLCJtZXJjaGFudENpdHkiOiJNb250ZXJyZXkiLCJsYW5nIjoiRVMiLCJjdXN0b21lclJlZjEiOiJOQSIsImN1c3RvbWVyUmVmMiI6Ik5BIiwiY3VzdG9tZXJSZWYzIjoiTkEiLCJjdXN0b21lclJlZjQiOiJOQSIsImN1c3RvbWVyUmVmNSI6Ik5BIn0=]... 
+2025-10-17 16:08:02,305 [http-nio-8888-exec-4] - [DEBUG] - com.cifrado.controller.CifradoController: Resultado Decodificado de Base64 (JSON Datos) [{"merchantId":"9709884","name":"ANGIE","password":"Mar?toN2!5","mode":"PRD","controlNumber":"REF1760717279","terminalId":"97098841","amount":"20.00","merchantName":"INSCRIP MARATHON MTY","merchantCity":"Monterrey","lang":"ES","customerRef1":"NA","customerRef2":"NA","customerRef3":"NA","customerRef4":"NA","customerRef5":"NA"}]
+
+2025-10-17 16:08:02,306 [http-nio-8888-exec-4] - [DEBUG] - com.cifrado.controller.CifradoController: 1.- Se cifrará JSON Datos con la llave pública -> [MIIGdDCCBVygAwIBAgITFwABTnQA5m6Udb1vlQABAAFOdDANBgkqhkiG9w0BAQsF
+ADB5MQswCQYDVQQGEwJNWDEZMBcGCgmSJomT8ixkARkWCWdmYmFub3J0ZTEeMBwG
+A1UEChMVU2VndXJpZGFkIGluZm9ybWF0aWNhMS8wLQYDVQQDEyZHcnVwbyBGaW5h
+bmNpZXJvIEJhbm9ydGUgQ0EgRW50ZXJwcmlzZTAeFw0yNTAyMjEyMDAwMzVaFw0y
+NjAyMjEyMDAwMzVaMIGoMQswCQYDVQQGEwJNWDELMAkGA1UECBMCREYxDzANBgNV
+BAcTBk1leGljbzErMCkGA1UEChMiR3J1cG8gRmluYW5jaWVybyBCYW5vcnRlIFNB
+QiBkZSBDVjEkMCIGA1UECxMbU2VndXJpZGFkIGRlIGxhIEluZm9ybWFjaW9uMSgw
+JgYDVQQDEx9tdWx0aWNvYnJvc2tleS51bml4LmJhbm9ydGUuY29tMIIBIjANBgkq
+hkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvp69wp3Z6ZXCHS+OQ2k8H26dWwuF/cSv
+f37YT7NYfz4YvvXeahNv0CCStL5tATSoYj8MDKzNbwidXq/7e6JQpV1bcZjYXcjL
+qli0GrOaJ00wUdR3zFS5F85Ks7ycTW6wNl/n7X8QXFVAh+HJyO7yrKdopcPyNLfJ
+xBeXlvvuGfAKLJ7mCDdPN2UROg/35yLKil+VMB8OgF/KXEajmR0a+FiEe96+AkW3
+oWMslb9fXm8+Kc4IqXKTZQg52CHPlbSnY8vaBqZd0sH5W60NILFFXgNFXsQAHhUt
+njvcL+MY6NOHGeRYyrafP7Vwoog2kQiIUZafH/D1dWmB0r9qCv3VkQIDAQABo4IC
+wzCCAr8wMgYDVR0RBCswKYIKbG54c2lzYTAxcIIbbG54c2lzYTAxcC51bml4LmJh
+bm9ydGUuY29tMB0GA1UdDgQWBBR3lYj1Ic4B/MjmXVpM+fSAo3YxhTAfBgNVHSME
+GDAWgBTQBPbPr59ruX3bXiA0YK0zB6UM0zCB7QYDVR0fBIHlMIHiMIHfoIHcoIHZ
+hoHWbGRhcDovLy9DTj1HcnVwbyUyMEZpbmFuY2llcm8lMjBCYW5vcnRlJTIwQ0El
+MjBFbnRlcnByaXNlLENOPUNBLUJBTk9SVEUtUkEsQ049Q0RQLENOPVB1YmxpYyUy
+MEtleSUyMFNlcnZpY2VzLENOPVNlcnZpY2VzLENOPUNvbmZpZ3VyYXRpb24sREM9
+Z2ZiYW5vcnRlP2NlcnRpZmljYXRlUmV2b2NhdGlvbkxpc3Q/YmFzZT9vYmplY3RD
+bGFzcz1jUkxEaXN0cmlidXRpb25Qb2ludDCB2wYIKwYBBQUHAQEEgc4wgcswgcgG
+CCsGAQUFBzAChoG7bGRhcDovLy9DTj1HcnVwbyUyMEZpbmFuY2llcm8lMjBCYW5v
+cnRlJTIwQ0ElMjBFbnRlcnByaXNlLENOPUFJQSxDTj1QdWJsaWMlMjBLZXklMjBT
+ZXJ2aWNlcyxDTj1TZXJ2aWNlcyxDTj1Db25maWd1cmF0aW9uLERDPWdmYmFub3J0
+ZT9jQUNlcnRpZmljYXRlP2Jhc2U/b2JqZWN0Q2xhc3M9Y2VydGlmaWNhdGlvbkF1
+dGhvcml0eTALBgNVHQ8EBAMCBaAwPAYJKwYBBAGCNxUHBC8wLQYlKwYBBAGCNxUI
+g+v5BoK1j0eNkROCp58GguHddCKCxphfgtj9DwIBZAIBEjATBgNVHSUEDDAKBggr
+BgEFBQcDATAbBgkrBgEEAYI3FQoEDjAMMAoGCCsGAQUFBwMBMA0GCSqGSIb3DQEB
+CwUAA4IBAQBicj3sAYJZTkjNo+HcqhPGDSA8vJ3rTEvDDqcaNiWlfPFaXLNBxfk2
+aKuV6Ibf1nSE9lfrpqVz+RwKCrtc4jXx9lO6BkgAuG7H2h6Tg53TbYPUJnr5ynwi
+jRlOacsJFvj5c6MLoM0Jrdw9ozd8UVjbqHTWo9iClPOGm9GX3FSc21bUWkSlp/Re
+MeWXKhMhCtKdWPqQGYIW3skpUYzhgGTDdEaUvXFYK79Pud7mxS1761P1qt7s1Axo
+61dvEM9gwtPuqcARkrwMroAqUhPmda71sndN3Z1CAh1khviyowwA2dZdxdT8ZqZy
+01+dEnuNx6BtEq8aht+M2u01BOXiqj1U
+]
+2025-10-17 16:08:02,310 [http-nio-8888-exec-4] - [DEBUG] - com.cifrado.controller.CifradoController: 2.- Resultado cifrado AES ( Subcadena2 ) [6BEbaefVxBXPUUkWL45qmSusleN9c+Y3dVbHUr+QSFxJAh6ius53CSz/qKe5TSdTS1xH1sv4as+i0gOGLHd/j114VQeXSTugyf3YMtBWoGp5nLCmIJe0H1kucUyVnp4xcs/9BVaiDTZNMM130CYN0iL+ux+mZNn39DrJaCHN8heUTnFzHN5Ez58mjTsWJ6qzFibkD1Baxvy7eqwqq5Jn3wqWwjIfTUF6rW6JP5TjV/c4xDCQSf2da1sFzfA9jjTYHOfMFZYbRSmvNE2DblHQNyUzKA/d/ZMEtwfN9CXV/bfCiNvRhLiFLYYjK79kNdTiYfAyzI8FtuURk9Yhbknd7ShAvsqrbg+rsTTjFmtbRm28peTtKBBBlU6LopcVFDBm5oC/DcKtHOLcKJNbVkHTBi7B8Qne/ZYuDe79/zgp2v8imGnRm6Y=]
+2025-10-17 16:08:02,312 [http-nio-8888-exec-4] - [DEBUG] - com.cifrado.controller.CifradoController: 3.- Prueba decifrado AES (JSON Datos) [{"merchantId":"9709884","name":"ANGIE","password":"Mar?toN2!5","mode":"PRD","controlNumber":"REF1760717279","terminalId":"97098841","amount":"20.00","merchantName":"INSCRIP MARATHON MTY","merchantCity":"Monterrey","lang":"ES","customerRef1":"NA","customerRef2":"NA","customerRef3":"NA","customerRef4":"NA","customerRef5":"NA"}]
+
+------------ JSON a utilizar en el servicio de Descifrado ------------
+{
+    "vi": "6670777a6b663562756d383972676c69",
+    "salt": "63756c686d74303467696c7a68656466",
+    "passphrase": "V)o0O+t=VtqKQTir",
+    "cypherData": "Sustituir_por_el_valor_de_cadena_cifrada_(data)_de_la_respuesta_de_VCE"
+}
+----------------------------------------------------------------------
+
+2025-10-17 16:08:02,312 [http-nio-8888-exec-4] - [DEBUG] - com.cifrado.controller.CifradoController: 4.- AES Llaves Generada [6670777a6b663562756d383972676c69::63756c686d74303467696c7a68656466::V)o0O+t=VtqKQTir]
+2025-10-17 16:08:02,313 [http-nio-8888-exec-4] - [DEBUG] - com.cifrado.controller.CifradoController: -
+2025-10-17 16:08:02,317 [http-nio-8888-exec-4] - [DEBUG] - com.cifrado.utils.CifradoRSA: RSA Encrypt Provider: [SunJCE], [RSA/ECB/OAEPWITHSHA-256ANDMGF1PADDING]
+2025-10-17 16:08:02,318 [http-nio-8888-exec-4] - [DEBUG] - com.cifrado.controller.CifradoController: 5.- Resultado cifrado de Llaves AES ( Subcadena1 ) [QWDpjbKJsSLAMjIk1bzkw4vkhuaDMz7e5zHEJ2OhZlNk6rFFoSAh6/G4AUw1ToRMeTq/TAkiNTm/IBMCMykvTnFp0nph+aJn5OjJlWNApHD0eXxToN3RAY94jBX7/1dUZ4CTVzgr01DMq/Fc8fqgWcw3gr5fQ4SWHrTUNQ/+r/Oh/l/XPrZYUK7Lndnw8aISFq5x8ZeeCY0cP3qcMnAVO1oOel8xyjMNcFRRXqxtXiBFvZF83JQaKNA93pgml8AFjmzgV4ujcuLbxjvG5d648sBthuX7eBMHxyRT4opHZMC2/SEFcUGBt/PLaNHt+ku+dAgiQtepFkFGEtz80A6Heg==]
+2025-10-17 16:08:02,318 [http-nio-8888-exec-4] - [DEBUG] - com.cifrado.controller.CifradoController: Cadena para enviar al Orquestador (Subcadena1:::Subcadena2) [QWDpjbKJsSLAMjIk1bzkw4vkhuaDMz7e5zHEJ2OhZlNk6rFFoSAh6/G4AUw1ToRMeTq/TAkiNTm/IBMCMykvTnFp0nph+aJn5OjJlWNApHD0eXxToN3RAY94jBX7/1dUZ4CTVzgr01DMq/Fc8fqgWcw3gr5fQ4SWHrTUNQ/+r/Oh/l/XPrZYUK7Lndnw8aISFq5x8ZeeCY0cP3qcMnAVO1oOel8xyjMNcFRRXqxtXiBFvZF83JQaKNA93pgml8AFjmzgV4ujcuLbxjvG5d648sBthuX7eBMHxyRT4opHZMC2/SEFcUGBt/PLaNHt+ku+dAgiQtepFkFGEtz80A6Heg==:::6BEbaefVxBXPUUkWL45qmSusleN9c+Y3dVbHUr+QSFxJAh6ius53CSz/qKe5TSdTS1xH1sv4as+i0gOGLHd/j114VQeXSTugyf3YMtBWoGp5nLCmIJe0H1kucUyVnp4xcs/9BVaiDTZNMM130CYN0iL+ux+mZNn39DrJaCHN8heUTnFzHN5Ez58mjTsWJ6qzFibkD1Baxvy7eqwqq5Jn3wqWwjIfTUF6rW6JP5TjV/c4xDCQSf2da1sFzfA9jjTYHOfMFZYbRSmvNE2DblHQNyUzKA/d/ZMEtwfN9CXV/bfCiNvRhLiFLYYjK79kNdTiYfAyzI8FtuURk9Yhbknd7ShAvsqrbg+rsTTjFmtbRm28peTtKBBBlU6LopcVFDBm5oC/DcKtHOLcKJNbVkHTBi7B8Qne/ZYuDe79/zgp2v8imGnRm6Y=]
+
+----------------------------------------------------------------------
+----------------------------- wsCifrado ------------------------------
+----------------------------------------------------------------------
+
+2025-10-17 16:14:32,239 [http-nio-8888-exec-6] - [DEBUG] - com.cifrado.controller.CifradoController: Obteniendo Base64 (JSON Datos) [eyJtZXJjaGFudElkIjoiOTcwOTg4NCIsIm5hbWUiOiJBTkdJRSIsInBhc3N3b3JkIjoiTWFyP3RvTjIhNSIsIm1vZGUiOiJQUkQiLCJjb250cm9sTnVtYmVyIjoiUkVGMTc2MDcxNzY2MyIsInRlcm1pbmFsSWQiOiI5NzA5ODg0MSIsImFtb3VudCI6IjIwLjAwIiwibWVyY2hhbnROYW1lIjoiSU5TQ1JJUCBNQVJBVEhPTiBNVFkiLCJtZXJjaGFudENpdHkiOiJNb250ZXJyZXkiLCJsYW5nIjoiRVMiLCJjdXN0b21lclJlZjEiOiJOQSIsImN1c3RvbWVyUmVmMiI6Ik5BIiwiY3VzdG9tZXJSZWYzIjoiTkEiLCJjdXN0b21lclJlZjQiOiJOQSIsImN1c3RvbWVyUmVmNSI6Ik5BIn0=]... 
+2025-10-17 16:14:32,243 [http-nio-8888-exec-6] - [DEBUG] - com.cifrado.controller.CifradoController: Resultado Decodificado de Base64 (JSON Datos) [{"merchantId":"9709884","name":"ANGIE","password":"Mar?toN2!5","mode":"PRD","controlNumber":"REF1760717663","terminalId":"97098841","amount":"20.00","merchantName":"INSCRIP MARATHON MTY","merchantCity":"Monterrey","lang":"ES","customerRef1":"NA","customerRef2":"NA","customerRef3":"NA","customerRef4":"NA","customerRef5":"NA"}]
+
+2025-10-17 16:14:32,243 [http-nio-8888-exec-6] - [DEBUG] - com.cifrado.controller.CifradoController: 1.- Se cifrará JSON Datos con la llave pública -> [MIIGdDCCBVygAwIBAgITFwABTnQA5m6Udb1vlQABAAFOdDANBgkqhkiG9w0BAQsF
+ADB5MQswCQYDVQQGEwJNWDEZMBcGCgmSJomT8ixkARkWCWdmYmFub3J0ZTEeMBwG
+A1UEChMVU2VndXJpZGFkIGluZm9ybWF0aWNhMS8wLQYDVQQDEyZHcnVwbyBGaW5h
+bmNpZXJvIEJhbm9ydGUgQ0EgRW50ZXJwcmlzZTAeFw0yNTAyMjEyMDAwMzVaFw0y
+NjAyMjEyMDAwMzVaMIGoMQswCQYDVQQGEwJNWDELMAkGA1UECBMCREYxDzANBgNV
+BAcTBk1leGljbzErMCkGA1UEChMiR3J1cG8gRmluYW5jaWVybyBCYW5vcnRlIFNB
+QiBkZSBDVjEkMCIGA1UECxMbU2VndXJpZGFkIGRlIGxhIEluZm9ybWFjaW9uMSgw
+JgYDVQQDEx9tdWx0aWNvYnJvc2tleS51bml4LmJhbm9ydGUuY29tMIIBIjANBgkq
+hkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvp69wp3Z6ZXCHS+OQ2k8H26dWwuF/cSv
+f37YT7NYfz4YvvXeahNv0CCStL5tATSoYj8MDKzNbwidXq/7e6JQpV1bcZjYXcjL
+qli0GrOaJ00wUdR3zFS5F85Ks7ycTW6wNl/n7X8QXFVAh+HJyO7yrKdopcPyNLfJ
+xBeXlvvuGfAKLJ7mCDdPN2UROg/35yLKil+VMB8OgF/KXEajmR0a+FiEe96+AkW3
+oWMslb9fXm8+Kc4IqXKTZQg52CHPlbSnY8vaBqZd0sH5W60NILFFXgNFXsQAHhUt
+njvcL+MY6NOHGeRYyrafP7Vwoog2kQiIUZafH/D1dWmB0r9qCv3VkQIDAQABo4IC
+wzCCAr8wMgYDVR0RBCswKYIKbG54c2lzYTAxcIIbbG54c2lzYTAxcC51bml4LmJh
+bm9ydGUuY29tMB0GA1UdDgQWBBR3lYj1Ic4B/MjmXVpM+fSAo3YxhTAfBgNVHSME
+GDAWgBTQBPbPr59ruX3bXiA0YK0zB6UM0zCB7QYDVR0fBIHlMIHiMIHfoIHcoIHZ
+hoHWbGRhcDovLy9DTj1HcnVwbyUyMEZpbmFuY2llcm8lMjBCYW5vcnRlJTIwQ0El
+MjBFbnRlcnByaXNlLENOPUNBLUJBTk9SVEUtUkEsQ049Q0RQLENOPVB1YmxpYyUy
+MEtleSUyMFNlcnZpY2VzLENOPVNlcnZpY2VzLENOPUNvbmZpZ3VyYXRpb24sREM9
+Z2ZiYW5vcnRlP2NlcnRpZmljYXRlUmV2b2NhdGlvbkxpc3Q/YmFzZT9vYmplY3RD
+bGFzcz1jUkxEaXN0cmlidXRpb25Qb2ludDCB2wYIKwYBBQUHAQEEgc4wgcswgcgG
+CCsGAQUFBzAChoG7bGRhcDovLy9DTj1HcnVwbyUyMEZpbmFuY2llcm8lMjBCYW5v
+cnRlJTIwQ0ElMjBFbnRlcnByaXNlLENOPUFJQSxDTj1QdWJsaWMlMjBLZXklMjBT
+ZXJ2aWNlcyxDTj1TZXJ2aWNlcyxDTj1Db25maWd1cmF0aW9uLERDPWdmYmFub3J0
+ZT9jQUNlcnRpZmljYXRlP2Jhc2U/b2JqZWN0Q2xhc3M9Y2VydGlmaWNhdGlvbkF1
+dGhvcml0eTALBgNVHQ8EBAMCBaAwPAYJKwYBBAGCNxUHBC8wLQYlKwYBBAGCNxUI
+g+v5BoK1j0eNkROCp58GguHddCKCxphfgtj9DwIBZAIBEjATBgNVHSUEDDAKBggr
+BgEFBQcDATAbBgkrBgEEAYI3FQoEDjAMMAoGCCsGAQUFBwMBMA0GCSqGSIb3DQEB
+CwUAA4IBAQBicj3sAYJZTkjNo+HcqhPGDSA8vJ3rTEvDDqcaNiWlfPFaXLNBxfk2
+aKuV6Ibf1nSE9lfrpqVz+RwKCrtc4jXx9lO6BkgAuG7H2h6Tg53TbYPUJnr5ynwi
+jRlOacsJFvj5c6MLoM0Jrdw9ozd8UVjbqHTWo9iClPOGm9GX3FSc21bUWkSlp/Re
+MeWXKhMhCtKdWPqQGYIW3skpUYzhgGTDdEaUvXFYK79Pud7mxS1761P1qt7s1Axo
+61dvEM9gwtPuqcARkrwMroAqUhPmda71sndN3Z1CAh1khviyowwA2dZdxdT8ZqZy
+01+dEnuNx6BtEq8aht+M2u01BOXiqj1U
+]
+2025-10-17 16:14:32,247 [http-nio-8888-exec-6] - [DEBUG] - com.cifrado.controller.CifradoController: 2.- Resultado cifrado AES ( Subcadena2 ) [B0UBamJhX3L8YPJkqGDBRCN85lD+mGYAMFKkXcOPSTBbBzJesGOzjvguC/yrpJwyyF/pBjZUcABCCkwFtZ5E3eSiQLL8fO7vUHBNozRi1rykxbqG8w2OBuOPmXRYYhcOUdViy0qTrV2iMaYsStopr7VJV5rzO0F55txZXh8Z/sZjkZk/mO4X/063oVJn3HavXDDNas65SPchUC7VLvsklAAIY21tZuwsE+BigmsgphkpZbkhV2+7MwGkmYiwZCYp54Z088+isKgst15kPBMEhmhxYt0PeZu5r/i9JfHWvmP5k25/iWxcE5LWDhnUL1RG5gvsn0OAlPKOIMsvCw5iu7OyzBRAvZqW+4b/sZqbXi9eN/xQ14HTtolA7vyESC7Ev3R1DQSZJJkElraGgnGNP5RonAw3+dLtUGbxwdUw6xhXnNvi+wI=]
+2025-10-17 16:14:32,249 [http-nio-8888-exec-6] - [DEBUG] - com.cifrado.controller.CifradoController: 3.- Prueba decifrado AES (JSON Datos) [{"merchantId":"9709884","name":"ANGIE","password":"Mar?toN2!5","mode":"PRD","controlNumber":"REF1760717663","terminalId":"97098841","amount":"20.00","merchantName":"INSCRIP MARATHON MTY","merchantCity":"Monterrey","lang":"ES","customerRef1":"NA","customerRef2":"NA","customerRef3":"NA","customerRef4":"NA","customerRef5":"NA"}]
+
+------------ JSON a utilizar en el servicio de Descifrado ------------
+{
+    "vi": "646c6d336c7036717762717170373336",
+    "salt": "6f756d3871366f6d6539663632707176",
+    "passphrase": "wJ*Qbv7XR!u(%A%u",
+    "cypherData": "Sustituir_por_el_valor_de_cadena_cifrada_(data)_de_la_respuesta_de_VCE"
+}
+----------------------------------------------------------------------
+
+2025-10-17 16:14:32,249 [http-nio-8888-exec-6] - [DEBUG] - com.cifrado.controller.CifradoController: 4.- AES Llaves Generada [646c6d336c7036717762717170373336::6f756d3871366f6d6539663632707176::wJ*Qbv7XR!u(%A%u]
+2025-10-17 16:14:32,250 [http-nio-8888-exec-6] - [DEBUG] - com.cifrado.controller.CifradoController: -
+2025-10-17 16:14:32,252 [http-nio-8888-exec-6] - [DEBUG] - com.cifrado.utils.CifradoRSA: RSA Encrypt Provider: [SunJCE], [RSA/ECB/OAEPWITHSHA-256ANDMGF1PADDING]
+2025-10-17 16:14:32,252 [http-nio-8888-exec-6] - [DEBUG] - com.cifrado.controller.CifradoController: 5.- Resultado cifrado de Llaves AES ( Subcadena1 ) [uXmT9N209oo7yf9vWnCmcRnZdDRTIw8WAhp/Lqbb3qg6YdU7InphvN3ArHD4xZyFOad2uF06z81HimRsTd2KjRCdiZ4FbIJdmRNNM7YHh8Sk4jS97ISFC25OLXVjmlMShNx2su2sPGVjGvhvuIwEaV6VZO83ITCCC2sP5IEE2AGFu8kEPzAvQbJ0gXF6XUJ/HA0spmloPmUn7NUXUmUo5j1Gf280ASK3YvJQmdXr8llG2SphhUklXsff7r8ANWaUbI9OYMbTi9ngCAxAniXybP/esNgtuHfZxFRBm2SZvqIp0J7RnIrMj7HVU/K7ScUMmzWmPkIt0CCiZjc5Hiue8A==]
+2025-10-17 16:14:32,253 [http-nio-8888-exec-6] - [DEBUG] - com.cifrado.controller.CifradoController: Cadena para enviar al Orquestador (Subcadena1:::Subcadena2) [uXmT9N209oo7yf9vWnCmcRnZdDRTIw8WAhp/Lqbb3qg6YdU7InphvN3ArHD4xZyFOad2uF06z81HimRsTd2KjRCdiZ4FbIJdmRNNM7YHh8Sk4jS97ISFC25OLXVjmlMShNx2su2sPGVjGvhvuIwEaV6VZO83ITCCC2sP5IEE2AGFu8kEPzAvQbJ0gXF6XUJ/HA0spmloPmUn7NUXUmUo5j1Gf280ASK3YvJQmdXr8llG2SphhUklXsff7r8ANWaUbI9OYMbTi9ngCAxAniXybP/esNgtuHfZxFRBm2SZvqIp0J7RnIrMj7HVU/K7ScUMmzWmPkIt0CCiZjc5Hiue8A==:::B0UBamJhX3L8YPJkqGDBRCN85lD+mGYAMFKkXcOPSTBbBzJesGOzjvguC/yrpJwyyF/pBjZUcABCCkwFtZ5E3eSiQLL8fO7vUHBNozRi1rykxbqG8w2OBuOPmXRYYhcOUdViy0qTrV2iMaYsStopr7VJV5rzO0F55txZXh8Z/sZjkZk/mO4X/063oVJn3HavXDDNas65SPchUC7VLvsklAAIY21tZuwsE+BigmsgphkpZbkhV2+7MwGkmYiwZCYp54Z088+isKgst15kPBMEhmhxYt0PeZu5r/i9JfHWvmP5k25/iWxcE5LWDhnUL1RG5gvsn0OAlPKOIMsvCw5iu7OyzBRAvZqW+4b/sZqbXi9eN/xQ14HTtolA7vyESC7Ev3R1DQSZJJkElraGgnGNP5RonAw3+dLtUGbxwdUw6xhXnNvi+wI=]
+
+----------------------------------------------------------------------
+----------------------------- wsCifrado ------------------------------
+----------------------------------------------------------------------
+
+2025-10-17 16:27:03,508 [http-nio-8888-exec-8] - [DEBUG] - com.cifrado.controller.CifradoController: Obteniendo Base64 (JSON Datos) [eyJtZXJjaGFudElkIjoiOTcwOTg4NCIsIm5hbWUiOiJBTkdJRSIsInBhc3N3b3JkIjoiTWFyP3RvTjIhNSIsIm1vZGUiOiJQUkQiLCJjb250cm9sTnVtYmVyIjoiUkVGMTc2MDcxODQyMiIsInRlcm1pbmFsSWQiOiI5NzA5ODg0MSIsImFtb3VudCI6IjIwLjAwIiwibWVyY2hhbnROYW1lIjoiSU5TQ1JJUCBNQVJBVEhPTiBNVFkiLCJtZXJjaGFudENpdHkiOiJNb250ZXJyZXkiLCJsYW5nIjoiRVMiLCJjdXN0b21lclJlZjEiOiJOQSIsImN1c3RvbWVyUmVmMiI6Ik5BIiwiY3VzdG9tZXJSZWYzIjoiTkEiLCJjdXN0b21lclJlZjQiOiJOQSIsImN1c3RvbWVyUmVmNSI6Ik5BIn0=]... 
+2025-10-17 16:27:03,510 [http-nio-8888-exec-8] - [DEBUG] - com.cifrado.controller.CifradoController: Resultado Decodificado de Base64 (JSON Datos) [{"merchantId":"9709884","name":"ANGIE","password":"Mar?toN2!5","mode":"PRD","controlNumber":"REF1760718422","terminalId":"97098841","amount":"20.00","merchantName":"INSCRIP MARATHON MTY","merchantCity":"Monterrey","lang":"ES","customerRef1":"NA","customerRef2":"NA","customerRef3":"NA","customerRef4":"NA","customerRef5":"NA"}]
+
+2025-10-17 16:27:03,511 [http-nio-8888-exec-8] - [DEBUG] - com.cifrado.controller.CifradoController: 1.- Se cifrará JSON Datos con la llave pública -> [MIIGdDCCBVygAwIBAgITFwABTnQA5m6Udb1vlQABAAFOdDANBgkqhkiG9w0BAQsF
+ADB5MQswCQYDVQQGEwJNWDEZMBcGCgmSJomT8ixkARkWCWdmYmFub3J0ZTEeMBwG
+A1UEChMVU2VndXJpZGFkIGluZm9ybWF0aWNhMS8wLQYDVQQDEyZHcnVwbyBGaW5h
+bmNpZXJvIEJhbm9ydGUgQ0EgRW50ZXJwcmlzZTAeFw0yNTAyMjEyMDAwMzVaFw0y
+NjAyMjEyMDAwMzVaMIGoMQswCQYDVQQGEwJNWDELMAkGA1UECBMCREYxDzANBgNV
+BAcTBk1leGljbzErMCkGA1UEChMiR3J1cG8gRmluYW5jaWVybyBCYW5vcnRlIFNB
+QiBkZSBDVjEkMCIGA1UECxMbU2VndXJpZGFkIGRlIGxhIEluZm9ybWFjaW9uMSgw
+JgYDVQQDEx9tdWx0aWNvYnJvc2tleS51bml4LmJhbm9ydGUuY29tMIIBIjANBgkq
+hkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvp69wp3Z6ZXCHS+OQ2k8H26dWwuF/cSv
+f37YT7NYfz4YvvXeahNv0CCStL5tATSoYj8MDKzNbwidXq/7e6JQpV1bcZjYXcjL
+qli0GrOaJ00wUdR3zFS5F85Ks7ycTW6wNl/n7X8QXFVAh+HJyO7yrKdopcPyNLfJ
+xBeXlvvuGfAKLJ7mCDdPN2UROg/35yLKil+VMB8OgF/KXEajmR0a+FiEe96+AkW3
+oWMslb9fXm8+Kc4IqXKTZQg52CHPlbSnY8vaBqZd0sH5W60NILFFXgNFXsQAHhUt
+njvcL+MY6NOHGeRYyrafP7Vwoog2kQiIUZafH/D1dWmB0r9qCv3VkQIDAQABo4IC
+wzCCAr8wMgYDVR0RBCswKYIKbG54c2lzYTAxcIIbbG54c2lzYTAxcC51bml4LmJh
+bm9ydGUuY29tMB0GA1UdDgQWBBR3lYj1Ic4B/MjmXVpM+fSAo3YxhTAfBgNVHSME
+GDAWgBTQBPbPr59ruX3bXiA0YK0zB6UM0zCB7QYDVR0fBIHlMIHiMIHfoIHcoIHZ
+hoHWbGRhcDovLy9DTj1HcnVwbyUyMEZpbmFuY2llcm8lMjBCYW5vcnRlJTIwQ0El
+MjBFbnRlcnByaXNlLENOPUNBLUJBTk9SVEUtUkEsQ049Q0RQLENOPVB1YmxpYyUy
+MEtleSUyMFNlcnZpY2VzLENOPVNlcnZpY2VzLENOPUNvbmZpZ3VyYXRpb24sREM9
+Z2ZiYW5vcnRlP2NlcnRpZmljYXRlUmV2b2NhdGlvbkxpc3Q/YmFzZT9vYmplY3RD
+bGFzcz1jUkxEaXN0cmlidXRpb25Qb2ludDCB2wYIKwYBBQUHAQEEgc4wgcswgcgG
+CCsGAQUFBzAChoG7bGRhcDovLy9DTj1HcnVwbyUyMEZpbmFuY2llcm8lMjBCYW5v
+cnRlJTIwQ0ElMjBFbnRlcnByaXNlLENOPUFJQSxDTj1QdWJsaWMlMjBLZXklMjBT
+ZXJ2aWNlcyxDTj1TZXJ2aWNlcyxDTj1Db25maWd1cmF0aW9uLERDPWdmYmFub3J0
+ZT9jQUNlcnRpZmljYXRlP2Jhc2U/b2JqZWN0Q2xhc3M9Y2VydGlmaWNhdGlvbkF1
+dGhvcml0eTALBgNVHQ8EBAMCBaAwPAYJKwYBBAGCNxUHBC8wLQYlKwYBBAGCNxUI
+g+v5BoK1j0eNkROCp58GguHddCKCxphfgtj9DwIBZAIBEjATBgNVHSUEDDAKBggr
+BgEFBQcDATAbBgkrBgEEAYI3FQoEDjAMMAoGCCsGAQUFBwMBMA0GCSqGSIb3DQEB
+CwUAA4IBAQBicj3sAYJZTkjNo+HcqhPGDSA8vJ3rTEvDDqcaNiWlfPFaXLNBxfk2
+aKuV6Ibf1nSE9lfrpqVz+RwKCrtc4jXx9lO6BkgAuG7H2h6Tg53TbYPUJnr5ynwi
+jRlOacsJFvj5c6MLoM0Jrdw9ozd8UVjbqHTWo9iClPOGm9GX3FSc21bUWkSlp/Re
+MeWXKhMhCtKdWPqQGYIW3skpUYzhgGTDdEaUvXFYK79Pud7mxS1761P1qt7s1Axo
+61dvEM9gwtPuqcARkrwMroAqUhPmda71sndN3Z1CAh1khviyowwA2dZdxdT8ZqZy
+01+dEnuNx6BtEq8aht+M2u01BOXiqj1U
+]
+2025-10-17 16:27:03,514 [http-nio-8888-exec-8] - [DEBUG] - com.cifrado.controller.CifradoController: 2.- Resultado cifrado AES ( Subcadena2 ) [pq09r2CkV58Z2vVqiYBbXEsEhmX3vNoRm6Vo4I7/QSKcCU+tuSU34n8hAwGACHc8WYcwLEmPZORZqqN+4vgm6I9f3q+oy+aQTI/yyW3N8GRINwF/DNVgnllWxGNtcUzjf2+tL8jTe3vdO65SYliEKVuz2uBmc8SwljqMkDXbT4rX+DsMB55WKeJLQg8qEmVrwWDDjSJfLtzQ01T+D+p8XdTsHn9hPJxyQmqk1SHDTfziXT+P/0/JjdBJjC+rNRVFt/Z9ZIYsczSU7b9Ful6zhyoqb9qM2T6NhH1g5qwzlsJXHgS1fwR3EBhk5pe5O845QVIhKmM7qlZSEszOesXQh/mMveeZBR5R/3rNt0R4ihnn7ouhd5Lew3ofDyISdy38V5NDKIkCmjfL7qXjDwQLLDHMCEZWA9oKcUEO99UAeGGMNgz7/Yw=]
+2025-10-17 16:27:03,516 [http-nio-8888-exec-8] - [DEBUG] - com.cifrado.controller.CifradoController: 3.- Prueba decifrado AES (JSON Datos) [{"merchantId":"9709884","name":"ANGIE","password":"Mar?toN2!5","mode":"PRD","controlNumber":"REF1760718422","terminalId":"97098841","amount":"20.00","merchantName":"INSCRIP MARATHON MTY","merchantCity":"Monterrey","lang":"ES","customerRef1":"NA","customerRef2":"NA","customerRef3":"NA","customerRef4":"NA","customerRef5":"NA"}]
+
+------------ JSON a utilizar en el servicio de Descifrado ------------
+{
+    "vi": "646b3935723865636e3737757030356d",
+    "salt": "6d62616e793873643568757038316e62",
+    "passphrase": "eAPP7iZx=q*?G=Ws",
+    "cypherData": "Sustituir_por_el_valor_de_cadena_cifrada_(data)_de_la_respuesta_de_VCE"
+}
+----------------------------------------------------------------------
+
+2025-10-17 16:27:03,516 [http-nio-8888-exec-8] - [DEBUG] - com.cifrado.controller.CifradoController: 4.- AES Llaves Generada [646b3935723865636e3737757030356d::6d62616e793873643568757038316e62::eAPP7iZx=q*?G=Ws]
+2025-10-17 16:27:03,516 [http-nio-8888-exec-8] - [DEBUG] - com.cifrado.controller.CifradoController: -
+2025-10-17 16:27:03,519 [http-nio-8888-exec-8] - [DEBUG] - com.cifrado.utils.CifradoRSA: RSA Encrypt Provider: [SunJCE], [RSA/ECB/OAEPWITHSHA-256ANDMGF1PADDING]
+2025-10-17 16:27:03,519 [http-nio-8888-exec-8] - [DEBUG] - com.cifrado.controller.CifradoController: 5.- Resultado cifrado de Llaves AES ( Subcadena1 ) [LJoKuKPJYiupyGjp6NbAavZA5637Hs3wnJxjzE54TVyZFV61gWPSmh5e/5GZqy/Ure1kfeEfQESdsflDaX7GI+iGEdAUXcmnNLaI9uLgS1yUGY0EcoDLwE7y2fxddMj3IiUq2EETQn0/TnAJsLcabV4b2ma0yCs+sxYY8z8cmI4XPsQHsg4lbKeP2YZDhQqI/tHM+vBwNaUxTr8vV4wyZnFDAEeJMosCGXHhfce5Gz7ujX5NP6/GSV3zoNd9+wARak17jDKrl//x1BA60FgaDJZhJS2LQtuNIsNRHtndvft8Pm/9p9acPcXkXIy6D9GlRdCvPBCgNQlfS1CEhdvOqg==]
+2025-10-17 16:27:03,519 [http-nio-8888-exec-8] - [DEBUG] - com.cifrado.controller.CifradoController: Cadena para enviar al Orquestador (Subcadena1:::Subcadena2) [LJoKuKPJYiupyGjp6NbAavZA5637Hs3wnJxjzE54TVyZFV61gWPSmh5e/5GZqy/Ure1kfeEfQESdsflDaX7GI+iGEdAUXcmnNLaI9uLgS1yUGY0EcoDLwE7y2fxddMj3IiUq2EETQn0/TnAJsLcabV4b2ma0yCs+sxYY8z8cmI4XPsQHsg4lbKeP2YZDhQqI/tHM+vBwNaUxTr8vV4wyZnFDAEeJMosCGXHhfce5Gz7ujX5NP6/GSV3zoNd9+wARak17jDKrl//x1BA60FgaDJZhJS2LQtuNIsNRHtndvft8Pm/9p9acPcXkXIy6D9GlRdCvPBCgNQlfS1CEhdvOqg==:::pq09r2CkV58Z2vVqiYBbXEsEhmX3vNoRm6Vo4I7/QSKcCU+tuSU34n8hAwGACHc8WYcwLEmPZORZqqN+4vgm6I9f3q+oy+aQTI/yyW3N8GRINwF/DNVgnllWxGNtcUzjf2+tL8jTe3vdO65SYliEKVuz2uBmc8SwljqMkDXbT4rX+DsMB55WKeJLQg8qEmVrwWDDjSJfLtzQ01T+D+p8XdTsHn9hPJxyQmqk1SHDTfziXT+P/0/JjdBJjC+rNRVFt/Z9ZIYsczSU7b9Ful6zhyoqb9qM2T6NhH1g5qwzlsJXHgS1fwR3EBhk5pe5O845QVIhKmM7qlZSEszOesXQh/mMveeZBR5R/3rNt0R4ihnn7ouhd5Lew3ofDyISdy38V5NDKIkCmjfL7qXjDwQLLDHMCEZWA9oKcUEO99UAeGGMNgz7/Yw=]
