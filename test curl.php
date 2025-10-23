@@ -1,0 +1,37 @@
+curl -X POST "https://maratonmonterrey.mx/wp-admin/admin-ajax.php?action=banorte_vce_wc_notify" \
+  -d "payload=$(php -r 'echo base64_encode(json_encode([
+    "order_id"=>33761,
+    "order_key"=>"wc_order_UsrF9CBV4MlUH",
+    "status"=>"approved",
+    "resultadoPayw"=>"A",
+    "txn_id"=>"SIMTXN123456",
+    "auth_code"=>"214144",
+    "codigoAut"=>"214144",
+    "message"=>"Aprobada (sim)",
+    "controlNumber"=>"TEST-CONTROL-1",
+    "amount"=>"20.00",
+    "importe"=>"20.00",
+    "currency"=>"MXN",
+    "referencia"=>"248238359790",
+    "numeroControl"=>"TEST-CONTROL-1",
+    "idAfiliacion"=>"7000002",
+    "texto"=>"Aprobada (sim)"
+  ], JSON_UNESCAPED_SLASHES));')" \
+  -d "sig=$(php -r 'echo hash_hmac("sha256", base64_encode(json_encode([
+    "order_id"=>33761,
+    "order_key"=>"wc_order_UsrF9CBV4MlUH",
+    "status"=>"approved",
+    "resultadoPayw"=>"A",
+    "txn_id"=>"SIMTXN123456",
+    "auth_code"=>"214144",
+    "codigoAut"=>"214144",
+    "message"=>"Aprobada (sim)",
+    "controlNumber"=>"TEST-CONTROL-1",
+    "amount"=>"20.00",
+    "importe"=>"20.00",
+    "currency"=>"MXN",
+    "referencia"=>"248238359790",
+    "numeroControl"=>"TEST-CONTROL-1",
+    "idAfiliacion"=>"7000002",
+    "texto"=>"Aprobada (sim)"
+  ], JSON_UNESCAPED_SLASHES)), "366d892d07ee0db767cd38acd78bd032b8124043705f5cdc910815ea3e9c6808");')"

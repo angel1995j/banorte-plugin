@@ -1,0 +1,5 @@
+# /prueba/php/.htaccess
+RewriteEngine On
+
+# En esta misma carpeta: routear callback.php -> callback-router.php
+RewriteRule ^callback\.php$ callback-router.php [L,QSA]
